@@ -37,6 +37,7 @@
     "tech": ["React.js", "Three.js", "Prismic", "Voicebot IA"],
     "gallery": [],
     "links": [
+      { "label": "Ouvrir l'appli", "url": "https://epod.polarpod.fr/", "type": "web" },
       { "label": "Voir la vidéo", "url": "https://www.youtube.com/watch?v=9mL9WTJRlX0", "type": "youtube" }
     ]
   },
@@ -118,6 +119,8 @@
     "fullDesc": "<p><strong>Contexte :</strong> Installation interactive développée pour Webnet, déployée lors de salons de recrutement et d'événements tech, dont le <strong>DevFest Nantes</strong>.</p><p>Le dispositif repose sur un pipeline de <strong>body tracking temps réel</strong> via Kinect v2, couplé à un modèle de <strong>reconnaissance de formes par réseau de neurones</strong> (TensorFlow.js). Le visiteur dessine dans l'air à main levée ; le système classifie le geste en temps réel et affiche le résultat sur écran.</p><ul><li>Tracking squelette <strong>Kinect v2</strong></li><li>Classification CNN via <strong>TensorFlow.js</strong></li><li>Backend <strong>Node.js</strong>, frontend web</li></ul>",
     "tech": ["Kinect v2", "TensorFlow.js", "Node.js", "JavaScript"],
     "gallery": [],
-    "links": []
+    "links": [
+      { "label": "Post LinkedIn", "url": "https://www.linkedin.com/posts/webnet_vid%C3%A9o-air-draw-challenge-sfl-activity-7044690743919013888-move?utm_source=share&utm_medium=member_desktop&rcm=ACoAABdswaYBzYZb5Bo-w2PUM2BV3DbDZJCudb8", "type": "web" }
+    ]
   }
 ]
