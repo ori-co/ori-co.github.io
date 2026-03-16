@@ -2,7 +2,7 @@
   {
     "id": "polarpod",
     "filterTags": ["3d", "ia", "mediation"],
-    "img": "assets/img/projects/polarpod.jpg",
+    "img": "assets/img/projects/polarpod.png",
     "svg": "assets/svg/projects/polarpod.svg",
     "year": "2024 · Médiation scientifique",
     "name": "PolarPod 3.0",
@@ -16,11 +16,11 @@
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Plateforme de médiation scientifique conçue pour le projet PolarPod de <strong>Jean-Louis Étienne</strong>, développée en 2024.</p><p>La plateforme combine plusieurs couches de contenu pour rendre accessible la mission scientifique polaire :</p><ul><li>Scènes <strong>3D interactives</strong> (Three.js) pour visualiser le pod et son environnement</li><li>Contenus éditoriaux et médias gérés via <strong>Prismic</strong> (headless CMS)</li><li><strong>Voicebot IA</strong> permettant au grand public d'interroger le système en langage naturel</li></ul><p>Front-end développé en <strong>React.js</strong>. Disponible en ligne.</p>",
     "tech": ["React.js", "Three.js", "Prismic", "Voicebot IA"],
-    "gallery": [],
+    "gallery": ["assets/img/projects/polarpod.png"],
     "video": null,
     "links": [
       { "label": "Ouvrir l'appli", "url": "https://epod.polarpod.fr/", "type": "web" },
-      { "label": "Voir la vidéo", "url": "https://www.youtube.com/watch?v=9mL9WTJRlX0", "type": "youtube" }
+      { "label": "En savoir plus", "url": "https://www.youtube.com/watch?v=9mL9WTJRlX0", "type": "youtube" }
     ]
   },
   {
@@ -40,14 +40,14 @@
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur IA déployé lors de salons clients et de workshops d'acculturation à l'IA générative.</p><p>L'agent incarne un <strong>assistant assurance</strong> : il guide le client en langage naturel à travers les démarches en cas de sinistre ou d'accident, de la déclaration jusqu'à la résolution.</p><p>Un <strong>agent conversationnel vocal LLM</strong> est intégré dans un environnement 3D temps réel développé sous <strong>Unreal Engine</strong>. La solution est diffusée sur deux formats distincts :</p><ul><li><strong>Looking Glass</strong> — écran stéréoscopique autostéréoscopique, rendu holographique sans lunettes</li><li><strong>Aximmetry GreenStudio</strong> — incrustation temps réel sur fond vert pour présentation scénique</li></ul><p>L'agent répond en langage naturel et s'inscrit de manière cohérente dans le décor 3D généré dynamiquement.</p>",
     "tech": ["Unreal Engine", "LLM", "Looking Glass", "Aximmetry"],
-    "gallery": ["assets/img/projects/axel-presentation.jpg"],
+    "gallery": ["assets/img/projects/axel.jpg", "assets/img/projects/axel_1.png","assets/img/projects/axel_2.png", "assets/img/projects/axel-lookingglass.jpg"],
     "video": null,
     "links": []
   },
   {
     "id": "offertodesign",
     "filterTags": ["vr", "salon"],
-    "img": "assets/img/projects/offertodesign.jpg",
+    "img": "assets/img/projects/offertodesign.png",
     "svg": "assets/svg/projects/offertodesign.svg",
     "year": "2023 · Aéronautique · Bourget",
     "name": "Offer To Design VR",
@@ -61,14 +61,14 @@
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Expérience de configuration cabine en réalité virtuelle présentée au salon du Bourget 2023.</p><p>Le visiteur, équipé d'un <strong>Meta Quest 2</strong>, accède à un configurateur d'intérieur avion en <strong>full VR standalone</strong> : sélection des aménagements cabine, choix des matériaux et configurations de sièges, puis visite immersive de l'espace configuré.</p><p>Développé sous <strong>Unity</strong> avec pipeline de rendu optimisé pour Quest 2.</p>",
     "tech": ["Unity", "Meta Quest 2"],
-    "gallery": [],
+    "gallery": ["assets/img/projects/offertodesign.png","assets/img/projects/otd_1.png","assets/img/projects/otd_2.png","assets/img/projects/otd_3.png" ],
     "video": null,
     "links": []
   },
   {
     "id": "augmented-worker",
     "filterTags": ["ar", "salon"],
-    "img": "assets/img/projects/augmented-worker.jpg",
+    "img": "assets/img/projects/augmented-worker.png",
     "svg": "assets/svg/projects/augmented-worker.svg",
     "year": "2022 · Industrie · Connected Worker",
     "name": "Augmented Worker",
@@ -82,7 +82,7 @@
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Application de démonstration AR développée pour sensibiliser les industriels aux apports de la réalité augmentée sur le terrain, présentée lors de workshops clients, à la <strong>Semaine de l'Immersion</strong> au Carrefour Numérique, et dans des workshops à <strong>CampusFab</strong>.</p><p>L'application est <strong>modulaire et paramétrable</strong> : chaque use case peut être activé ou désactivé indépendamment, ce qui permet d'adapter la démonstration au profil du client — ouvrier terrain, manager de production ou décideur industriel.</p><p>Cas d'usages couverts :</p><ul><li><strong>Digital Twin</strong> — visualisation du jumeau numérique d'équipements industriels</li><li><strong>Procédures guidées main libre</strong> — assistance pas à pas superposée à l'environnement réel</li><li><strong>Remote Assistance</strong> — collaboration à distance avec annotation spatiale en temps réel</li></ul><p>Développée sous <strong>Unity</strong> avec le SDK <strong>MRTK</strong> pour <strong>HoloLens 2</strong>.</p>",
     "tech": ["Unity", "HoloLens 2", "MRTK"],
-    "gallery": [],
+    "gallery": ["assets/img/projects/augmented-worker.png","assets/img/projects/augmentedworker-campusfab.jpg", "assets/img/projects/augmentedworker_1.png","assets/img/projects/augmentedworker_2.png","assets/img/projects/augmentedworker_3.png"],
     "video": "assets/video/projects/augmented-worker-teaser.mp4",
     "links": []
   },
@@ -122,9 +122,9 @@
     ],
     "study": false,
     "wip": false,
-    "fullDesc": "<p><strong>Contexte :</strong> Installation interactive développée pour une agence digitale, déployée lors de salons de recrutement et d'événements tech, dont le <strong>DevFest Nantes</strong>.</p><p>Le dispositif repose sur un pipeline de <strong>body tracking temps réel</strong> via Kinect v2, couplé à un modèle de <strong>reconnaissance de formes par réseau de neurones</strong> (TensorFlow.js). Le visiteur dessine dans l'air à main levée ; le système classifie le geste en temps réel et affiche le résultat sur écran.</p><ul><li>Tracking squelette <strong>Kinect v2</strong></li><li>Classification CNN via <strong>TensorFlow.js</strong></li><li>Backend <strong>Node.js</strong>, frontend web</li></ul>",
+    "fullDesc": "<p><strong>Contexte :</strong> Installation interactive développée pour une agence digitale, déployée lors de salons de recrutement et d'événements tech, dont le <strong>DevFest</strong> et le <strong>Symfony Live</strong></p><p>Le dispositif repose sur un pipeline de <strong>body tracking temps réel</strong> via Kinect v2, couplé à un modèle de <strong>reconnaissance de formes par réseau de neurones</strong> (TensorFlow.js). Le visiteur dessine dans l'air à main levée ; le système classifie le geste en temps réel et affiche le résultat sur écran.</p><ul><li>Tracking squelette <strong>Kinect v2</strong></li><li>Classification CNN via <strong>TensorFlow.js</strong></li><li>Backend <strong>Node.js</strong>, frontend web</li></ul>",
     "tech": ["Kinect v2", "TensorFlow.js", "Node.js", "JavaScript"],
-    "gallery": [],
+    "gallery": ["assets/img/projects/airdraw.jpg","assets/img/projects/airdraw_1.png"],
     "video": null,
     "links": [
       { "label": "Post LinkedIn", "url": "https://www.linkedin.com/posts/webnet_vid%C3%A9o-air-draw-challenge-sfl-activity-7044690743919013888-move", "type": "web" }
