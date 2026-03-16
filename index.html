@@ -148,6 +148,29 @@
   </footer>
 </div>
 
+<!-- Modal projet -->
+<div id="proj-modal" class="pmodal-overlay" onclick="if(event.target===this)closeProjModal()">
+  <div class="pmodal">
+    <button class="pmodal-close" onclick="closeProjModal()">×</button>
+    <div class="pmodal-header">
+      <p class="pmodal-year" id="pmodal-year"></p>
+      <h2 class="pmodal-name" id="pmodal-name"></h2>
+      <div class="pmodal-tags" id="pmodal-tags"></div>
+    </div>
+    <div class="pmodal-gallery" id="pmodal-gallery"></div>
+    <div class="pmodal-desc" id="pmodal-desc"></div>
+    <div class="pmodal-tech" id="pmodal-tech"></div>
+    <div class="pmodal-links" id="pmodal-links"></div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <button class="lb-nav lb-prev" onclick="event.stopPropagation();lbNav(-1)">&#8249;</button>
+  <img id="lb-img" src="" alt="">
+  <button class="lb-nav lb-next" onclick="event.stopPropagation();lbNav(1)">&#8250;</button>
+</div>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -12,7 +12,11 @@
       { "text": "Salon" },
       { "text": "Installation" }
     ],
-    "study": false
+    "study": false,
+    "fullDesc": "<p>Démonstration développée pour Thales au salon du Bourget 2019. Le visiteur pointe une tablette vers la maquette physique d'un pod militaire et accède à des procédures de maintenance guidées étape par étape en réalité augmentée.</p><p>Les instructions s'affichent directement superposées à la maquette, les mains restent libres pour suivre les gestes.</p>",
+    "tech": [],
+    "gallery": [],
+    "links": []
   },
   {
     "id": "polarpod",
@@ -27,7 +31,11 @@
       { "text": "IA", "color": "cyan" },
       { "text": "Médiation" }
     ],
-    "study": false
+    "study": false,
+    "fullDesc": "<p>Plateforme de médiation scientifique pour le projet PolarPod de Jean-Louis Étienne, développée pour Accenture en 2024.</p><p>Elle combine des contenus 3D interactifs, des animations 2D et un voicebot IA pour permettre au grand public d'explorer l'expédition polaire. Disponible en ligne.</p>",
+    "tech": [],
+    "gallery": [],
+    "links": []
   },
   {
     "id": "axel",
@@ -42,7 +50,11 @@
       { "text": "LLM",          "color": "violet" },
       { "text": "IA Générative" }
     ],
-    "study": false
+    "study": false,
+    "fullDesc": "<p>Démonstration de salon pour Accenture. Un agent vocal basé sur un LLM est intégré dans un environnement 3D immersif temps réel.</p><p>L'utilisateur dialogue naturellement avec l'assistant dans un espace spatial généré dynamiquement. Présenté au salon de l'aviation 2023.</p>",
+    "tech": [],
+    "gallery": [],
+    "links": []
   },
   {
     "id": "offertodesign",
@@ -57,7 +69,11 @@
       { "text": "Salon" },
       { "text": "3D" }
     ],
-    "study": false
+    "study": false,
+    "fullDesc": "<p>Configurateur d'avion en réalité virtuelle développé pour Accenture, présenté au Bourget 2023.</p><p>Le visiteur personnalise l'intérieur d'un avion en VR — choix des configurations, des finitions — puis effectue une visite immersive de la cabine configurée.</p>",
+    "tech": [],
+    "gallery": [],
+    "links": []
   },
   {
     "id": "airdraw",
@@ -72,7 +88,11 @@
       { "text": "Multimodal" },
       { "text": "Installation" }
     ],
-    "study": false
+    "study": false,
+    "fullDesc": "<p>Installation interactive développée pour Webnet. Une caméra Kinect capture les mouvements du corps en temps réel.</p><p>Le visiteur dessine dans l'air à l'aide de ses mains, et un algorithme de reconnaissance IA identifie le dessin à la volée. Conçu pour un événement d'entreprise en 2019.</p>",
+    "tech": [],
+    "gallery": [],
+    "links": []
   },
   {
     "id": "mediation-etude",
@@ -87,6 +107,10 @@
       { "text": "Médiation" },
       { "text": "Concept" }
     ],
-    "study": true
+    "study": true,
+    "fullDesc": "<p>Concept développé en 2025 pour explorer l'usage de la réalité augmentée en contexte muséal.</p><p>L'idée : superposer du contenu contextuel sur les objets physiques d'une exposition permanente, permettant aux visiteurs d'enrichir leur expérience via smartphone ou tablette.</p><p>L'étude comprend l'analyse des usages, le parcours utilisateur et une maquette interactive.</p>",
+    "tech": [],
+    "gallery": [],
+    "links": []
   }
 ]

@@ -117,7 +117,10 @@ function renderMaker(tiles) {
     </div>`).join('');
 }
 
+let _projects = [];
+
 function renderProjects(projects) {
+  _projects = projects;
   document.getElementById('pgrid').innerHTML = projects.map(p => {
     const labels = p.labels.map(l =>
       l.color
@@ -125,7 +128,7 @@ function renderProjects(projects) {
         : `<span class="ptag">${l.text}</span>`
     ).join('');
     const studyBadge = p.study ? '<span class="study-b">★ étude</span>' : '';
-    return `<div class="ptile" data-tags="${p.filterTags.join(',')}">
+    return `<div class="ptile" data-tags="${p.filterTags.join(',')}" onclick="openProject('${p.id}')">
       <div class="ptile-vis" style="position:relative;">
         <img src="${p.img}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
         <img src="${p.svg}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
@@ -140,6 +143,81 @@ function renderProjects(projects) {
     </div>`;
   }).join('');
 }
+
+let _lbImages = [], _lbIndex = 0;
+
+function openProject(id) {
+  const p = _projects.find(x => x.id === id);
+  if (!p) return;
+
+  document.getElementById('pmodal-year').textContent = p.year;
+  document.getElementById('pmodal-name').textContent = p.name;
+
+  const labels = p.labels.map(l =>
+    l.color
+      ? `<span class="ptag" style="color:var(--${l.color});border-color:var(--${l.color});">${l.text}</span>`
+      : `<span class="ptag">${l.text}</span>`
+  ).join('');
+  const studyBadge = p.study ? '<span class="study-b" style="position:static;display:inline-block;margin-left:0.5rem;">★ étude</span>' : '';
+  document.getElementById('pmodal-tags').innerHTML = labels + studyBadge;
+
+  const images = (p.gallery && p.gallery.length) ? p.gallery : [p.img];
+  _lbImages = images;
+  document.getElementById('pmodal-gallery').innerHTML = images.map((src, i) =>
+    `<img src="${src}" alt="" class="gallery-img" onclick="openLightbox(${i})" onerror="this.style.display='none'">`
+  ).join('');
+
+  document.getElementById('pmodal-desc').innerHTML = p.fullDesc || `<p>${p.desc}</p>`;
+
+  const techEl = document.getElementById('pmodal-tech');
+  if (p.tech && p.tech.length) {
+    techEl.innerHTML = `<p class="pmodal-section-label">// stack</p><div class="tech-tags">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>`;
+    techEl.style.display = '';
+  } else { techEl.style.display = 'none'; }
+
+  const linksEl = document.getElementById('pmodal-links');
+  if (p.links && p.links.length) {
+    const icons = { web: '↗', youtube: '▶', github: '⌥' };
+    linksEl.innerHTML = `<p class="pmodal-section-label" style="margin-top:1.5rem;">// liens</p><div class="pmodal-links-list">${
+      p.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener" class="plink plink-${l.type || 'web'}">${icons[l.type] || '↗'} ${l.label}</a>`).join('')
+    }</div>`;
+    linksEl.style.display = '';
+  } else { linksEl.style.display = 'none'; }
+
+  document.getElementById('proj-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProjModal() {
+  document.getElementById('proj-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function openLightbox(index) {
+  _lbIndex = index;
+  document.getElementById('lb-img').src = _lbImages[index];
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+function lbNav(dir) {
+  _lbIndex = (_lbIndex + dir + _lbImages.length) % _lbImages.length;
+  document.getElementById('lb-img').src = _lbImages[_lbIndex];
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('lightbox').classList.contains('open')) closeLightbox();
+    else closeProjModal();
+  }
+  if (document.getElementById('lightbox').classList.contains('open')) {
+    if (e.key === 'ArrowLeft') lbNav(-1);
+    if (e.key === 'ArrowRight') lbNav(1);
+  }
+});
 
 const load = path => fetch(path).then(r => r.json());
 
