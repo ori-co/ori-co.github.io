@@ -16,7 +16,7 @@
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Plateforme de médiation scientifique conçue pour le projet PolarPod de <strong>Jean-Louis Étienne</strong>, développée en 2024.</p><p>La plateforme combine plusieurs couches de contenu pour rendre accessible la mission scientifique polaire :</p><ul><li>Scènes <strong>3D interactives</strong> (Three.js) pour visualiser le pod et son environnement</li><li>Contenus éditoriaux et médias gérés via <strong>Prismic</strong> (headless CMS)</li><li><strong>Voicebot IA</strong> permettant au grand public d'interroger le système en langage naturel</li></ul><p>Front-end développé en <strong>React.js</strong>. Disponible en ligne.</p>",
     "tech": ["React.js", "Three.js", "Prismic", "Voicebot IA"],
-    "gallery": ["assets/img/projects/polarpod.png"],
+    "gallery": ["assets/img/projects/polarpod_2.png","assets/img/projects/polarpod_1.png","assets/img/projects/polarpod_3.png"],
     "video": null,
     "links": [
       { "label": "Ouvrir l'appli", "url": "https://epod.polarpod.fr/", "type": "web" },
