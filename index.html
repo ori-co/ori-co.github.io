@@ -18,7 +18,9 @@
   --violet:  #9B8EC4;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Syne',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+body { font-family:'Syne',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; font-size:18px; }
+
+html { font-size:18px; }
 
 /* NAV */
 nav {
@@ -31,12 +33,12 @@ nav {
 }
 .nav-logo {
   font-family:'DM Mono',monospace;
-  font-size:0.85rem; letter-spacing:0.08em;
+  font-size:1rem; letter-spacing:0.08em;
   color:var(--ocre); cursor:pointer;
 }
 .nav-links { display:flex; gap:2.5rem; list-style:none; }
 .nav-links a {
-  font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase;
+  font-size:0.82rem; letter-spacing:0.15em; text-transform:uppercase;
   color:var(--muted); cursor:pointer; transition:color 0.2s;
 }
 .nav-links a:hover, .nav-links a.active { color:var(--text); }
@@ -76,34 +78,34 @@ nav {
 }
 .hero-tag {
   font-family:'DM Mono',monospace;
-  font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase;
+  font-size:0.82rem; letter-spacing:0.2em; text-transform:uppercase;
   color:var(--ocre); margin-bottom:1.5rem;
 }
 .hero-title {
-  font-size:clamp(2.4rem,4vw,3.8rem);
+  font-size:clamp(2.8rem,4.5vw,4.4rem);
   font-weight:500; line-height:1.1;
   color:var(--text); margin-bottom:1rem;
 }
 .hero-title span { color:var(--cyan); }
 .hero-title em { font-style:normal; color:var(--violet); }
 .hero-sub {
-  font-size:0.9rem; line-height:1.8; color:var(--muted);
+  font-size:1.05rem; line-height:1.8; color:var(--muted);
   max-width:420px; margin-bottom:2.5rem;
   font-weight:300;
 }
 .hero-ctas { display:flex; gap:1rem; flex-wrap:wrap; }
 .btn-p {
-  padding:0.75rem 1.8rem;
+  padding:0.85rem 2rem;
   background:var(--cyan); color:var(--bg);
-  font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase;
+  font-size:0.85rem; letter-spacing:0.15em; text-transform:uppercase;
   border:none; cursor:pointer; font-family:'Syne',sans-serif;
   font-weight:500; transition:background 0.2s;
 }
 .btn-p:hover { background:var(--violet); }
 .btn-s {
-  padding:0.75rem 1.8rem;
+  padding:0.85rem 2rem;
   background:transparent; color:var(--muted);
-  font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase;
+  font-size:0.85rem; letter-spacing:0.15em; text-transform:uppercase;
   border:0.5px solid var(--border); cursor:pointer; font-family:'Syne',sans-serif;
   transition:all 0.2s;
 }
@@ -144,11 +146,11 @@ nav {
 .section { position:relative; z-index:1; padding:6rem 5rem; }
 .s-label {
   font-family:'DM Mono',monospace;
-  font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase;
+  font-size:0.78rem; letter-spacing:0.2em; text-transform:uppercase;
   color:var(--muted); margin-bottom:0.8rem;
 }
 .s-title {
-  font-size:clamp(1.8rem,2.5vw,2.4rem); font-weight:500;
+  font-size:clamp(2rem,2.8vw,2.8rem); font-weight:500;
   color:var(--text); margin-bottom:3rem; line-height:1.2;
 }
 
@@ -162,15 +164,15 @@ nav {
 .offre:hover { background:var(--surface); }
 .offre-n {
   font-family:'DM Mono',monospace;
-  font-size:0.65rem; color:var(--muted); margin-bottom:1.2rem;
+  font-size:0.78rem; color:var(--muted); margin-bottom:1.2rem;
 }
-.offre-title { font-size:0.9rem; font-weight:500; color:var(--text); margin-bottom:0.8rem; }
-.offre-desc { font-size:0.8rem; line-height:1.7; color:var(--muted); margin-bottom:1.5rem; font-weight:300; }
+.offre-title { font-size:1.05rem; font-weight:500; color:var(--text); margin-bottom:0.8rem; }
+.offre-desc { font-size:0.92rem; line-height:1.7; color:var(--muted); margin-bottom:1.5rem; font-weight:300; }
 .offre-tags { display:flex; flex-wrap:wrap; gap:0.4rem; }
 .otag {
   font-family:'DM Mono',monospace;
-  font-size:0.58rem; letter-spacing:0.08em;
-  padding:2px 7px; border:0.5px solid var(--border); color:var(--muted);
+  font-size:0.7rem; letter-spacing:0.08em;
+  padding:3px 9px; border:0.5px solid var(--border); color:var(--muted);
 }
 .offre-bar {
   position:absolute; bottom:0; left:0; right:0; height:2px;
@@ -188,12 +190,12 @@ nav {
   border-top:0.5px solid var(--border);
   display:grid; grid-template-columns:1fr 1fr; gap:5rem;
 }
-.contact-s h2 { font-size:2rem; font-weight:500; color:var(--text); margin-bottom:1rem; line-height:1.2; }
-.contact-s p { font-size:0.85rem; line-height:1.8; color:var(--muted); font-weight:300; }
+.contact-s h2 { font-size:2.2rem; font-weight:500; color:var(--text); margin-bottom:1rem; line-height:1.2; }
+.contact-s p { font-size:1rem; line-height:1.8; color:var(--muted); font-weight:300; }
 .contact-link {
   display:inline-flex; align-items:center; gap:0.4rem;
   margin-top:1.5rem; color:var(--cyan); font-family:'DM Mono',monospace;
-  font-size:0.72rem; text-decoration:none; letter-spacing:0.1em;
+  font-size:0.85rem; text-decoration:none; letter-spacing:0.1em;
 }
 .cform { display:flex; flex-direction:column; gap:1rem; }
 .fg { display:flex; flex-direction:column; gap:0.3rem; }
@@ -380,84 +382,7 @@ footer .fdot { color:var(--cyan); }
 
 <!-- BG PATTERN global -->
 <div class="bg-pattern">
-<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="position:fixed;inset:0;width:100%;height:100%;" preserveAspectRatio="xMidYMid slice">
-
-  <!-- Dot pattern de base -->
-  <defs>
-    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="0.7" fill="#DDDBD6" opacity="0.06"/>
-    </pattern>
-  </defs>
-  <rect width="100%" height="100%" fill="url(#dots)"/>
-
-  <!-- FORMES GÉOMÉTRIQUES GRANDES — très subtiles -->
-  <!-- Carré wireframe violet haut gauche -->
-  <rect x="3%" y="4%" width="12%" height="18%" fill="none" stroke="#9B8EC4" stroke-width="0.6" opacity="0.12" transform="rotate(-8, 9%, 13%)"/>
-  <!-- Carré wireframe ocre bas droite -->
-  <rect x="82%" y="68%" width="14%" height="22%" fill="none" stroke="#C8A86C" stroke-width="0.6" opacity="0.1" transform="rotate(12, 89%, 79%)"/>
-  <!-- Carré wireframe cyan milieu droite -->
-  <rect x="78%" y="18%" width="8%" height="12%" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.12" transform="rotate(20, 82%, 24%)"/>
-
-  <!-- Sphères / cercles concentrics violet -->
-  <circle cx="88%" cy="12%" r="7%" fill="none" stroke="#9B8EC4" stroke-width="0.6" opacity="0.12"/>
-  <circle cx="88%" cy="12%" r="4.5%" fill="none" stroke="#9B8EC4" stroke-width="0.4" opacity="0.09"/>
-  <circle cx="88%" cy="12%" r="2%" fill="none" stroke="#9B8EC4" stroke-width="0.4" opacity="0.1"/>
-
-  <!-- Sphère cyan bas gauche -->
-  <circle cx="8%" cy="82%" r="9%" fill="none" stroke="#5BC8C0" stroke-width="0.6" opacity="0.1"/>
-  <circle cx="8%" cy="82%" r="5.5%" fill="none" stroke="#5BC8C0" stroke-width="0.4" opacity="0.08"/>
-  <circle cx="8%" cy="82%" r="2.5%" fill="none" stroke="#5BC8C0" stroke-width="0.3" opacity="0.1"/>
-
-  <!-- Sphère ocre milieu gauche -->
-  <circle cx="18%" cy="50%" r="5%" fill="none" stroke="#C8A86C" stroke-width="0.5" opacity="0.1"/>
-  <circle cx="18%" cy="50%" r="2.8%" fill="none" stroke="#C8A86C" stroke-width="0.3" opacity="0.08"/>
-
-  <!-- Triangle wireframe ocre haut droite -->
-  <polygon points="72%,2% 85%,2% 78.5%,14%" fill="none" stroke="#C8A86C" stroke-width="0.6" opacity="0.13"/>
-
-  <!-- Triangle wireframe violet bas milieu -->
-  <polygon points="42%,88% 52%,88% 47%,98%" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.1"/>
-
-  <!-- CONSTELLATION VERTICES + CONNEXIONS violet haut -->
-  <line x1="6%" y1="22%" x2="20%" y2="14%" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2"/>
-  <line x1="20%" y1="14%" x2="34%" y2="26%" stroke="#9B8EC4" stroke-width="0.5" opacity="0.16"/>
-  <line x1="34%" y1="26%" x2="48%" y2="16%" stroke="#9B8EC4" stroke-width="0.4" opacity="0.13"/>
-  <line x1="48%" y1="16%" x2="60%" y2="28%" stroke="#9B8EC4" stroke-width="0.4" opacity="0.11"/>
-  <circle cx="6%" cy="22%" r="2.5" fill="#9B8EC4" opacity="0.35"/>
-  <circle cx="20%" cy="14%" r="2" fill="#9B8EC4" opacity="0.28"/>
-  <circle cx="34%" cy="26%" r="3" fill="#9B8EC4" opacity="0.22"/>
-  <circle cx="48%" cy="16%" r="2" fill="#9B8EC4" opacity="0.2"/>
-  <circle cx="60%" cy="28%" r="1.5" fill="#9B8EC4" opacity="0.18"/>
-
-  <!-- COURBE SIGNAL cyan traversante -->
-  <polyline points="0,72% 8%,66% 18%,70% 30%,56% 44%,62% 58%,48% 72%,54% 85%,40% 100%,46%"
-    fill="none" stroke="#5BC8C0" stroke-width="0.7" opacity="0.18"/>
-  <circle cx="30%" cy="56%" r="2.5" fill="#5BC8C0" opacity="0.3"/>
-  <circle cx="58%" cy="48%" r="2" fill="#5BC8C0" opacity="0.25"/>
-  <circle cx="85%" cy="40%" r="2.5" fill="#5BC8C0" opacity="0.22"/>
-
-  <!-- CONSTELLATION ocre bas droite -->
-  <line x1="65%" y1="78%" x2="76%" y2="70%" stroke="#C8A86C" stroke-width="0.5" opacity="0.18"/>
-  <line x1="76%" y1="70%" x2="88%" y2="80%" stroke="#C8A86C" stroke-width="0.5" opacity="0.15"/>
-  <line x1="88%" y1="80%" x2="96%" y2="72%" stroke="#C8A86C" stroke-width="0.4" opacity="0.13"/>
-  <circle cx="65%" cy="78%" r="2.5" fill="#C8A86C" opacity="0.3"/>
-  <circle cx="76%" cy="70%" r="2" fill="#C8A86C" opacity="0.25"/>
-  <circle cx="88%" cy="80%" r="3" fill="#C8A86C" opacity="0.2"/>
-  <circle cx="96%" cy="72%" r="1.5" fill="#C8A86C" opacity="0.18"/>
-
-  <!-- Vertices isolés épars -->
-  <circle cx="55%" cy="72%" r="1.5" fill="#9B8EC4" opacity="0.2"/>
-  <circle cx="70%" cy="44%" r="2" fill="#C8A86C" opacity="0.18"/>
-  <circle cx="25%" cy="38%" r="1.5" fill="#5BC8C0" opacity="0.18"/>
-  <circle cx="40%" cy="82%" r="2" fill="#5BC8C0" opacity="0.15"/>
-  <circle cx="92%" cy="52%" r="1.5" fill="#9B8EC4" opacity="0.2"/>
-
-  <!-- Diagonales très fines -->
-  <line x1="0" y1="100%" x2="12%" y2="0" stroke="#9B8EC4" stroke-width="0.3" opacity="0.06"/>
-  <line x1="92%" y1="0" x2="100%" y2="100%" stroke="#5BC8C0" stroke-width="0.3" opacity="0.06"/>
-  <line x1="50%" y1="0" x2="55%" y2="100%" stroke="#C8A86C" stroke-width="0.2" opacity="0.05"/>
-
-</svg>
+  <img src="assets/svg/bg-pattern.svg" style="position:fixed;inset:0;width:100%;height:100%;object-fit:cover;" alt="">
 </div>
 
 <nav>
@@ -485,65 +410,11 @@ footer .fdot { color:var(--cyan); }
         <button class="btn-s" onclick="document.getElementById('ca').scrollIntoView({behavior:'smooth'})">Me contacter</button>
       </div>
     </div>
-    <div class="hero-right">
-      <svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:460px;opacity:0.85;">
-        <!-- Grille de fond -->
-        <defs>
-          <pattern id="hgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#DDDBD6" stroke-width="0.3" opacity="0.12"/>
-          </pattern>
-        </defs>
-        <rect width="500" height="420" fill="url(#hgrid)"/>
-
-        <!-- Cube wireframe 3D central — ocre -->
-        <polygon points="180,120 300,80 380,140 380,260 300,300 180,240" fill="none" stroke="#C8A86C" stroke-width="1.2" opacity="0.55"/>
-        <polygon points="180,120 180,240 100,200 100,80" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.35"/>
-        <line x1="100" y1="80" x2="180" y2="120" stroke="#C8A86C" stroke-width="0.8" opacity="0.35"/>
-        <line x1="300" y1="80" x2="100" y2="80" stroke="#C8A86C" stroke-width="0.8" opacity="0.3"/>
-        <line x1="380" y1="140" x2="100" y2="200" stroke="#C8A86C" stroke-width="0.5" opacity="0.2"/>
-        <!-- Vertices cube -->
-        <circle cx="180" cy="120" r="3" fill="#C8A86C" opacity="0.7"/>
-        <circle cx="300" cy="80" r="3" fill="#C8A86C" opacity="0.7"/>
-        <circle cx="380" cy="140" r="3" fill="#C8A86C" opacity="0.6"/>
-        <circle cx="380" cy="260" r="3" fill="#C8A86C" opacity="0.5"/>
-        <circle cx="300" cy="300" r="3" fill="#C8A86C" opacity="0.6"/>
-        <circle cx="180" cy="240" r="3" fill="#C8A86C" opacity="0.7"/>
-        <circle cx="100" cy="80" r="2.5" fill="#C8A86C" opacity="0.4"/>
-        <circle cx="100" cy="200" r="2.5" fill="#C8A86C" opacity="0.4"/>
-
-        <!-- Sphère concentrique cyan -->
-        <circle cx="250" cy="190" r="110" fill="none" stroke="#5BC8C0" stroke-width="0.8" opacity="0.18"/>
-        <circle cx="250" cy="190" r="75" fill="none" stroke="#5BC8C0" stroke-width="0.6" opacity="0.14"/>
-        <circle cx="250" cy="190" r="40" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.18"/>
-        <circle cx="250" cy="190" r="10" fill="none" stroke="#5BC8C0" stroke-width="1" opacity="0.35"/>
-        <circle cx="250" cy="190" r="3" fill="#5BC8C0" opacity="0.6"/>
-
-        <!-- Constellation violet haut droite -->
-        <circle cx="400" cy="50" r="2.5" fill="#9B8EC4" opacity="0.6"/>
-        <circle cx="440" cy="90" r="2" fill="#9B8EC4" opacity="0.5"/>
-        <circle cx="470" cy="55" r="2" fill="#9B8EC4" opacity="0.4"/>
-        <circle cx="420" cy="130" r="1.5" fill="#9B8EC4" opacity="0.35"/>
-        <line x1="400" y1="50" x2="440" y2="90" stroke="#9B8EC4" stroke-width="0.5" opacity="0.3"/>
-        <line x1="440" y1="90" x2="470" y2="55" stroke="#9B8EC4" stroke-width="0.5" opacity="0.25"/>
-        <line x1="440" y1="90" x2="420" y2="130" stroke="#9B8EC4" stroke-width="0.4" opacity="0.2"/>
-
-        <!-- Constellation violet bas gauche -->
-        <circle cx="40" cy="300" r="2.5" fill="#9B8EC4" opacity="0.5"/>
-        <circle cx="80" cy="340" r="2" fill="#9B8EC4" opacity="0.4"/>
-        <circle cx="30" cy="370" r="2" fill="#9B8EC4" opacity="0.35"/>
-        <line x1="40" y1="300" x2="80" y2="340" stroke="#9B8EC4" stroke-width="0.5" opacity="0.25"/>
-        <line x1="80" y1="340" x2="30" y2="370" stroke="#9B8EC4" stroke-width="0.4" opacity="0.2"/>
-
-        <!-- Courbe signal cyan traversante -->
-        <polyline points="0,380 60,355 130,368 200,330 280,345 360,310 440,322 500,295"
-          fill="none" stroke="#5BC8C0" stroke-width="0.8" opacity="0.25"/>
-        <circle cx="200" cy="330" r="2.5" fill="#5BC8C0" opacity="0.45"/>
-        <circle cx="360" cy="310" r="2" fill="#5BC8C0" opacity="0.35"/>
-
-        <!-- Petit carré accent violet bas droite -->
-        <rect x="420" y="310" width="55" height="55" fill="none" stroke="#9B8EC4" stroke-width="0.8" opacity="0.3" transform="rotate(18,447,337)"/>
-        <rect x="432" y="322" width="30" height="30" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2" transform="rotate(18,447,337)"/>
-      </svg>
+    <div class="hero-right" style="display:flex;align-items:center;justify-content:center;padding:3rem;position:relative;">
+      <!-- Image hero réelle (à placer dans assets/img/home/hero.jpg) -->
+      <img src="assets/img/home/hero.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.2;" onerror="this.style.display='none'">
+      <!-- Illustration SVG de fallback -->
+      <img src="assets/svg/hero-illustration.svg" alt="" style="width:100%;max-width:460px;opacity:0.85;position:relative;z-index:1;">
     </div>
   </section>
 
@@ -649,21 +520,10 @@ footer .fdot { color:var(--cyan); }
   <div class="pgrid" id="pgrid">
 
     <div class="ptile" data-tags="ar,salon">
-      <div class="ptile-vis">
-        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="200" fill="#23262B"/>
-          <circle cx="80" cy="60" r="1.5" fill="#9B8EC4" opacity="0.6"/>
-          <circle cx="180" cy="40" r="1.5" fill="#9B8EC4" opacity="0.5"/>
-          <circle cx="280" cy="70" r="1.5" fill="#9B8EC4" opacity="0.6"/>
-          <circle cx="340" cy="30" r="1" fill="#9B8EC4" opacity="0.4"/>
-          <line x1="80" y1="60" x2="180" y2="40" stroke="#9B8EC4" stroke-width="0.5" opacity="0.3"/>
-          <line x1="180" y1="40" x2="280" y2="70" stroke="#9B8EC4" stroke-width="0.5" opacity="0.3"/>
-          <line x1="280" y1="70" x2="340" y2="30" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2"/>
-          <rect x="140" y="70" width="120" height="80" fill="none" stroke="#9B8EC4" stroke-width="0.8" opacity="0.4"/>
-          <rect x="155" y="82" width="90" height="56" fill="#9B8EC4" opacity="0.06"/>
-          <circle cx="200" cy="110" r="18" fill="none" stroke="#5BC8C0" stroke-width="0.8" opacity="0.5"/>
-          <line x1="155" y1="110" x2="245" y2="110" stroke="#C8A86C" stroke-width="0.5" opacity="0.3"/>
-        </svg>
+      <div class="ptile-vis" style="position:relative;">
+        <img src="assets/img/projects/armaldo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/projects/armaldo.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+        
       </div>
       <div class="ptile-body">
         <p class="ptile-year">2019 · Thales · Bourget</p>
@@ -678,19 +538,10 @@ footer .fdot { color:var(--cyan); }
     </div>
 
     <div class="ptile" data-tags="3d,ia,mediation">
-      <div class="ptile-vis">
-        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="200" fill="#23262B"/>
-          <polyline points="0,140 50,120 100,130 160,95 220,108 280,78 340,90 400,65"
-            fill="none" stroke="#5BC8C0" stroke-width="0.8" opacity="0.3"/>
-          <circle cx="160" cy="95" r="3" fill="#5BC8C0" opacity="0.5"/>
-          <circle cx="280" cy="78" r="3" fill="#5BC8C0" opacity="0.5"/>
-          <polygon points="200,40 260,100 140,100" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.35"/>
-          <circle cx="200" cy="40" r="4" fill="#C8A86C" opacity="0.4"/>
-          <circle cx="260" cy="100" r="3" fill="#C8A86C" opacity="0.3"/>
-          <circle cx="140" cy="100" r="3" fill="#C8A86C" opacity="0.3"/>
-          <rect x="310" y="30" width="50" height="50" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.3" transform="rotate(15,335,55)"/>
-        </svg>
+      <div class="ptile-vis" style="position:relative;">
+        <img src="assets/img/projects/polarpod.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/projects/polarpod.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+        
       </div>
       <div class="ptile-body">
         <p class="ptile-year">2024 · Accenture</p>
@@ -705,20 +556,10 @@ footer .fdot { color:var(--cyan); }
     </div>
 
     <div class="ptile" data-tags="3d,ia,salon">
-      <div class="ptile-vis">
-        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="200" fill="#23262B"/>
-          <circle cx="200" cy="100" r="70" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2"/>
-          <circle cx="200" cy="100" r="45" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.2"/>
-          <circle cx="200" cy="100" r="20" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.35"/>
-          <circle cx="200" cy="100" r="5" fill="#C8A86C" opacity="0.5"/>
-          <line x1="200" y1="30" x2="200" y2="170" stroke="#9B8EC4" stroke-width="0.3" opacity="0.15"/>
-          <line x1="130" y1="100" x2="270" y2="100" stroke="#9B8EC4" stroke-width="0.3" opacity="0.15"/>
-          <circle cx="200" cy="30" r="2" fill="#9B8EC4" opacity="0.4"/>
-          <circle cx="270" cy="100" r="2" fill="#5BC8C0" opacity="0.4"/>
-          <circle cx="200" cy="170" r="2" fill="#9B8EC4" opacity="0.3"/>
-          <circle cx="130" cy="100" r="2" fill="#5BC8C0" opacity="0.3"/>
-        </svg>
+      <div class="ptile-vis" style="position:relative;">
+        <img src="assets/img/projects/axel.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/projects/axel.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+        
       </div>
       <div class="ptile-body">
         <p class="ptile-year">2023 · Accenture</p>
@@ -733,19 +574,10 @@ footer .fdot { color:var(--cyan); }
     </div>
 
     <div class="ptile" data-tags="vr,salon">
-      <div class="ptile-vis">
-        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="200" fill="#23262B"/>
-          <ellipse cx="200" cy="100" rx="130" ry="55" fill="none" stroke="#5BC8C0" stroke-width="0.8" opacity="0.25"/>
-          <ellipse cx="200" cy="100" rx="85" ry="35" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2"/>
-          <rect x="155" y="82" width="90" height="36" rx="18" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.35"/>
-          <circle cx="175" cy="100" r="8" fill="#C8A86C" opacity="0.12"/>
-          <circle cx="225" cy="100" r="8" fill="#C8A86C" opacity="0.12"/>
-          <line x1="40" y1="100" x2="155" y2="100" stroke="#5BC8C0" stroke-width="0.4" opacity="0.2"/>
-          <line x1="245" y1="100" x2="360" y2="100" stroke="#5BC8C0" stroke-width="0.4" opacity="0.2"/>
-          <circle cx="40" cy="100" r="2" fill="#5BC8C0" opacity="0.4"/>
-          <circle cx="360" cy="100" r="2" fill="#5BC8C0" opacity="0.4"/>
-        </svg>
+      <div class="ptile-vis" style="position:relative;">
+        <img src="assets/img/projects/offertodesign.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/projects/offertodesign.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+        
       </div>
       <div class="ptile-body">
         <p class="ptile-year">2023 · Accenture · Bourget</p>
@@ -760,20 +592,10 @@ footer .fdot { color:var(--cyan); }
     </div>
 
     <div class="ptile" data-tags="ia,salon">
-      <div class="ptile-vis">
-        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="200" fill="#23262B"/>
-          <circle cx="80" cy="80" r="30" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.25"/>
-          <circle cx="200" cy="60" r="20" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.25"/>
-          <circle cx="320" cy="80" r="30" fill="none" stroke="#C8A86C" stroke-width="0.5" opacity="0.25"/>
-          <line x1="80" y1="80" x2="200" y2="60" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2"/>
-          <line x1="200" y1="60" x2="320" y2="80" stroke="#5BC8C0" stroke-width="0.5" opacity="0.2"/>
-          <polyline points="30,150 80,130 140,145 200,115 260,128 320,105 380,118"
-            fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.3"/>
-          <circle cx="200" cy="115" r="3" fill="#C8A86C" opacity="0.6"/>
-          <circle cx="80" cy="130" r="2" fill="#C8A86C" opacity="0.4"/>
-          <circle cx="320" cy="105" r="2" fill="#C8A86C" opacity="0.4"/>
-        </svg>
+      <div class="ptile-vis" style="position:relative;">
+        <img src="assets/img/projects/airdraw.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/projects/airdraw.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+        
       </div>
       <div class="ptile-body">
         <p class="ptile-year">2019 · Webnet</p>
@@ -789,15 +611,8 @@ footer .fdot { color:var(--cyan); }
 
     <div class="ptile" data-tags="ar,education,mediation">
       <div class="ptile-vis" style="position:relative;">
-        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="200" fill="#23262B"/>
-          <rect x="80" y="40" width="240" height="120" fill="none" stroke="#9B8EC4" stroke-width="0.5" stroke-dasharray="6,3" opacity="0.3"/>
-          <polygon points="200,55 270,140 130,140" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.3"/>
-          <circle cx="200" cy="55" r="3" fill="#C8A86C" opacity="0.5"/>
-          <circle cx="270" cy="140" r="3" fill="#9B8EC4" opacity="0.4"/>
-          <circle cx="130" cy="140" r="3" fill="#5BC8C0" opacity="0.4"/>
-          <circle cx="200" cy="100" r="15" fill="none" stroke="#5BC8C0" stroke-width="0.5" stroke-dasharray="3,2" opacity="0.3"/>
-        </svg>
+        <img src="assets/img/projects/mediation-etude.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/projects/mediation-etude.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
         <span class="study-b">★ étude</span>
       </div>
       <div class="ptile-body">
@@ -824,26 +639,14 @@ footer .fdot { color:var(--cyan); }
 <div class="page" id="page-about">
   <div class="about-hero">
     <div class="about-left">
+      <div style="margin-bottom:2rem;">
+        <img src="assets/img/infos/orianecosson.png" alt="Oriane Cosson" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:2px solid var(--border);display:block;" onerror="this.style.display='none'">
+      </div>
       <h1>Ingénieure,<br><span class="a-cyan">conceptrice,</span><br><span class="a-violet">fabricante.</span></h1>
-      <p>9 ans à concevoir des expériences interactives dans des labs d'innovation. Aujourd'hui en freelance pour travailler sur des projets qui ont du sens — culture, médiation, éducation, sport.</p>
+      <p>9 ans à concevoir des expériences interactives dans des labs d'innovation. Aujourd'hui en freelance pour travailler sur des projets qui ont du sens.</p>
     </div>
     <div class="about-right">
-      <svg width="100%" height="100%" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <rect width="500" height="400" fill="#23262B"/>
-        <defs><pattern id="dotsA" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="#DDDBD6" opacity="0.07"/></pattern></defs>
-        <rect width="500" height="400" fill="url(#dotsA)"/>
-        <circle cx="250" cy="200" r="140" fill="none" stroke="#9B8EC4" stroke-width="0.8" opacity="0.18"/>
-        <circle cx="250" cy="200" r="90" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.15"/>
-        <circle cx="250" cy="200" r="45" fill="none" stroke="#C8A86C" stroke-width="0.5" opacity="0.2"/>
-        <line x1="110" y1="200" x2="390" y2="200" stroke="#9B8EC4" stroke-width="0.3" opacity="0.12"/>
-        <line x1="250" y1="60" x2="250" y2="340" stroke="#9B8EC4" stroke-width="0.3" opacity="0.12"/>
-        <circle cx="250" cy="60" r="3" fill="#9B8EC4" opacity="0.4"/>
-        <circle cx="390" cy="200" r="3" fill="#5BC8C0" opacity="0.4"/>
-        <circle cx="250" cy="340" r="3" fill="#C8A86C" opacity="0.4"/>
-        <circle cx="110" cy="200" r="3" fill="#9B8EC4" opacity="0.3"/>
-        <polyline points="50,350 120,300 200,320 280,270 360,290 450,240"
-          fill="none" stroke="#5BC8C0" stroke-width="0.6" opacity="0.2"/>
-      </svg>
+      <img src="assets/svg/about/about-visual.svg" alt="" style="width:100%;height:100%;object-fit:cover;">
     </div>
   </div>
 
@@ -889,58 +692,28 @@ footer .fdot { color:var(--cyan); }
     <p class="msub">Fabrication, arts visuels, making — ce qui nourrit le reste.</p>
     <div class="mgrid">
       <div class="mtile">
-        <svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="360" fill="#2A2D33"/>
-          <circle cx="160" cy="150" r="80" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.25"/>
-          <circle cx="160" cy="150" r="50" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2"/>
-          <line x1="80" y1="150" x2="240" y2="150" stroke="#C8A86C" stroke-width="0.4" opacity="0.2"/>
-          <line x1="160" y1="70" x2="160" y2="230" stroke="#C8A86C" stroke-width="0.4" opacity="0.2"/>
-          <polyline points="40,280 100,260 180,270 260,245 340,258" fill="none" stroke="#5BC8C0" stroke-width="0.6" opacity="0.2"/>
-        </svg>
+        <img src="assets/img/maker/couture.jpg" alt="Couture" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/maker/couture.svg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;" onerror="this.style.display='none'">
         <span class="mlabel">Couture & Modélisme</span>
       </div>
       <div class="mtile">
-        <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
-          <rect width="200" height="170" fill="#2A2D33"/>
-          <polygon points="100,20 170,140 30,140" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.3"/>
-          <circle cx="100" cy="20" r="2.5" fill="#C8A86C" opacity="0.5"/>
-          <circle cx="170" cy="140" r="2.5" fill="#9B8EC4" opacity="0.4"/>
-          <circle cx="30" cy="140" r="2.5" fill="#5BC8C0" opacity="0.4"/>
-        </svg>
+        <img src="assets/img/maker/peinture.jpg" alt="Peinture" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/maker/peinture.svg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;" onerror="this.style.display='none'">
         <span class="mlabel">Peinture</span>
       </div>
       <div class="mtile">
-        <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
-          <rect width="200" height="170" fill="#2A2D33"/>
-          <rect x="50" y="40" width="100" height="90" fill="none" stroke="#5BC8C0" stroke-width="0.6" opacity="0.25"/>
-          <rect x="65" y="55" width="70" height="60" fill="none" stroke="#9B8EC4" stroke-width="0.4" opacity="0.2"/>
-          <circle cx="100" cy="85" r="15" fill="none" stroke="#C8A86C" stroke-width="0.6" opacity="0.3"/>
-          <circle cx="100" cy="85" r="4" fill="#C8A86C" opacity="0.4"/>
-        </svg>
+        <img src="assets/img/maker/modelisation.jpg" alt="Modélisation 3D" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/maker/modelisation.svg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;" onerror="this.style.display='none'">
         <span class="mlabel">Modélisation 3D</span>
       </div>
       <div class="mtile">
-        <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
-          <rect width="200" height="170" fill="#2A2D33"/>
-          <circle cx="70" cy="70" r="35" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.25"/>
-          <circle cx="130" cy="100" r="35" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.25"/>
-          <line x1="70" y1="70" x2="130" y2="100" stroke="#C8A86C" stroke-width="0.5" opacity="0.3"/>
-          <circle cx="70" cy="70" r="3" fill="#9B8EC4" opacity="0.5"/>
-          <circle cx="130" cy="100" r="3" fill="#5BC8C0" opacity="0.5"/>
-        </svg>
+        <img src="assets/img/maker/fablab.jpg" alt="Fablab" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/maker/fablab.svg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;" onerror="this.style.display='none'">
         <span class="mlabel">Fablab</span>
       </div>
       <div class="mtile">
-        <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
-          <rect width="200" height="170" fill="#2A2D33"/>
-          <line x1="30" y1="130" x2="90" y2="50" stroke="#C8A86C" stroke-width="0.6" opacity="0.3"/>
-          <line x1="90" y1="50" x2="150" y2="110" stroke="#9B8EC4" stroke-width="0.6" opacity="0.3"/>
-          <line x1="150" y1="110" x2="180" y2="60" stroke="#5BC8C0" stroke-width="0.6" opacity="0.3"/>
-          <circle cx="30" cy="130" r="2" fill="#C8A86C" opacity="0.5"/>
-          <circle cx="90" cy="50" r="2" fill="#C8A86C" opacity="0.5"/>
-          <circle cx="150" cy="110" r="2" fill="#9B8EC4" opacity="0.4"/>
-          <circle cx="180" cy="60" r="2" fill="#5BC8C0" opacity="0.4"/>
-        </svg>
+        <img src="assets/img/maker/dessin.jpg" alt="Dessin" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+        <img src="assets/svg/maker/dessin.svg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;" onerror="this.style.display='none'">
         <span class="mlabel">Dessin</span>
       </div>
     </div>
