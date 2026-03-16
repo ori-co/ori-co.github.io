@@ -1,0 +1,38 @@
+{
+  "name": "Oriane Cosson",
+  "initials": "OC_",
+  "role": "Ingénieur en Innovation · Freelance",
+  "linkedin": "https://linkedin.com/in/orianecosson",
+  "formspreeId": "mbdzzkwn",
+  "copyright": "© 2025 Oriane Cosson",
+
+  "hero": {
+    "tag": "// Ingénieur en Innovation · Freelance",
+    "titleHtml": "Expériences<br><span>interactives</span><br><em>& immersives</em>",
+    "sub": "Je conçois et développe des prototypes XR, 3D et IA générative, du cadrage initial jusqu'à la démo live. Pour les projets qui ont du sens."
+  },
+
+  "contact": {
+    "title": "Un projet en tête ?",
+    "text": "Disponible pour des missions freelance, toujours partante pour discuter d'un projet difficile à implémenter ou d'une collaboration entre profils complémentaires.",
+    "missionTypes": [
+      "Atelier / Acculturation",
+      "Démonstrateur Salon",
+      "Installation Interactive",
+      "POC / Prototypage",
+      "Direction de Projet",
+      "Autre"
+    ]
+  },
+
+  "about": {
+    "heroTitleHtml": "Ingénieure,<br><span class=\"a-cyan\">conceptrice,</span><br><span class=\"a-violet\">fabricante.</span>",
+    "heroSub": "9 ans à concevoir des expériences interactives dans des labs d'innovation. Aujourd'hui en freelance pour travailler sur des projets qui ont du sens.",
+    "bio": [
+      "Ingénieure de formation, j'ai passé 9 ans dans des labs d'innovation à concevoir et développer des prototypes interactifs — réalité augmentée, réalité virtuelle, 3D, IA générative.",
+      "Rôles de Tech Lead et Product Owner : de la vision jusqu'à la démo live, en passant par l'animation d'ateliers et la coordination d'équipes pluridisciplinaires.",
+      "Ce qui m'anime : les projets bien pensés, bien réalisés, où le numérique et le tangible se croisent."
+    ],
+    "valuesIntro": "Rigueur intellectuelle, honnêteté, bienveillance, créativité. Construire des choses utiles, bien faites, intéressantes à produire."
+  }
+}

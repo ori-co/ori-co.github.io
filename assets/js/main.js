@@ -19,6 +19,65 @@ function fp(tag, btn) {
   });
 }
 
+function renderProfile(p) {
+  document.title = p.name;
+  document.getElementById('nav-logo').textContent = p.initials;
+
+  document.getElementById('hero-tag').textContent = p.hero.tag;
+  document.getElementById('hero-title').innerHTML = p.hero.titleHtml;
+  document.getElementById('hero-sub').textContent = p.hero.sub;
+
+  document.getElementById('contact-title').textContent = p.contact.title;
+  document.getElementById('contact-text').textContent = p.contact.text;
+  const linkedin = document.getElementById('contact-linkedin');
+  linkedin.href = p.linkedin;
+  document.getElementById('mission-select').innerHTML =
+    '<option>— Sélectionner —</option>' +
+    p.contact.missionTypes.map(t => `<option>${t}</option>`).join('');
+
+  const form = document.querySelector('.cform');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = form.querySelector('.btn-send');
+    const data = {
+      name:    form.querySelector('input[type="text"]').value,
+      email:   form.querySelector('input[type="email"]').value,
+      mission: form.querySelector('select').value,
+      message: form.querySelector('textarea').value,
+    };
+    btn.textContent = 'Envoi…';
+    btn.disabled = true;
+    try {
+      const res = await fetch(`https://formspree.io/f/${p.formspreeId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        btn.textContent = 'Message envoyé ✓';
+        btn.style.background = 'var(--cyan)';
+        form.reset();
+      } else {
+        throw new Error();
+      }
+    } catch {
+      btn.textContent = 'Erreur — réessayer';
+      btn.style.background = 'var(--ocre)';
+      btn.disabled = false;
+    }
+  });
+
+  document.getElementById('about-hero-title').innerHTML = p.about.heroTitleHtml;
+  document.getElementById('about-hero-sub').textContent = p.about.heroSub;
+  document.getElementById('about-bio').innerHTML = p.about.bio.map(t => `<p>${t}</p>`).join('');
+  document.getElementById('values-intro').textContent = p.about.valuesIntro;
+
+  ['home', 'portfolio', 'about'].forEach(page => {
+    document.getElementById(`footer-copy-${page}`).textContent = p.copyright;
+    document.getElementById(`footer-role-${page}`).textContent = p.role;
+  });
+}
+
 function renderOffres(offres) {
   document.getElementById('offres').innerHTML = offres.map(o => `
     <div class="offre" style="border-top:2px solid var(--${o.color});">
@@ -85,12 +144,14 @@ function renderProjects(projects) {
 const load = path => fetch(path).then(r => r.json());
 
 Promise.all([
+  load('assets/data/profile.json'),
   load('assets/data/offres.json'),
   load('assets/data/projects.json'),
   load('assets/data/skills.json'),
   load('assets/data/values.json'),
   load('assets/data/maker.json'),
-]).then(([offres, projects, skills, values, maker]) => {
+]).then(([profile, offres, projects, skills, values, maker]) => {
+  renderProfile(profile);
   renderOffres(offres);
   renderProjects(projects);
   renderSkills(skills);

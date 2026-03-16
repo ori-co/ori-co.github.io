@@ -15,7 +15,7 @@
 </div>
 
 <nav>
-  <span class="nav-logo" onclick="showPage('home')">OC_</span>
+  <span class="nav-logo" id="nav-logo" onclick="showPage('home')"></span>
   <ul class="nav-links">
     <li><a onclick="showPage('home')" id="nav-home" class="active"><span class="nav-dot"></span>Accueil</a></li>
     <li><a onclick="showPage('portfolio')" id="nav-portfolio"><span class="nav-dot"></span>Portfolio</a></li>
@@ -27,13 +27,9 @@
 <div class="page active" id="page-home">
   <section class="hero">
     <div class="hero-left">
-      <p class="hero-tag">// Ingénieur en Innovation · Freelance</p>
-      <h1 class="hero-title">
-        Expériences<br>
-        <span>interactives</span><br>
-        <em>& immersives</em>
-      </h1>
-      <p class="hero-sub">Je conçois et développe des prototypes XR, 3D et IA générative, du cadrage initial jusqu'à la démo live. Pour les projets qui ont du sens.</p>
+      <p class="hero-tag" id="hero-tag"></p>
+      <h1 class="hero-title" id="hero-title"></h1>
+      <p class="hero-sub" id="hero-sub"></p>
       <div class="hero-ctas">
         <button class="btn-p" onclick="showPage('portfolio')">Voir les réalisations</button>
         <button class="btn-s" onclick="document.getElementById('ca').scrollIntoView({behavior:'smooth'})">Me contacter</button>
@@ -53,9 +49,9 @@
 
   <section class="contact-s" id="ca">
     <div>
-      <h2>Un projet en tête ?</h2>
-      <p>Disponible pour des missions freelance, toujours partante pour discuter d'un projet difficile à implémenter ou d'une collaboration entre profils complémentaires.</p>
-      <a class="contact-link" href="https://linkedin.com/in/orianecosson" target="_blank">→ LinkedIn</a>
+      <h2 id="contact-title"></h2>
+      <p id="contact-text"></p>
+      <a class="contact-link" id="contact-linkedin" href="#" target="_blank">→ LinkedIn</a>
     </div>
     <form class="cform" onsubmit="return false">
       <div class="fg">
@@ -68,15 +64,7 @@
       </div>
       <div class="fg">
         <label>Type de mission</label>
-        <select>
-          <option>— Sélectionner —</option>
-          <option>Atelier / Acculturation</option>
-          <option>Démonstrateur Salon</option>
-          <option>Installation Interactive</option>
-          <option>POC / Prototypage</option>
-          <option>Direction de Projet</option>
-          <option>Autre</option>
-        </select>
+        <select id="mission-select"></select>
       </div>
       <div class="fg">
         <label>Message</label>
@@ -87,9 +75,9 @@
   </section>
 
   <footer>
-    <span>© 2025 Oriane Cosson</span>
+    <span id="footer-copy-home"></span>
     <span class="fdot">·</span>
-    <span>Ingénieur en Innovation · Freelance</span>
+    <span id="footer-role-home"></span>
   </footer>
 </div>
 
@@ -111,9 +99,9 @@
   </div>
   <div class="pgrid" id="pgrid"></div>
   <footer>
-    <span>© 2025 Oriane Cosson</span>
+    <span id="footer-copy-portfolio"></span>
     <span class="fdot">·</span>
-    <span>Ingénieur en Innovation · Freelance</span>
+    <span id="footer-role-portfolio"></span>
   </footer>
 </div>
 
@@ -121,8 +109,8 @@
 <div class="page" id="page-about">
   <div class="about-hero">
     <div class="about-left">
-      <h1>Ingénieure,<br><span class="a-cyan">conceptrice,</span><br><span class="a-violet">fabricante.</span></h1>
-      <p>9 ans à concevoir des expériences interactives dans des labs d'innovation. Aujourd'hui en freelance pour travailler sur des projets qui ont du sens.</p>
+      <h1 id="about-hero-title"></h1>
+      <p id="about-hero-sub"></p>
     </div>
     <div class="about-right">
       <div style="position:relative;width:100%;max-width:420px;aspect-ratio:4/5;border-radius:10px;overflow:hidden;border:2px solid #23262B;transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(white,black);">
@@ -136,14 +124,12 @@
     <div class="about-grid">
       <div class="about-bio">
         <h2>Parcours</h2>
-        <p>Ingénieure de formation, j'ai passé 9 ans dans des labs d'innovation à concevoir et développer des prototypes interactifs — réalité augmentée, réalité virtuelle, 3D, IA générative.</p>
-        <p>Rôles de Tech Lead et Product Owner : de la vision jusqu'à la démo live, en passant par l'animation d'ateliers et la coordination d'équipes pluridisciplinaires.</p>
-        <p>Ce qui m'anime : les projets bien pensés, bien réalisés, où le numérique et le tangible se croisent.</p>
+        <div id="about-bio"></div>
         <div class="skills" id="skills"></div>
       </div>
       <div>
         <h2 style="font-size:1.4rem;font-weight:500;margin-bottom:1.2rem;">Valeurs & engagements</h2>
-        <p style="font-size:0.82rem;line-height:1.85;color:var(--muted);margin-bottom:1.5rem;font-weight:300;">Rigueur intellectuelle, honnêteté, bienveillance, créativité. Construire des choses utiles, bien faites, intéressantes à produire.</p>
+        <p id="values-intro" style="font-size:0.82rem;line-height:1.85;color:var(--muted);margin-bottom:1.5rem;font-weight:300;"></p>
         <div class="val-cards" id="val-cards"></div>
       </div>
     </div>
@@ -156,9 +142,9 @@
   </div>
 
   <footer>
-    <span>© 2025 Oriane Cosson</span>
+    <span id="footer-copy-about"></span>
     <span class="fdot">·</span>
-    <span>Ingénieur en Innovation · Freelance</span>
+    <span id="footer-role-about"></span>
   </footer>
 </div>
 
