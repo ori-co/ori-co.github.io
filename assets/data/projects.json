@@ -1,19 +1,19 @@
 [
   {
-    "id": "armaldo",
-    "filterTags": ["ar", "salon"],
-    "img": "assets/img/projects/armaldo.jpg",
-    "svg": "assets/svg/projects/armaldo.svg",
-    "year": "2019 · Thales · Bourget",
-    "name": "Armaldo",
-    "desc": "AR sur maquette physique d'un pod militaire. Procédures guidées mains libres.",
+    "id": "mediation-etude",
+    "filterTags": ["ar", "education", "mediation"],
+    "img": "assets/img/projects/mediation-etude.jpg",
+    "svg": "assets/svg/projects/mediation-etude.svg",
+    "year": "Concept · 2025",
+    "name": "Médiation AR — Musée",
+    "desc": "Installation AR sur objets physiques pour enrichir la visite d'une exposition permanente.",
     "labels": [
-      { "text": "AR",           "color": "violet" },
-      { "text": "Salon" },
-      { "text": "Installation" }
+      { "text": "AR",       "color": "cyan" },
+      { "text": "Médiation" }
     ],
-    "study": false,
-    "fullDesc": "<p>Démonstration développée pour Thales au salon du Bourget 2019. Le visiteur pointe une tablette vers la maquette physique d'un pod militaire et accède à des procédures de maintenance guidées étape par étape en réalité augmentée.</p><p>Les instructions s'affichent directement superposées à la maquette, les mains restent libres pour suivre les gestes.</p>",
+    "study": true,
+    "wip": true,
+    "fullDesc": "",
     "tech": [],
     "gallery": [],
     "links": []
@@ -28,14 +28,17 @@
     "desc": "Plateforme de médiation scientifique avec contenus 3D, 2D et voicebot IA. En ligne.",
     "labels": [
       { "text": "3D", "color": "ocre" },
-      { "text": "IA", "color": "cyan" },
+      { "text": "IA", "color": "violet" },
       { "text": "Médiation" }
     ],
     "study": false,
-    "fullDesc": "<p>Plateforme de médiation scientifique pour le projet PolarPod de Jean-Louis Étienne, développée pour Accenture en 2024.</p><p>Elle combine des contenus 3D interactifs, des animations 2D et un voicebot IA pour permettre au grand public d'explorer l'expédition polaire. Disponible en ligne.</p>",
-    "tech": [],
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Plateforme de médiation scientifique conçue pour le projet PolarPod de <strong>Jean-Louis Étienne</strong>, développée pour Accenture en 2024.</p><p>La plateforme combine plusieurs couches de contenu pour rendre accessible la mission scientifique polaire :</p><ul><li>Scènes <strong>3D interactives</strong> (Three.js) pour visualiser le pod et son environnement</li><li>Contenus éditoriaux et médias gérés via <strong>Prismic</strong> (headless CMS)</li><li><strong>Voicebot IA</strong> permettant au grand public d'interroger le système en langage naturel</li></ul><p>Front-end développé en <strong>React.js</strong>. Disponible en ligne.</p>",
+    "tech": ["React.js", "Three.js", "Prismic", "Voicebot IA"],
     "gallery": [],
-    "links": []
+    "links": [
+      { "label": "Voir la vidéo", "url": "https://www.youtube.com/watch?v=9mL9WTJRlX0", "type": "youtube" }
+    ]
   },
   {
     "id": "axel",
@@ -44,16 +47,17 @@
     "svg": "assets/svg/projects/axel.svg",
     "year": "2023 · Accenture",
     "name": "Axel Green Studio",
-    "desc": "Agent LLM vocal dans un environnement 3D immersif. IA générative et espace spatial.",
+    "desc": "Agent LLM vocal dans un environnement 3D immersif. Plusieurs formats de diffusion.",
     "labels": [
-      { "text": "3D",           "color": "ocre" },
-      { "text": "LLM",          "color": "violet" },
-      { "text": "IA Générative" }
+      { "text": "3D",  "color": "ocre" },
+      { "text": "LLM", "color": "violet" },
+      { "text": "Acculturation" }
     ],
     "study": false,
-    "fullDesc": "<p>Démonstration de salon pour Accenture. Un agent vocal basé sur un LLM est intégré dans un environnement 3D immersif temps réel.</p><p>L'utilisateur dialogue naturellement avec l'assistant dans un espace spatial généré dynamiquement. Présenté au salon de l'aviation 2023.</p>",
-    "tech": [],
-    "gallery": [],
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur IA développé pour Accenture, déployé lors de salons clients et de workshops d'acculturation à l'IA générative.</p><p>L'agent incarne un <strong>assistant assurance</strong> : il guide le client en langage naturel à travers les démarches en cas de sinistre ou d'accident, de la déclaration jusqu'à la résolution.</p><p>Un <strong>agent conversationnel vocal LLM</strong> est intégré dans un environnement 3D temps réel développé sous <strong>Unreal Engine</strong>. La solution est diffusée sur deux formats distincts :</p><ul><li><strong>Looking Glass</strong> — écran stéréoscopique autostéréoscopique, rendu holographique sans lunettes</li><li><strong>Aximetry GreenStudio</strong> — incrustation temps réel sur fond vert pour présentation scénique</li></ul><p>L'agent répond en langage naturel et s'inscrit de manière cohérente dans le décor 3D généré dynamiquement.</p>",
+    "tech": ["Unreal Engine", "LLM", "Looking Glass", "Aximetry"],
+    "gallery": ["assets/img/projects/axel-presentation.jpg"],
     "links": []
   },
   {
@@ -65,13 +69,34 @@
     "name": "Offer To Design VR",
     "desc": "Configurateur d'avion en réalité virtuelle et visite immersive. Présenté au Bourget.",
     "labels": [
-      { "text": "VR",   "color": "cyan" },
-      { "text": "Salon" },
-      { "text": "3D" }
+      { "text": "VR", "color": "cyan" },
+      { "text": "3D", "color": "ocre" },
+      { "text": "Salon" }
     ],
     "study": false,
-    "fullDesc": "<p>Configurateur d'avion en réalité virtuelle développé pour Accenture, présenté au Bourget 2023.</p><p>Le visiteur personnalise l'intérieur d'un avion en VR — choix des configurations, des finitions — puis effectue une visite immersive de la cabine configurée.</p>",
-    "tech": [],
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Expérience de configuration cabine en réalité virtuelle développée pour Accenture, présentée au salon du Bourget 2023.</p><p>Le visiteur, équipé d'un <strong>Meta Quest 2</strong>, accède à un configurateur d'intérieur avion en <strong>full VR standalone</strong> : sélection des aménagements cabine, choix des matériaux et configurations de sièges, puis visite immersive de l'espace configuré.</p><p>Développé sous <strong>Unity</strong> avec pipeline de rendu optimisé pour Quest 2.</p>",
+    "tech": ["Unity", "Meta Quest 2"],
+    "gallery": [],
+    "links": []
+  },
+  {
+    "id": "armaldo",
+    "filterTags": ["ar", "salon"],
+    "img": "assets/img/projects/armaldo.jpg",
+    "svg": "assets/svg/projects/armaldo.svg",
+    "year": "2019 · Thales · Bourget",
+    "name": "Armaldo",
+    "desc": "AR sur maquette physique d'un pod militaire. Procédures guidées main libre.",
+    "labels": [
+      { "text": "AR",  "color": "cyan" },
+      { "text": "Salon" },
+      { "text": "Installation" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur développé pour Thales à l'occasion du salon du Bourget 2019, à destination des équipes de maintenance et de démonstration terrain.</p><p>Le technicien équipé d'un <strong>HoloLens</strong> pointe son regard vers la maquette physique d'un pod militaire. Le système de <strong>spatial tracking</strong> déclenche l'affichage de <strong>procédures guidées main libre</strong> superposées à la maquette en temps réel — navigation étape par étape avec validation gestuelle.</p><p>Développé sous <strong>Unity</strong> avec le SDK HoloLens (UWP).</p>",
+    "tech": ["Unity", "HoloLens", "UWP"],
     "gallery": [],
     "links": []
   },
@@ -84,32 +109,14 @@
     "name": "AirDraw Challenge",
     "desc": "Installation multimodale — body tracking Kinect + reconnaissance IA de dessins dans l'air.",
     "labels": [
-      { "text": "IA",        "color": "violet" },
+      { "text": "IA",  "color": "violet" },
       { "text": "Multimodal" },
       { "text": "Installation" }
     ],
     "study": false,
-    "fullDesc": "<p>Installation interactive développée pour Webnet. Une caméra Kinect capture les mouvements du corps en temps réel.</p><p>Le visiteur dessine dans l'air à l'aide de ses mains, et un algorithme de reconnaissance IA identifie le dessin à la volée. Conçu pour un événement d'entreprise en 2019.</p>",
-    "tech": [],
-    "gallery": [],
-    "links": []
-  },
-  {
-    "id": "mediation-etude",
-    "filterTags": ["ar", "education", "mediation"],
-    "img": "assets/img/projects/mediation-etude.jpg",
-    "svg": "assets/svg/projects/mediation-etude.svg",
-    "year": "Concept · 2025",
-    "name": "Médiation AR — Musée",
-    "desc": "Installation AR sur objets physiques pour enrichir la visite d'une exposition permanente.",
-    "labels": [
-      { "text": "AR",       "color": "violet" },
-      { "text": "Médiation" },
-      { "text": "Concept" }
-    ],
-    "study": true,
-    "fullDesc": "<p>Concept développé en 2025 pour explorer l'usage de la réalité augmentée en contexte muséal.</p><p>L'idée : superposer du contenu contextuel sur les objets physiques d'une exposition permanente, permettant aux visiteurs d'enrichir leur expérience via smartphone ou tablette.</p><p>L'étude comprend l'analyse des usages, le parcours utilisateur et une maquette interactive.</p>",
-    "tech": [],
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Installation interactive développée pour Webnet, déployée lors de salons de recrutement et d'événements tech, dont le <strong>DevFest Nantes</strong>.</p><p>Le dispositif repose sur un pipeline de <strong>body tracking temps réel</strong> via Kinect v2, couplé à un modèle de <strong>reconnaissance de formes par réseau de neurones</strong> (TensorFlow.js). Le visiteur dessine dans l'air à main levée ; le système classifie le geste en temps réel et affiche le résultat sur écran.</p><ul><li>Tracking squelette <strong>Kinect v2</strong></li><li>Classification CNN via <strong>TensorFlow.js</strong></li><li>Backend <strong>Node.js</strong>, frontend web</li></ul>",
+    "tech": ["Kinect v2", "TensorFlow.js", "Node.js", "JavaScript"],
     "gallery": [],
     "links": []
   }

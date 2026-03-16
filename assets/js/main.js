@@ -128,7 +128,7 @@ function renderProjects(projects) {
         : `<span class="ptag">${l.text}</span>`
     ).join('');
     const studyBadge = p.study ? '<span class="study-b">★ étude</span>' : '';
-    return `<div class="ptile" data-tags="${p.filterTags.join(',')}" onclick="openProject('${p.id}')">
+    return `<div class="ptile${p.wip ? ' ptile-wip' : ''}" data-tags="${p.filterTags.join(',')}"${p.wip ? ' style="cursor:default;opacity:0.55;"' : ` onclick="openProject('${p.id}')"`}>
       <div class="ptile-vis" style="position:relative;">
         <img src="${p.img}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
         <img src="${p.svg}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
