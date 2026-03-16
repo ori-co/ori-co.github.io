@@ -415,6 +415,11 @@ footer .fdot { color:var(--cyan); }
 }
 .gallery-img:first-child:last-child { aspect-ratio:16/7; }
 .gallery-img:hover { opacity:0.8; transform:scale(1.01); }
+/* Vidéo */
+.pmodal-video { margin-bottom:2rem; }
+.pmodal-video:empty { display:none; }
+.pmodal-video video { width:100%; display:block; background:#000; }
+
 /* Description */
 .pmodal-desc { font-size:0.82rem; line-height:1.9; color:var(--muted); font-weight:300; margin-bottom:2rem; }
 .pmodal-desc p { margin-bottom:0.8rem; }

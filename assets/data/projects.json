@@ -1,24 +1,5 @@
 [
   {
-    "id": "mediation-etude",
-    "filterTags": ["ar", "education", "mediation"],
-    "img": "assets/img/projects/mediation-etude.jpg",
-    "svg": "assets/svg/projects/mediation-etude.svg",
-    "year": "Concept · 2025",
-    "name": "Médiation AR — Musée",
-    "desc": "Installation AR sur objets physiques pour enrichir la visite d'une exposition permanente.",
-    "labels": [
-      { "text": "AR",       "color": "cyan" },
-      { "text": "Médiation" }
-    ],
-    "study": true,
-    "wip": true,
-    "fullDesc": "",
-    "tech": [],
-    "gallery": [],
-    "links": []
-  },
-  {
     "id": "polarpod",
     "filterTags": ["3d", "ia", "mediation"],
     "img": "assets/img/projects/polarpod.jpg",
@@ -36,6 +17,7 @@
     "fullDesc": "<p><strong>Contexte :</strong> Plateforme de médiation scientifique conçue pour le projet PolarPod de <strong>Jean-Louis Étienne</strong>, développée en 2024.</p><p>La plateforme combine plusieurs couches de contenu pour rendre accessible la mission scientifique polaire :</p><ul><li>Scènes <strong>3D interactives</strong> (Three.js) pour visualiser le pod et son environnement</li><li>Contenus éditoriaux et médias gérés via <strong>Prismic</strong> (headless CMS)</li><li><strong>Voicebot IA</strong> permettant au grand public d'interroger le système en langage naturel</li></ul><p>Front-end développé en <strong>React.js</strong>. Disponible en ligne.</p>",
     "tech": ["React.js", "Three.js", "Prismic", "Voicebot IA"],
     "gallery": [],
+    "video": null,
     "links": [
       { "label": "Ouvrir l'appli", "url": "https://epod.polarpod.fr/", "type": "web" },
       { "label": "Voir la vidéo", "url": "https://www.youtube.com/watch?v=9mL9WTJRlX0", "type": "youtube" }
@@ -47,7 +29,7 @@
     "img": "assets/img/projects/axel.jpg",
     "svg": "assets/svg/projects/axel.svg",
     "year": "2023 · Secteur Assurance",
-    "name": "Axel Green Studio",
+    "name": "Axel Agent",
     "desc": "Agent LLM vocal dans un environnement 3D immersif. Plusieurs formats de diffusion.",
     "labels": [
       { "text": "3D",  "color": "ocre" },
@@ -59,6 +41,7 @@
     "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur IA déployé lors de salons clients et de workshops d'acculturation à l'IA générative.</p><p>L'agent incarne un <strong>assistant assurance</strong> : il guide le client en langage naturel à travers les démarches en cas de sinistre ou d'accident, de la déclaration jusqu'à la résolution.</p><p>Un <strong>agent conversationnel vocal LLM</strong> est intégré dans un environnement 3D temps réel développé sous <strong>Unreal Engine</strong>. La solution est diffusée sur deux formats distincts :</p><ul><li><strong>Looking Glass</strong> — écran stéréoscopique autostéréoscopique, rendu holographique sans lunettes</li><li><strong>Aximmetry GreenStudio</strong> — incrustation temps réel sur fond vert pour présentation scénique</li></ul><p>L'agent répond en langage naturel et s'inscrit de manière cohérente dans le décor 3D généré dynamiquement.</p>",
     "tech": ["Unreal Engine", "LLM", "Looking Glass", "Aximmetry"],
     "gallery": ["assets/img/projects/axel-presentation.jpg"],
+    "video": null,
     "links": []
   },
   {
@@ -79,6 +62,28 @@
     "fullDesc": "<p><strong>Contexte :</strong> Expérience de configuration cabine en réalité virtuelle présentée au salon du Bourget 2023.</p><p>Le visiteur, équipé d'un <strong>Meta Quest 2</strong>, accède à un configurateur d'intérieur avion en <strong>full VR standalone</strong> : sélection des aménagements cabine, choix des matériaux et configurations de sièges, puis visite immersive de l'espace configuré.</p><p>Développé sous <strong>Unity</strong> avec pipeline de rendu optimisé pour Quest 2.</p>",
     "tech": ["Unity", "Meta Quest 2"],
     "gallery": [],
+    "video": null,
+    "links": []
+  },
+  {
+    "id": "augmented-worker",
+    "filterTags": ["ar", "salon"],
+    "img": "assets/img/projects/augmented-worker.jpg",
+    "svg": "assets/svg/projects/augmented-worker.svg",
+    "year": "2022 · Industrie · Connected Worker",
+    "name": "Augmented Worker",
+    "desc": "Application AR modulaire démontrant les cas d'usage Connected Worker en industrie.",
+    "labels": [
+      { "text": "AR",  "color": "cyan" },
+      { "text": "Industrie 4.0" },
+      { "text": "Connected Worker" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Application de démonstration AR développée pour sensibiliser les industriels aux apports de la réalité augmentée sur le terrain, présentée lors de workshops clients, à la <strong>Semaine de l'Immersion</strong> au Carrefour Numérique, et dans des workshops à <strong>CampusFab</strong>.</p><p>L'application est <strong>modulaire et paramétrable</strong> : chaque use case peut être activé ou désactivé indépendamment, ce qui permet d'adapter la démonstration au profil du client — ouvrier terrain, manager de production ou décideur industriel.</p><p>Cas d'usages couverts :</p><ul><li><strong>Digital Twin</strong> — visualisation du jumeau numérique d'équipements industriels</li><li><strong>Procédures guidées main libre</strong> — assistance pas à pas superposée à l'environnement réel</li><li><strong>Remote Assistance</strong> — collaboration à distance avec annotation spatiale en temps réel</li></ul><p>Développée sous <strong>Unity</strong> avec le SDK <strong>MRTK</strong> pour <strong>HoloLens 2</strong>.</p>",
+    "tech": ["Unity", "HoloLens 2", "MRTK"],
+    "gallery": [],
+    "video": "assets/video/projects/augmented-worker-teaser.mp4",
     "links": []
   },
   {
@@ -99,6 +104,7 @@
     "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur développé pour l'industrie de la Défense, présenté au salon du Bourget 2019 à destination des équipes de maintenance terrain.</p><p>Le technicien équipé d'un <strong>HoloLens</strong> pointe son regard vers la maquette physique d'un pod militaire. Le système de <strong>spatial tracking</strong> déclenche l'affichage de <strong>procédures guidées main libre</strong> superposées à la maquette en temps réel — navigation étape par étape avec validation gestuelle.</p><p>Développé sous <strong>Unity</strong> avec le SDK HoloLens (UWP).</p>",
     "tech": ["Unity", "HoloLens", "UWP"],
     "gallery": [],
+    "video": null,
     "links": []
   },
   {
@@ -119,8 +125,9 @@
     "fullDesc": "<p><strong>Contexte :</strong> Installation interactive développée pour une agence digitale, déployée lors de salons de recrutement et d'événements tech, dont le <strong>DevFest Nantes</strong>.</p><p>Le dispositif repose sur un pipeline de <strong>body tracking temps réel</strong> via Kinect v2, couplé à un modèle de <strong>reconnaissance de formes par réseau de neurones</strong> (TensorFlow.js). Le visiteur dessine dans l'air à main levée ; le système classifie le geste en temps réel et affiche le résultat sur écran.</p><ul><li>Tracking squelette <strong>Kinect v2</strong></li><li>Classification CNN via <strong>TensorFlow.js</strong></li><li>Backend <strong>Node.js</strong>, frontend web</li></ul>",
     "tech": ["Kinect v2", "TensorFlow.js", "Node.js", "JavaScript"],
     "gallery": [],
+    "video": null,
     "links": [
-      { "label": "Post LinkedIn", "url": "https://www.linkedin.com/posts/webnet_vid%C3%A9o-air-draw-challenge-sfl-activity-7044690743919013888-move?utm_source=share&utm_medium=member_desktop&rcm=ACoAABdswaYBzYZb5Bo-w2PUM2BV3DbDZJCudb8", "type": "web" }
+      { "label": "Post LinkedIn", "url": "https://www.linkedin.com/posts/webnet_vid%C3%A9o-air-draw-challenge-sfl-activity-7044690743919013888-move", "type": "web" }
     ]
   }
 ]

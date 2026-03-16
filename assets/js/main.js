@@ -167,6 +167,11 @@ function openProject(id) {
     `<img src="${src}" alt="" class="gallery-img" onclick="openLightbox(${i})" onerror="this.style.display='none'">`
   ).join('');
 
+  const videoEl = document.getElementById('pmodal-video');
+  if (p.video) {
+    videoEl.innerHTML = `<video controls preload="metadata"><source src="${p.video}" type="video/mp4"></video>`;
+  } else { videoEl.innerHTML = ''; }
+
   document.getElementById('pmodal-desc').innerHTML = p.fullDesc || `<p>${p.desc}</p>`;
 
   const techEl = document.getElementById('pmodal-tech');
