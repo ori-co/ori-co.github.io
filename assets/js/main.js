@@ -19,9 +19,47 @@ function fp(tag, btn) {
   });
 }
 
+function renderOffres(offres) {
+  document.getElementById('offres').innerHTML = offres.map(o => `
+    <div class="offre" style="border-top:2px solid var(--${o.color});">
+      <p class="offre-n" style="color:var(--${o.color});">${o.num}</p>
+      <h3 class="offre-title" style="color:var(--${o.color});">${o.title}</h3>
+      <p class="offre-desc">${o.desc}</p>
+      <div class="offre-tags">
+        ${o.tags.map(t => `<span class="otag" style="color:var(--${o.color});border-color:var(--${o.color});">${t}</span>`).join('')}
+      </div>
+      <div class="offre-bar bar-${o.color}"></div>
+    </div>`).join('');
+}
+
+function renderSkills(skills) {
+  document.getElementById('skills').innerHTML = skills.map(s => {
+    const dots = Array.from({ length: 5 }, (_, i) =>
+      `<div class="dot${i < s.level ? ' on' + (s.color === 'violet' ? '2' : '') : ''}"></div>`
+    ).join('');
+    return `<div class="ski"><span class="ski-n">${s.name}</span><div class="dots">${dots}</div></div>`;
+  }).join('');
+}
+
+function renderValues(values) {
+  document.getElementById('val-cards').innerHTML = values.map(v => `
+    <div class="val-card ${v.variant}">
+      <h4>${v.title}</h4>
+      <p>${v.desc}</p>
+    </div>`).join('');
+}
+
+function renderMaker(tiles) {
+  document.getElementById('mgrid').innerHTML = tiles.map(t => `
+    <div class="mtile">
+      <img src="${t.img}" alt="${t.label}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+      <img src="${t.svg}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;" onerror="this.style.display='none'">
+      <span class="mlabel">${t.label}</span>
+    </div>`).join('');
+}
+
 function renderProjects(projects) {
-  const grid = document.getElementById('pgrid');
-  grid.innerHTML = projects.map(p => {
+  document.getElementById('pgrid').innerHTML = projects.map(p => {
     const labels = p.labels.map(l =>
       l.color
         ? `<span class="ptag" style="color:var(--${l.color});border-color:var(--${l.color});">${l.text}</span>`
@@ -44,7 +82,18 @@ function renderProjects(projects) {
   }).join('');
 }
 
-fetch('assets/data/projects.json')
-  .then(r => r.json())
-  .then(renderProjects)
-  .catch(() => console.error('Impossible de charger projects.json'));
+const load = path => fetch(path).then(r => r.json());
+
+Promise.all([
+  load('assets/data/offres.json'),
+  load('assets/data/projects.json'),
+  load('assets/data/skills.json'),
+  load('assets/data/values.json'),
+  load('assets/data/maker.json'),
+]).then(([offres, projects, skills, values, maker]) => {
+  renderOffres(offres);
+  renderProjects(projects);
+  renderSkills(skills);
+  renderValues(values);
+  renderMaker(maker);
+}).catch(err => console.error('Erreur chargement données:', err));

@@ -1,0 +1,23 @@
+[
+  {
+    "num": "01",
+    "color": "ocre",
+    "title": "Atelier Vision & Acculturation",
+    "desc": "Cadrage de projet, Design Thinking, initiation aux technologies immersives. Pour clarifier une idée avant de se lancer, ou faire découvrir la XR à une équipe.",
+    "tags": ["1 à 3 jours", "Workshop", "Roadmap"]
+  },
+  {
+    "num": "02",
+    "color": "cyan",
+    "title": "Prototypage & Développement",
+    "desc": "Démonstrateurs salon, installations interactives pour musées, POC pour valider un concept. Du prototype fonctionnel livré en quelques semaines.",
+    "tags": ["AR / VR", "3D", "IA", "Salon"]
+  },
+  {
+    "num": "03",
+    "color": "violet",
+    "title": "Direction de Projet Innovation",
+    "desc": "Tech Lead ou Product Owner sur la durée. Vision produit, choix technologiques, coordination d'équipe, livraison. Un fil directeur technique et créatif.",
+    "tags": ["Tech Lead", "PO", "Long terme"]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "variant": "vc1",
+    "title": "Fablab & Making",
+    "desc": "Membre active d'un fablab de mairie. Couture, modélisme, impression 3D, électronique."
+  },
+  {
+    "variant": "vc2",
+    "title": "Arts visuels",
+    "desc": "Dessin, peinture, modélisation 3D. Une sensibilité artistique qui nourrit le travail technique."
+  },
+  {
+    "variant": "vc3",
+    "title": "Engagement",
+    "desc": "Conférencière sur l'effet Matilda dans les écoles d'ingénieurs."
+  }
+]

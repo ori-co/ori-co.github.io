@@ -1,0 +1,7 @@
+[
+  { "img": "assets/img/maker/couture.jpg",     "svg": "assets/svg/maker/couture.svg",     "label": "Couture & Modélisme" },
+  { "img": "assets/img/maker/peinture.jpg",    "svg": "assets/svg/maker/peinture.svg",    "label": "Peinture"           },
+  { "img": "assets/img/maker/modelisation.jpg","svg": "assets/svg/maker/modelisation.svg","label": "Modélisation 3D"    },
+  { "img": "assets/img/maker/fablab.jpg",      "svg": "assets/svg/maker/fablab.svg",      "label": "Fablab"             },
+  { "img": "assets/img/maker/dessin.jpg",      "svg": "assets/svg/maker/dessin.svg",      "label": "Dessin"             }
+]
