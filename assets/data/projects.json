@@ -1,0 +1,92 @@
+[
+  {
+    "id": "armaldo",
+    "filterTags": ["ar", "salon"],
+    "img": "assets/img/projects/armaldo.jpg",
+    "svg": "assets/svg/projects/armaldo.svg",
+    "year": "2019 · Thales · Bourget",
+    "name": "Armaldo",
+    "desc": "AR sur maquette physique d'un pod militaire. Procédures guidées mains libres.",
+    "labels": [
+      { "text": "AR",           "color": "violet" },
+      { "text": "Salon" },
+      { "text": "Installation" }
+    ],
+    "study": false
+  },
+  {
+    "id": "polarpod",
+    "filterTags": ["3d", "ia", "mediation"],
+    "img": "assets/img/projects/polarpod.jpg",
+    "svg": "assets/svg/projects/polarpod.svg",
+    "year": "2024 · Accenture",
+    "name": "PolarPod 3.0",
+    "desc": "Plateforme de médiation scientifique avec contenus 3D, 2D et voicebot IA. En ligne.",
+    "labels": [
+      { "text": "3D", "color": "ocre" },
+      { "text": "IA", "color": "cyan" },
+      { "text": "Médiation" }
+    ],
+    "study": false
+  },
+  {
+    "id": "axel",
+    "filterTags": ["3d", "ia", "salon"],
+    "img": "assets/img/projects/axel.jpg",
+    "svg": "assets/svg/projects/axel.svg",
+    "year": "2023 · Accenture",
+    "name": "Axel Green Studio",
+    "desc": "Agent LLM vocal dans un environnement 3D immersif. IA générative et espace spatial.",
+    "labels": [
+      { "text": "3D",           "color": "ocre" },
+      { "text": "LLM",          "color": "violet" },
+      { "text": "IA Générative" }
+    ],
+    "study": false
+  },
+  {
+    "id": "offertodesign",
+    "filterTags": ["vr", "salon"],
+    "img": "assets/img/projects/offertodesign.jpg",
+    "svg": "assets/svg/projects/offertodesign.svg",
+    "year": "2023 · Accenture · Bourget",
+    "name": "Offer To Design VR",
+    "desc": "Configurateur d'avion en réalité virtuelle et visite immersive. Présenté au Bourget.",
+    "labels": [
+      { "text": "VR",   "color": "cyan" },
+      { "text": "Salon" },
+      { "text": "3D" }
+    ],
+    "study": false
+  },
+  {
+    "id": "airdraw",
+    "filterTags": ["ia", "salon"],
+    "img": "assets/img/projects/airdraw.jpg",
+    "svg": "assets/svg/projects/airdraw.svg",
+    "year": "2019 · Webnet",
+    "name": "AirDraw Challenge",
+    "desc": "Installation multimodale — body tracking Kinect + reconnaissance IA de dessins dans l'air.",
+    "labels": [
+      { "text": "IA",        "color": "violet" },
+      { "text": "Multimodal" },
+      { "text": "Installation" }
+    ],
+    "study": false
+  },
+  {
+    "id": "mediation-etude",
+    "filterTags": ["ar", "education", "mediation"],
+    "img": "assets/img/projects/mediation-etude.jpg",
+    "svg": "assets/svg/projects/mediation-etude.svg",
+    "year": "Concept · 2025",
+    "name": "Médiation AR — Musée",
+    "desc": "Installation AR sur objets physiques pour enrichir la visite d'une exposition permanente.",
+    "labels": [
+      { "text": "AR",       "color": "violet" },
+      { "text": "Médiation" },
+      { "text": "Concept" }
+    ],
+    "study": true
+  }
+]
