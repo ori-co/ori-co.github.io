@@ -56,8 +56,8 @@
     ],
     "study": false,
     "wip": false,
-    "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur IA développé pour Accenture, déployé lors de salons clients et de workshops d'acculturation à l'IA générative.</p><p>L'agent incarne un <strong>assistant assurance</strong> : il guide le client en langage naturel à travers les démarches en cas de sinistre ou d'accident, de la déclaration jusqu'à la résolution.</p><p>Un <strong>agent conversationnel vocal LLM</strong> est intégré dans un environnement 3D temps réel développé sous <strong>Unreal Engine</strong>. La solution est diffusée sur deux formats distincts :</p><ul><li><strong>Looking Glass</strong> — écran stéréoscopique autostéréoscopique, rendu holographique sans lunettes</li><li><strong>Aximetry GreenStudio</strong> — incrustation temps réel sur fond vert pour présentation scénique</li></ul><p>L'agent répond en langage naturel et s'inscrit de manière cohérente dans le décor 3D généré dynamiquement.</p>",
-    "tech": ["Unreal Engine", "LLM", "Looking Glass", "Aximetry"],
+    "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur IA développé pour Accenture, déployé lors de salons clients et de workshops d'acculturation à l'IA générative.</p><p>L'agent incarne un <strong>assistant assurance</strong> : il guide le client en langage naturel à travers les démarches en cas de sinistre ou d'accident, de la déclaration jusqu'à la résolution.</p><p>Un <strong>agent conversationnel vocal LLM</strong> est intégré dans un environnement 3D temps réel développé sous <strong>Unreal Engine</strong>. La solution est diffusée sur deux formats distincts :</p><ul><li><strong>Looking Glass</strong> — écran stéréoscopique autostéréoscopique, rendu holographique sans lunettes</li><li><strong>Aximmetry GreenStudio</strong> — incrustation temps réel sur fond vert pour présentation scénique</li></ul><p>L'agent répond en langage naturel et s'inscrit de manière cohérente dans le décor 3D généré dynamiquement.</p>",
+    "tech": ["Unreal Engine", "LLM", "Looking Glass", "Aximmetry"],
     "gallery": ["assets/img/projects/axel-presentation.jpg"],
     "links": []
   },
