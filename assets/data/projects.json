@@ -40,7 +40,7 @@
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Démonstrateur IA déployé lors de salons clients et de workshops d'acculturation à l'IA générative.</p><p>L'agent incarne un <strong>assistant assurance</strong> : il guide le client en langage naturel à travers les démarches en cas de sinistre ou d'accident, de la déclaration jusqu'à la résolution.</p><p>Un <strong>agent conversationnel vocal LLM</strong> est intégré dans un environnement 3D temps réel développé sous <strong>Unreal Engine</strong>. La solution est diffusée sur deux formats distincts :</p><ul><li><strong>Looking Glass</strong> — écran stéréoscopique autostéréoscopique, rendu holographique sans lunettes</li><li><strong>Aximmetry GreenStudio</strong> — incrustation temps réel sur fond vert pour présentation scénique</li></ul><p>L'agent répond en langage naturel et s'inscrit de manière cohérente dans le décor 3D généré dynamiquement.</p>",
     "tech": ["Unreal Engine", "LLM", "Looking Glass", "Aximmetry"],
-    "gallery": ["assets/img/projects/axel.jpg", "assets/img/projects/axel_1.png","assets/img/projects/axel_2.png", "assets/img/projects/axel-lookingglass.jpg"],
+    "gallery": ["assets/img/projects/axel.jpg", "assets/img/projects/axel_1.png", "assets/img/projects/axel-lookingglass.jpg"],
     "video": null,
     "links": []
   },
@@ -61,7 +61,7 @@
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Expérience de configuration cabine en réalité virtuelle présentée au salon du Bourget 2023.</p><p>Le visiteur, équipé d'un <strong>Meta Quest 2</strong>, accède à un configurateur d'intérieur avion en <strong>full VR standalone</strong> : sélection des aménagements cabine, choix des matériaux et configurations de sièges, puis visite immersive de l'espace configuré.</p><p>Développé sous <strong>Unity</strong> avec pipeline de rendu optimisé pour Quest 2.</p>",
     "tech": ["Unity", "Meta Quest 2"],
-    "gallery": ["assets/img/projects/offertodesign.png","assets/img/projects/otd_1.png","assets/img/projects/otd_2.png","assets/img/projects/otd_3.png" ],
+    "gallery": ["assets/img/projects/offertodesign.png","assets/img/projects/otd_2.png","assets/img/projects/otd_3.png" ],
     "video": null,
     "links": []
   },
@@ -75,16 +75,41 @@
     "desc": "Application AR modulaire démontrant les cas d'usage Connected Worker en industrie.",
     "labels": [
       { "text": "AR",  "color": "cyan" },
-      { "text": "Industrie 4.0" },
+      { "text": "Acculturation" },
       { "text": "Connected Worker" }
     ],
     "study": false,
     "wip": false,
     "fullDesc": "<p><strong>Contexte :</strong> Application de démonstration AR développée pour sensibiliser les industriels aux apports de la réalité augmentée sur le terrain, présentée lors de workshops clients, à la <strong>Semaine de l'Immersion</strong> au Carrefour Numérique, et dans des workshops à <strong>CampusFab</strong>.</p><p>L'application est <strong>modulaire et paramétrable</strong> : chaque use case peut être activé ou désactivé indépendamment, ce qui permet d'adapter la démonstration au profil du client — ouvrier terrain, manager de production ou décideur industriel.</p><p>Cas d'usages couverts :</p><ul><li><strong>Digital Twin</strong> — visualisation du jumeau numérique d'équipements industriels</li><li><strong>Procédures guidées main libre</strong> — assistance pas à pas superposée à l'environnement réel</li><li><strong>Remote Assistance</strong> — collaboration à distance avec annotation spatiale en temps réel</li></ul><p>Développée sous <strong>Unity</strong> avec le SDK <strong>MRTK</strong> pour <strong>HoloLens 2</strong>.</p>",
     "tech": ["Unity", "HoloLens 2", "MRTK"],
-    "gallery": ["assets/img/projects/augmented-worker.png","assets/img/projects/augmentedworker-campusfab.jpg", "assets/img/projects/augmentedworker_1.png","assets/img/projects/augmentedworker_2.png","assets/img/projects/augmentedworker_3.png"],
-    "video": "assets/video/projects/augmented-worker-teaser.mp4",
-    "links": []
+    "gallery": ["assets/img/projects/augmented-worker.png","assets/img/projects/augmentedworker-campusfab.jpg", "assets/img/projects/augmentedworker_1.png"],
+    "video": null,
+    "links": [
+      { "label": "Post LinkedIn", "url": "https://www.linkedin.com/posts/philippe-pruvost-89215255_cloud-industriedufutur-robotique-activity-6868914984529739776-MDRb", "type": "web" }
+    ]
+  },
+  {
+    "id": "airdraw",
+    "filterTags": ["ia", "salon"],
+    "img": "assets/img/projects/airdraw.jpg",
+    "svg": "assets/svg/projects/airdraw.svg",
+    "year": "2020 · Agence digitale",
+    "name": "AirDraw Challenge",
+    "desc": "Installation multimodale — body tracking Kinect + reconnaissance IA de dessins dans l'air.",
+    "labels": [
+      { "text": "IA",  "color": "violet" },
+      { "text": "Multimodal" },
+      { "text": "Installation" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Installation interactive développée pour une agence digitale, déployée lors de salons de recrutement et d'événements tech, dont le <strong>DevFest</strong> et le <strong>Symfony Live</strong></p><p>Le dispositif repose sur un pipeline de <strong>body tracking temps réel</strong> via Kinect v2, couplé à un modèle de <strong>reconnaissance de formes par réseau de neurones</strong> (TensorFlow.js). Le visiteur dessine dans l'air à main levée ; le système classifie le geste en temps réel et affiche le résultat sur écran.</p><ul><li>Tracking squelette <strong>Kinect v2</strong></li><li>Classification CNN via <strong>TensorFlow.js</strong></li><li>Backend <strong>Node.js</strong>, frontend web</li></ul>",
+    "tech": ["Kinect v2", "TensorFlow.js", "Node.js", "JavaScript"],
+    "gallery": ["assets/img/projects/airdraw.jpg","assets/img/projects/airdraw_1.png"],
+    "video": null,
+    "links": [
+      { "label": "Post LinkedIn", "url": "https://www.linkedin.com/posts/webnet_vid%C3%A9o-air-draw-challenge-sfl-activity-7044690743919013888-move", "type": "web" }
+    ]
   },
   {
     "id": "armaldo",
@@ -106,28 +131,5 @@
     "gallery": [],
     "video": null,
     "links": []
-  },
-  {
-    "id": "airdraw",
-    "filterTags": ["ia", "salon"],
-    "img": "assets/img/projects/airdraw.jpg",
-    "svg": "assets/svg/projects/airdraw.svg",
-    "year": "2019 · Agence digitale",
-    "name": "AirDraw Challenge",
-    "desc": "Installation multimodale — body tracking Kinect + reconnaissance IA de dessins dans l'air.",
-    "labels": [
-      { "text": "IA",  "color": "violet" },
-      { "text": "Multimodal" },
-      { "text": "Installation" }
-    ],
-    "study": false,
-    "wip": false,
-    "fullDesc": "<p><strong>Contexte :</strong> Installation interactive développée pour une agence digitale, déployée lors de salons de recrutement et d'événements tech, dont le <strong>DevFest</strong> et le <strong>Symfony Live</strong></p><p>Le dispositif repose sur un pipeline de <strong>body tracking temps réel</strong> via Kinect v2, couplé à un modèle de <strong>reconnaissance de formes par réseau de neurones</strong> (TensorFlow.js). Le visiteur dessine dans l'air à main levée ; le système classifie le geste en temps réel et affiche le résultat sur écran.</p><ul><li>Tracking squelette <strong>Kinect v2</strong></li><li>Classification CNN via <strong>TensorFlow.js</strong></li><li>Backend <strong>Node.js</strong>, frontend web</li></ul>",
-    "tech": ["Kinect v2", "TensorFlow.js", "Node.js", "JavaScript"],
-    "gallery": ["assets/img/projects/airdraw.jpg","assets/img/projects/airdraw_1.png"],
-    "video": null,
-    "links": [
-      { "label": "Post LinkedIn", "url": "https://www.linkedin.com/posts/webnet_vid%C3%A9o-air-draw-challenge-sfl-activity-7044690743919013888-move", "type": "web" }
-    ]
   }
 ]
