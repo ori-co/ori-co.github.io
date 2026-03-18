@@ -57,20 +57,20 @@
     </div>
     <form class="cform" onsubmit="return false">
       <div class="fg">
-        <label id="label-name"></label>
-        <input type="text" id="input-name">
+        <label id="label-name" for="input-name"></label>
+        <input type="text" id="input-name" name="name">
       </div>
       <div class="fg">
-        <label id="label-email"></label>
-        <input type="email" placeholder="votre@email.com">
+        <label id="label-email" for="input-email"></label>
+        <input type="email" id="input-email" name="email" placeholder="votre@email.com">
       </div>
       <div class="fg">
-        <label id="label-mission"></label>
-        <select id="mission-select"></select>
+        <label id="label-mission" for="mission-select"></label>
+        <select id="mission-select" name="mission"></select>
       </div>
       <div class="fg">
-        <label id="label-message"></label>
-        <textarea id="textarea-msg" rows="3"></textarea>
+        <label id="label-message" for="textarea-msg"></label>
+        <textarea id="textarea-msg" name="message" rows="3"></textarea>
       </div>
       <button class="btn-send" id="btn-send"></button>
     </form>

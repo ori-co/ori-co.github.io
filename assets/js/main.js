@@ -85,7 +85,7 @@ function renderProfile(p) {
     const btn = form.querySelector('.btn-send');
     const data = {
       name:    document.getElementById('input-name').value,
-      email:   form.querySelector('input[type="email"]').value,
+      email:   document.getElementById('input-email').value,
       mission: form.querySelector('select').value,
       message: document.getElementById('textarea-msg').value,
     };
