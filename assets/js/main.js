@@ -71,7 +71,7 @@ function renderProfile(p) {
   });
 
   document.getElementById('about-hero-title').innerHTML = p.about.heroTitleHtml;
-  document.getElementById('about-hero-sub').textContent = p.about.heroSub;
+  document.getElementById('about-hero-sub').innerHTML = p.about.bio.map(t => `<p>${t}</p>`).join('');
   document.getElementById('about-timeline').innerHTML =
     `<div class="timeline">${p.about.timeline.map(t => `
       <div class="tl-item${t.current ? ' tl-current' : ''}${t.edu ? ' tl-edu' : ''}">
@@ -105,7 +105,7 @@ function renderOffres(offres) {
 function renderSkills(skills) {
   document.getElementById('skills').innerHTML = skills.map(cat => `
     <div class="skill-cat">
-      <p class="skill-cat-label">${cat.category}</p>
+      <p class="skill-cat-label" style="color:var(--${cat.color})">${cat.category}</p>
       <div class="tech-tags">${cat.items.map(i => `<span class="tech-tag">${i}</span>`).join('')}</div>
     </div>`).join('');
 }
@@ -253,14 +253,11 @@ Promise.all([
   load('assets/data/profile.json'),
   load('assets/data/offres.json'),
   load('assets/data/projects.json'),
-  load('assets/data/skills.json'),
-  load('assets/data/values.json'),
-  load('assets/data/maker.json'),
-]).then(([profile, offres, projects, skills, values, maker]) => {
+]).then(([profile, offres, projects]) => {
   renderProfile(profile);
   renderOffres(offres);
   renderProjects(projects);
-  renderSkills(skills);
-  renderValues(values);
-  renderMaker(maker);
+  renderSkills(profile.about.skills);
+  renderValues(profile.about.values);
+  renderMaker(profile.about.maker);
 }).catch(err => console.error('Erreur chargement données:', err));

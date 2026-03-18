@@ -26,20 +26,38 @@
 
   "about": {
     "heroTitleHtml": "Ingénieure,<br><span class=\"a-cyan\">conceptrice,</span><br><span class=\"a-violet\">fabricante.</span>",
-    "heroSub": "Ingénieure (Centrale Nantes, 2016), 9 ans à concevoir des expériences interactives en labs d'innovation — AR, VR, 3D temps réel, IA générative. J'interviens en Tech Lead ou Product Owner sur l'ensemble du cycle : cadrage, animation d'ateliers, développement, coordination d'équipe, démo live. Ce qui m'anime : les projets bien pensés, bien réalisés, où le numérique et le tangible se croisent.",
     "bio": [
-      "Ingénieure de formation (Centrale Nantes, 2016), spécialisée dans les interfaces interactives — réalité augmentée, réalité virtuelle, 3D temps réel, IA générative.",
-      "J'interviens en Tech Lead ou Product Owner sur l'ensemble du cycle : cadrage, animation d'ateliers, développement, coordination d'équipe, démo live.",
-      "Ce qui m'anime : les projets bien pensés, bien réalisés, où le numérique et le tangible se croisent."
+      "Ingénieure (Centrale Nantes, 2016), j'ai conçu et développé des expériences interactives en laboratoires d'innovation — réalité augmentée, réalité virtuelle, 3D, IA générative — en portant les rôles de Tech Lead et Product Owner du cadrage jusqu'à la démo live.",
+      "Des projets présentés dans des salons internationaux, des workshops clients, des plateformes de médiation scientifique. Ce qui m'intéresse : les projets bien conçus, bien réalisés, qui répondent à un vrai besoin.",
+      "Aujourd'hui en freelance, j'explore les terrains où l'expérience interactive a du sens — et de plus en plus, ceux où numérique et objet physique se croisent."
     ],
-    "valuesIntro": "Rigueur intellectuelle, honnêteté, bienveillance, créativité. Construire des choses utiles, bien faites, intéressantes à produire.",
     "timeline": [
-      { "period": "2025 →",      "title": "Freelance",                        "detail": "Ingénieure en Innovation",                                   "current": true  },
-      { "period": "2023 – 2025", "title": "Accenture Liquid Studio",          "detail": "Tech Lead XR & IA générative"                                               },
-      { "period": "2021 – 2023", "title": "OCTO Technology",                  "detail": "Consultant AR / VR"                                                         },
-      { "period": "2017 – 2021", "title": "Webnet · Thales R&D",              "detail": "Développement XR & IHM"                                                     },
-      { "period": "2014 – 2016", "title": "Stages & vacations",               "detail": "Manzalab, IT-CE, Netgem, Applidium — dev, UX/UI, gestion de projet"         },
-      { "period": "2016",        "title": "Centrale Nantes",                  "detail": "Diplôme ingénieur informatique · mention TB",                 "edu": true    }
+      { "period": "2025 →",      "title": "Freelance",               "detail": "Ingénieure en Innovation",                                             "current": true },
+      { "period": "2023 – 2025", "title": "Accenture Liquid Studio", "detail": "Tech Lead XR & IA générative"                                                         },
+      { "period": "2021 – 2023", "title": "OCTO Technology",         "detail": "Consultant AR / VR"                                                                   },
+      { "period": "2017 – 2021", "title": "Webnet · Thales R&D",     "detail": "Développement XR & IHM"                                                              },
+      { "period": "2014 – 2016", "title": "Stages & vacations",      "detail": "Manzalab, IT-CE, Netgem, Applidium — dev, UX/UI, gestion de projet"                 },
+      { "period": "2016",        "title": "Centrale Nantes",         "detail": "Diplôme ingénieur informatique · mention TB",                         "edu": true    }
+    ],
+    "skills": [
+      { "category": "XR",              "color": "cyan",   "items": ["AR / VR", "HoloLens 2 · MRTK", "Looking Glass", "Aximmetry"] },
+      { "category": "Temps réel & 3D", "color": "ocre",   "items": ["Unity", "Unreal Engine", "Blender · Modélisation 3D"] },
+      { "category": "IA",              "color": "violet", "items": ["IA Générative · LLM", "TensorFlow.js", "Python", "Voicebot"] },
+      { "category": "Web",             "color": "cyan",   "items": ["React.js", "Three.js", "Node.js · JavaScript", "Prismic"] },
+      { "category": "Méthodes",        "color": "ocre",   "items": ["Design Thinking · Facilitation", "Tech Lead · Product Owner", "Prototypage rapide"] }
+    ],
+    "values": [
+      { "variant": "vc1", "title": "Arts visuels",        "desc": "Dessin, peinture, modélisation 3D. Une sensibilité artistique qui nourrit le travail technique." },
+      { "variant": "vc2", "title": "Couture & Patronage", "desc": "Autodidacte depuis de nombreuses années. Conception et réalisation sur mesure — peluches, pochettes, vêtements — du patronage à la confection." },
+      { "variant": "vc3", "title": "Fablab & Making",     "desc": "Membre active d'un fablab municipal. Modélisme, impression 3D, projets pluridisciplinaires." }
+      
+    ],
+    "maker": [
+      { "img": "assets/img/maker/couture.jpg",      "svg": "assets/svg/maker/couture.svg",      "label": "Couture & Modélisme" },
+      { "img": "assets/img/maker/peinture.jpg",     "svg": "assets/svg/maker/peinture.svg",     "label": "Peinture"           },
+      { "img": "assets/img/maker/modelisation.jpg", "svg": "assets/svg/maker/modelisation.svg", "label": "Modélisation 3D"    },
+      { "img": "assets/img/maker/fablab.jpg",       "svg": "assets/svg/maker/fablab.svg",       "label": "Fablab"             },
+      { "img": "assets/img/maker/dessin.jpg",       "svg": "assets/svg/maker/dessin.svg",       "label": "Dessin"             }
     ]
   }
 }
