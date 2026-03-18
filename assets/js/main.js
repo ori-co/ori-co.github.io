@@ -294,7 +294,7 @@ const suffix = lang === 'en' ? '-en' : '';
 Promise.all([
   load(`assets/data/profile${suffix}.json`),
   load(`assets/data/offres${suffix}.json`),
-  load('assets/data/projects.json'),
+  load(`assets/data/projects${suffix}.json`),
   load(`assets/data/ui${suffix}.json`),
 ]).then(([profile, offres, projects, ui]) => {
   renderUI(ui);

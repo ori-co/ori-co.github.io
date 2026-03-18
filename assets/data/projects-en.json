@@ -1,0 +1,135 @@
+[
+  {
+    "id": "polarpod",
+    "filterTags": ["3d", "ia", "mediation"],
+    "img": "assets/img/projects/polarpod.png",
+    "svg": "assets/svg/projects/polarpod.svg",
+    "year": "2024 · Science mediation",
+    "name": "PolarPod 3.0",
+    "desc": "Science mediation platform with 3D, 2D content and an AI voicebot. Live online.",
+    "labels": [
+      { "text": "3D", "color": "ocre" },
+      { "text": "AI", "color": "violet" },
+      { "text": "Mediation" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> Science mediation platform built for <strong>Jean-Louis Étienne</strong>'s PolarPod project, developed in 2024.</p><p>The platform combines several content layers to make the polar scientific mission accessible:</p><ul><li><strong>Interactive 3D scenes</strong> (Three.js) to visualise the pod and its environment</li><li>Editorial content and media managed via <strong>Prismic</strong> (headless CMS)</li><li><strong>AI Voicebot</strong> allowing the general public to query the system in natural language</li></ul><p>Front-end built in <strong>React.js</strong>. Available online.</p>",
+    "tech": ["React.js", "Three.js", "Prismic", "AI Voicebot"],
+    "gallery": ["assets/img/projects/polarpod_2.png","assets/img/projects/polarpod_1.png","assets/img/projects/polarpod_3.png"],
+    "video": null,
+    "links": [
+      { "label": "Open app", "url": "https://epod.polarpod.fr/", "type": "web" },
+      { "label": "Learn more", "url": "https://www.youtube.com/watch?v=9mL9WTJRlX0", "type": "youtube" }
+    ]
+  },
+  {
+    "id": "axel",
+    "filterTags": ["3d", "ia", "salon"],
+    "img": "assets/img/projects/axel.jpg",
+    "svg": "assets/svg/projects/axel.svg",
+    "year": "2023 · Insurance sector",
+    "name": "Axel Agent",
+    "desc": "Voice LLM agent inside an immersive 3D environment. Multiple display formats.",
+    "labels": [
+      { "text": "3D",  "color": "ocre" },
+      { "text": "LLM", "color": "violet" },
+      { "text": "Discovery" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> AI demonstrator deployed at client trade shows and generative AI discovery workshops.</p><p>The agent embodies an <strong>insurance assistant</strong>: it guides the customer through claims and accident procedures in natural language, from initial report to resolution.</p><p>A <strong>voice LLM conversational agent</strong> is embedded in a real-time 3D environment built with <strong>Unreal Engine</strong>. The solution runs on two distinct display formats:</p><ul><li><strong>Looking Glass</strong> — autostereoscopic display, glasses-free holographic rendering</li><li><strong>Aximmetry GreenStudio</strong> — real-time green screen compositing for live stage presentations</li></ul><p>The agent responds in natural language and integrates coherently into the dynamically generated 3D environment.</p>",
+    "tech": ["Unreal Engine", "LLM", "Looking Glass", "Aximmetry"],
+    "gallery": ["assets/img/projects/axel.jpg", "assets/img/projects/axel_1.png", "assets/img/projects/axel-lookingglass.jpg"],
+    "video": null,
+    "links": []
+  },
+  {
+    "id": "offertodesign",
+    "filterTags": ["vr", "salon"],
+    "img": "assets/img/projects/offertodesign.png",
+    "svg": "assets/svg/projects/offertodesign.svg",
+    "year": "2023 · Aeronautics · Paris Air Show",
+    "name": "Offer To Design VR",
+    "desc": "VR aircraft configurator and immersive cabin tour. Presented at the Paris Air Show.",
+    "labels": [
+      { "text": "VR", "color": "cyan" },
+      { "text": "3D", "color": "ocre" },
+      { "text": "Trade show" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> VR cabin configuration experience presented at the Paris Air Show 2023.</p><p>Wearing a <strong>Meta Quest 2</strong>, visitors access a <strong>fully standalone VR</strong> aircraft interior configurator: selecting cabin layouts, materials and seat configurations, then taking an immersive tour of the configured space.</p><p>Built with <strong>Unity</strong> and a rendering pipeline optimised for Quest 2.</p>",
+    "tech": ["Unity", "Meta Quest 2"],
+    "gallery": ["assets/img/projects/offertodesign.png","assets/img/projects/otd_2.png","assets/img/projects/otd_3.png"],
+    "video": null,
+    "links": []
+  },
+  {
+    "id": "augmented-worker",
+    "filterTags": ["ar", "salon"],
+    "img": "assets/img/projects/augmented-worker.png",
+    "svg": "assets/svg/projects/augmented-worker.svg",
+    "year": "2022 · Industry · Connected Worker",
+    "name": "Augmented Worker",
+    "desc": "Modular AR application demonstrating Connected Worker use cases in industrial settings.",
+    "labels": [
+      { "text": "AR",  "color": "cyan" },
+      { "text": "Discovery" },
+      { "text": "Connected Worker" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> AR demonstration app built to introduce industrial clients to the benefits of augmented reality in the field. Presented at client workshops, the <strong>Semaine de l'Immersion</strong> at Carrefour Numérique, and at <strong>CampusFab</strong>.</p><p>The application is <strong>modular and configurable</strong>: each use case can be toggled independently, allowing the demo to be tailored to the audience — field worker, production manager, or industrial decision-maker.</p><p>Use cases covered:</p><ul><li><strong>Digital Twin</strong> — visualisation of industrial equipment digital twins</li><li><strong>Guided hands-free procedures</strong> — step-by-step assistance overlaid on the real environment</li><li><strong>Remote Assistance</strong> — remote collaboration with real-time spatial annotation</li></ul><p>Built with <strong>Unity</strong> and the <strong>MRTK</strong> SDK for <strong>HoloLens 2</strong>.</p>",
+    "tech": ["Unity", "HoloLens 2", "MRTK"],
+    "gallery": ["assets/img/projects/augmented-worker.png","assets/img/projects/augmentedworker-campusfab.jpg", "assets/img/projects/augmentedworker_1.png"],
+    "video": null,
+    "links": [
+      { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/philippe-pruvost-89215255_cloud-industriedufutur-robotique-activity-6868914984529739776-MDRb", "type": "web" }
+    ]
+  },
+  {
+    "id": "airdraw",
+    "filterTags": ["ia", "salon"],
+    "img": "assets/img/projects/airdraw.jpg",
+    "svg": "assets/svg/projects/airdraw.svg",
+    "year": "2020 · Digital agency",
+    "name": "AirDraw Challenge",
+    "desc": "Multimodal installation — Kinect body tracking + AI recognition of air-drawn shapes.",
+    "labels": [
+      { "text": "AI",  "color": "violet" },
+      { "text": "Multimodal" },
+      { "text": "Installation" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> Interactive installation built for a digital agency, deployed at recruitment fairs and tech events including <strong>DevFest</strong> and <strong>Symfony Live</strong>.</p><p>The system runs a <strong>real-time body tracking</strong> pipeline via Kinect v2, coupled with a <strong>neural network shape recognition model</strong> (TensorFlow.js). Visitors draw in the air freehand; the system classifies the gesture in real time and displays the result on screen.</p><ul><li><strong>Kinect v2</strong> skeleton tracking</li><li>CNN classification via <strong>TensorFlow.js</strong></li><li><strong>Node.js</strong> backend, web frontend</li></ul>",
+    "tech": ["Kinect v2", "TensorFlow.js", "Node.js", "JavaScript"],
+    "gallery": ["assets/img/projects/airdraw.jpg","assets/img/projects/airdraw_1.png"],
+    "video": null,
+    "links": [
+      { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/webnet_vid%C3%A9o-air-draw-challenge-sfl-activity-7044690743919013888-move", "type": "web" }
+    ]
+  },
+  {
+    "id": "armaldo",
+    "filterTags": ["ar", "salon"],
+    "img": "assets/img/projects/armaldo.jpg",
+    "svg": "assets/svg/projects/armaldo.svg",
+    "year": "2019 · Defence · Paris Air Show",
+    "name": "Armaldo",
+    "desc": "AR on a physical scale model of a military pod. Hands-free guided procedures.",
+    "labels": [
+      { "text": "AR",  "color": "cyan" },
+      { "text": "Trade show" },
+      { "text": "Installation" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> Demonstrator built for the Defence industry, presented at the Paris Air Show 2019 for field maintenance teams.</p><p>A technician wearing a <strong>HoloLens</strong> looks at a physical scale model of a military pod. The <strong>spatial tracking</strong> system triggers the display of <strong>hands-free guided procedures</strong> overlaid on the model in real time — step-by-step navigation with gesture-based validation.</p><p>Built with <strong>Unity</strong> and the HoloLens SDK (UWP).</p>",
+    "tech": ["Unity", "HoloLens", "UWP"],
+    "gallery": [],
+    "video": null,
+    "links": []
+  }
+]
