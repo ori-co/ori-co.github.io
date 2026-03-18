@@ -22,10 +22,10 @@ function fp(tag, btn) {
 function renderProfile(p) {
   document.title = p.name;
   document.getElementById('nav-logo').textContent = p.initials;
-  document.getElementById('hero-name').textContent = p.hero.name;
-  document.getElementById('about-name').textContent = p.hero.name;
+  document.getElementById('hero-name').textContent = "// "+p.name;
+  document.getElementById('about-name').textContent = "// "+p.name;
 
-  document.getElementById('hero-tag').textContent = p.hero.tag;
+  document.getElementById('hero-tag').textContent = p.role;
   document.getElementById('hero-title').innerHTML = p.hero.titleHtml;
   document.getElementById('hero-sub').textContent = p.hero.sub;
 
