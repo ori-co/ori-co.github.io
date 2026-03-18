@@ -73,7 +73,7 @@ function renderProfile(p) {
   document.getElementById('about-hero-title').innerHTML = p.about.heroTitleHtml;
   document.getElementById('about-hero-sub').textContent = p.about.heroSub;
   document.getElementById('about-bio').innerHTML = p.about.bio.map(t => `<p>${t}</p>`).join('');
-  document.getElementById('values-intro').textContent = p.about.valuesIntro;
+
 
   ['home', 'portfolio', 'about'].forEach(page => {
     document.getElementById(`footer-copy-${page}`).textContent = p.copyright;
@@ -95,13 +95,18 @@ function renderOffres(offres) {
 }
 
 function renderSkills(skills) {
-  document.getElementById('skills').innerHTML = skills.map(s => {
-    const dots = Array.from({ length: 5 }, (_, i) =>
-      `<div class="dot${i < s.level ? ' on' + (s.color === 'violet' ? '2' : '') : ''}"></div>`
-    ).join('');
-    return `<div class="ski"><span class="ski-n">${s.name}</span><div class="dots">${dots}</div></div>`;
-  }).join('');
+  document.getElementById('skills').innerHTML =
+    `<div class="tech-tags">${skills.map(s => `<span class="tech-tag">${s.name}</span>`).join('')}</div>`;
 }
+// Version avec niveau (dots) — conservée pour référence
+// function renderSkills(skills) {
+//   document.getElementById('skills').innerHTML = skills.map(s => {
+//     const dots = Array.from({ length: 5 }, (_, i) =>
+//       `<div class="dot${i < s.level ? ' on' + (s.color === 'violet' ? '2' : '') : ''}"></div>`
+//     ).join('');
+//     return `<div class="ski"><span class="ski-n">${s.name}</span><div class="dots">${dots}</div></div>`;
+//   }).join('');
+// }
 
 function renderValues(values) {
   document.getElementById('val-cards').innerHTML = values.map(v => `

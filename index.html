@@ -85,8 +85,10 @@
 <!-- PAGE 2 PORTFOLIO -->
 <div class="page" id="page-portfolio">
   <div class="port-header">
-    <p class="hero-name" id="port-name"></p>
-    <h1>Réalisations</h1>
+    <div>
+      <p class="hero-name" id="port-name"></p>
+      <h1>Réalisations</h1>
+    </div>
     <small>★ projet d'étude</small>
   </div>
   <div class="filters">
@@ -124,24 +126,21 @@
   </div>
 
   <div class="about-content">
-    <div class="about-grid">
-      <div class="about-bio">
-        <h2>Parcours</h2>
-        <div id="about-bio"></div>
-        <div class="skills" id="skills"></div>
-      </div>
-      <div>
-        <h2 style="font-size:1.4rem;font-weight:500;margin-bottom:1.2rem;">Valeurs & engagements</h2>
-        <p id="values-intro" style="font-size:0.82rem;line-height:1.85;color:var(--muted);margin-bottom:1.5rem;font-weight:300;"></p>
-        <div class="val-cards" id="val-cards"></div>
-      </div>
-    </div>
+    <p class="s-label">// Parcours</p>
+    <div id="about-bio"></div>
+    <div class="skills" id="skills"></div>
   </div>
 
   <div class="maker-s">
-    <h2>Projets personnels</h2>
-    <p class="msub">Fabrication, arts visuels, making — ce qui nourrit le reste.</p>
-    <div class="mgrid" id="mgrid"></div>
+    <p class="s-label">// Projets personnels</p>
+    <div class="maker-layout">
+      <div class="maker-left">
+        <div class="val-cards" id="val-cards"></div>
+      </div>
+      <div class="maker-right">
+        <div class="mgrid" id="mgrid"></div>
+      </div>
+    </div>
   </div>
 
   <footer>
