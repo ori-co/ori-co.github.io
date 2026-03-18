@@ -1,0 +1,62 @@
+{
+  "name": "Oriane Cosson",
+  "initials": "OC_",
+  "role": "Innovation Engineer · Freelance",
+  "linkedin": "https://linkedin.com/in/orianecosson",
+  "formspreeId": "mbdzzkwn",
+  "copyright": "© 2025 Oriane Cosson",
+
+  "hero": {
+    "titleHtml": "Interactive<br><span>& immersive</span><br><em>experiences</em>",
+    "sub": "I design and build XR, 3D and generative AI prototypes — from initial scoping to live demo."
+  },
+
+  "contact": {
+    "title": "Got a project in mind?",
+    "text": "Available for freelance engagements, always open to discussing a tricky implementation or a collaboration between complementary profiles.",
+    "missionTypes": [
+      "Workshop / Discovery",
+      "Trade Show Demo",
+      "Interactive Installation",
+      "POC / Prototyping",
+      "Project Lead",
+      "Other"
+    ]
+  },
+
+  "about": {
+    "heroTitleHtml": "Engineer,<br><span class=\"a-cyan\">designer,</span><br><span class=\"a-violet\">maker.</span>",
+    "bio": [
+      "Engineer (Centrale Nantes, 2016), I have designed and built interactive experiences in innovation labs — augmented reality, virtual reality, real-time 3D, generative AI — taking on Tech Lead and Product Owner roles from scoping through to live demo.",
+      "Projects presented at international trade shows, client workshops, and science mediation platforms. What drives me: projects that are well thought out, well executed, and address a real need.",
+      "Now freelance, I explore the spaces where interactive experience makes sense — and increasingly, where digital and physical objects meet."
+    ],
+    "timeline": [
+      { "period": "2025 →",      "title": "Freelance",               "detail": "Innovation Engineer",                                                  "current": true },
+      { "period": "2023 – 2025", "title": "Accenture Liquid Studio", "detail": "XR & Generative AI Tech Lead"                                                         },
+      { "period": "2021 – 2023", "title": "OCTO Technology",         "detail": "AR / VR Consultant"                                                                   },
+      { "period": "2017 – 2021", "title": "Webnet · Thales R&D",     "detail": "XR & HMI Development"                                                                 },
+      { "period": "2014 – 2016", "title": "Internships",             "detail": "Manzalab, IT-CE, Netgem, Applidium — dev, UX/UI, project management"                 },
+      { "period": "2016",        "title": "Centrale Nantes",         "detail": "Engineering degree, Computer Science · High distinction",              "edu": true    }
+    ],
+    "skills": [
+      { "category": "XR",           "color": "cyan",   "items": ["AR / VR", "HoloLens 2 · MRTK", "Looking Glass", "Aximmetry"] },
+      { "category": "Realtime & 3D","color": "ocre",   "items": ["Unity", "Unreal Engine", "Blender · 3D Modelling"] },
+      { "category": "AI",           "color": "violet", "items": ["Generative AI · LLM", "TensorFlow.js", "Python", "Voicebot"] },
+      { "category": "Web",          "color": "cyan",   "items": ["React.js", "Three.js", "Node.js · JavaScript", "Prismic"] },
+      { "category": "Methods",      "color": "ocre",   "items": ["Design Thinking · Facilitation", "Tech Lead · Product Owner", "Rapid Prototyping"] }
+    ],
+    "values": [
+      { "variant": "vc1", "title": "Fablab & Making",    "desc": "Active member of a community fablab. Scale modelling, 3D printing, cross-disciplinary projects." },
+      { "variant": "vc2", "title": "Visual Arts",        "desc": "Drawing, painting, 3D modelling. An artistic sensibility that feeds into the technical work." },
+      { "variant": "vc3", "title": "Sewing & Patterns",  "desc": "Self-taught for many years. Designing and making to measure — soft toys, pouches, garments — from pattern to finished piece." }
+    ],
+    "maker": [
+      { "img": "assets/img/maker/couture.jpg",      "svg": "assets/svg/maker/couture.svg",      "label": "Sewing & Scale modelling" },
+      { "img": "assets/img/maker/peinture.jpg",     "svg": "assets/svg/maker/peinture.svg",     "label": "Painting"                },
+      { "img": "assets/img/maker/modelisation.jpg", "svg": "assets/svg/maker/modelisation.svg", "label": "3D Modelling"            },
+      { "img": "assets/img/maker/fablab.jpg",       "svg": "assets/svg/maker/fablab.svg",       "label": "Fablab"                  },
+      { "img": "assets/img/maker/dessin.jpg",       "svg": "assets/svg/maker/dessin.svg",       "label": "Drawing"                 }
+    ]
+  }
+}

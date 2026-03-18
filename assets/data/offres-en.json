@@ -1,0 +1,23 @@
+[
+  {
+    "num": "01",
+    "color": "ocre",
+    "title": "Vision & Discovery Workshop",
+    "desc": "Project scoping, Design Thinking, introduction to immersive technologies. To clarify an idea before committing, or help a team get up to speed with XR.",
+    "tags": ["1 to 3 days", "Workshop", "Roadmap"]
+  },
+  {
+    "num": "02",
+    "color": "cyan",
+    "title": "Prototyping & Development",
+    "desc": "Trade show demos, interactive museum installations, POCs to validate a concept. A working prototype delivered in a matter of weeks.",
+    "tags": ["AR / VR", "3D", "AI", "Trade show"]
+  },
+  {
+    "num": "03",
+    "color": "violet",
+    "title": "Innovation Project Lead",
+    "desc": "Tech Lead or Product Owner for the long haul. Product vision, technology choices, team coordination, delivery. A technical and creative through-line.",
+    "tags": ["Tech Lead", "PO", "Long-term"]
+  }
+]
