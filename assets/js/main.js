@@ -21,7 +21,8 @@ function fp(tag, btn) {
 
 function renderProfile(p) {
   document.title = p.name;
-  document.getElementById('nav-logo').textContent = p.initials;
+  document.getElementById('nav-logo').textContent = p.name;
+  document.getElementById('hero-name').textContent = p.name;
 
   document.getElementById('hero-tag').textContent = p.hero.tag;
   document.getElementById('hero-title').innerHTML = p.hero.titleHtml;
@@ -149,6 +150,10 @@ let _lbImages = [], _lbIndex = 0;
 function openProject(id) {
   const p = _projects.find(x => x.id === id);
   if (!p) return;
+
+  const firstColored = p.labels.find(l => l.color);
+  const accent = firstColored ? `var(--${firstColored.color})` : 'var(--cyan)';
+  document.querySelector('.pmodal').style.borderTop = `3px solid ${accent}`;
 
   document.getElementById('pmodal-year').textContent = p.year;
   document.getElementById('pmodal-name').textContent = p.name;
