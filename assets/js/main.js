@@ -19,6 +19,48 @@ function fp(tag, btn) {
   });
 }
 
+function toggleLang() {
+  const current = localStorage.getItem('lang') || 'fr';
+  localStorage.setItem('lang', current === 'fr' ? 'en' : 'fr');
+  location.reload();
+}
+
+let _ui = {};
+
+function renderUI(ui) {
+  _ui = ui;
+  document.documentElement.lang = ui.lang;
+  document.getElementById('lang-toggle').textContent = ui.lang === 'fr' ? 'EN' : 'FR';
+
+  ['home', 'portfolio', 'about'].forEach(p => {
+    document.getElementById(`nav-label-${p}`).textContent = ui.nav[p];
+  });
+
+  document.getElementById('btn-portfolio').textContent = ui.hero.btnPortfolio;
+  document.getElementById('btn-contact').textContent   = ui.hero.btnContact;
+
+  document.getElementById('label-offres').textContent = ui.offres.label;
+  document.getElementById('title-offres').textContent = ui.offres.title;
+
+  document.getElementById('title-portfolio').textContent = ui.portfolio.title;
+  Object.entries(ui.portfolio.filters).forEach(([tag, label]) => {
+    const btn = document.getElementById(`fb-${tag}`);
+    if (btn) btn.textContent = label;
+  });
+
+  document.getElementById('label-name').textContent    = ui.contact.labelName;
+  document.getElementById('label-email').textContent   = ui.contact.labelEmail;
+  document.getElementById('label-mission').textContent = ui.contact.labelMission;
+  document.getElementById('label-message').textContent = ui.contact.labelMessage;
+  document.getElementById('input-name').placeholder    = ui.contact.placeholderName;
+  document.getElementById('textarea-msg').placeholder  = ui.contact.placeholderMsg;
+  document.getElementById('btn-send').textContent      = ui.contact.btnSend;
+
+  document.getElementById('label-stack').textContent      = ui.about.labelStack;
+  document.getElementById('label-experience').textContent = ui.about.labelExperience;
+  document.getElementById('label-perso').textContent      = ui.about.labelPerso;
+}
+
 function renderProfile(p) {
   document.title = p.name;
   document.getElementById('nav-logo').textContent = p.initials;
@@ -32,8 +74,7 @@ function renderProfile(p) {
 
   document.getElementById('contact-title').textContent = p.contact.title;
   document.getElementById('contact-text').textContent = p.contact.text;
-  const linkedin = document.getElementById('contact-linkedin');
-  linkedin.href = p.linkedin;
+  document.getElementById('contact-linkedin').href = p.linkedin;
   document.getElementById('mission-select').innerHTML =
     '<option>— Sélectionner —</option>' +
     p.contact.missionTypes.map(t => `<option>${t}</option>`).join('');
@@ -43,12 +84,12 @@ function renderProfile(p) {
     e.preventDefault();
     const btn = form.querySelector('.btn-send');
     const data = {
-      name:    form.querySelector('input[type="text"]').value,
+      name:    document.getElementById('input-name').value,
       email:   form.querySelector('input[type="email"]').value,
       mission: form.querySelector('select').value,
-      message: form.querySelector('textarea').value,
+      message: document.getElementById('textarea-msg').value,
     };
-    btn.textContent = 'Envoi…';
+    btn.textContent = '…';
     btn.disabled = true;
     try {
       const res = await fetch(`https://formspree.io/f/${p.formspreeId}`, {
@@ -57,14 +98,14 @@ function renderProfile(p) {
         body: JSON.stringify(data),
       });
       if (res.ok) {
-        btn.textContent = 'Message envoyé ✓';
+        btn.textContent = _ui.lang === 'en' ? 'Sent ✓' : 'Message envoyé ✓';
         btn.style.background = 'var(--cyan)';
         form.reset();
       } else {
         throw new Error();
       }
     } catch {
-      btn.textContent = 'Erreur — réessayer';
+      btn.textContent = _ui.lang === 'en' ? 'Error — retry' : 'Erreur — réessayer';
       btn.style.background = 'var(--ocre)';
       btn.disabled = false;
     }
@@ -81,7 +122,6 @@ function renderProfile(p) {
           <span class="tl-detail">${t.detail}</span>
         </div>
       </div>`).join('')}</div>`;
-
 
   ['home', 'portfolio', 'about'].forEach(page => {
     document.getElementById(`footer-copy-${page}`).textContent = p.copyright;
@@ -199,14 +239,14 @@ function openProject(id) {
 
   const techEl = document.getElementById('pmodal-tech');
   if (p.tech && p.tech.length) {
-    techEl.innerHTML = `<p class="pmodal-section-label">// stack</p><div class="tech-tags">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>`;
+    techEl.innerHTML = `<p class="pmodal-section-label">${_ui.modal.stack}</p><div class="tech-tags">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>`;
     techEl.style.display = '';
   } else { techEl.style.display = 'none'; }
 
   const linksEl = document.getElementById('pmodal-links');
   if (p.links && p.links.length) {
     const icons = { web: '↗', youtube: '▶', github: '⌥' };
-    linksEl.innerHTML = `<p class="pmodal-section-label" style="margin-top:1.5rem;">// liens</p><div class="pmodal-links-list">${
+    linksEl.innerHTML = `<p class="pmodal-section-label" style="margin-top:1.5rem;">${_ui.modal.liens}</p><div class="pmodal-links-list">${
       p.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener" class="plink plink-${l.type || 'web'}">${icons[l.type] || '↗'} ${l.label}</a>`).join('')
     }</div>`;
     linksEl.style.display = '';
@@ -248,12 +288,16 @@ document.addEventListener('keydown', e => {
 });
 
 const load = path => fetch(path).then(r => r.json());
+const lang = localStorage.getItem('lang') || 'fr';
+const suffix = lang === 'en' ? '-en' : '';
 
 Promise.all([
-  load('assets/data/profile.json'),
-  load('assets/data/offres.json'),
+  load(`assets/data/profile${suffix}.json`),
+  load(`assets/data/offres${suffix}.json`),
   load('assets/data/projects.json'),
-]).then(([profile, offres, projects]) => {
+  load(`assets/data/ui${suffix}.json`),
+]).then(([profile, offres, projects, ui]) => {
+  renderUI(ui);
   renderProfile(profile);
   renderOffres(offres);
   renderProjects(projects);
