@@ -52,11 +52,14 @@
       { "variant": "vc3", "title": "Sewing & Patterns",  "desc": "Self-taught for many years. Designing and making to measure — soft toys, pouches, garments — from pattern to finished piece." }
     ],
     "maker": [
-      { "img": "assets/img/maker/couture.jpg",      "svg": "assets/svg/maker/couture.svg",      "label": "Sewing & Scale modelling" },
-      { "img": "assets/img/maker/peinture.jpg",     "svg": "assets/svg/maker/peinture.svg",     "label": "Painting"                },
-      { "img": "assets/img/maker/modelisation.jpg", "svg": "assets/svg/maker/modelisation.svg", "label": "3D Modelling"            },
-      { "img": "assets/img/maker/fablab.jpg",       "svg": "assets/svg/maker/fablab.svg",       "label": "Fablab"                  },
-      { "img": "assets/img/maker/dessin.jpg",       "svg": "assets/svg/maker/dessin.svg",       "label": "Drawing"                 }
+      { "img": "assets/img/maker/maker1.jpg", "svg": "assets/svg/maker/maker1.svg", "label": "Painting"            },
+      { "img": "assets/img/maker/maker2.jpg", "svg": "assets/svg/maker/maker2.svg", "label": "Observational Drawing" },
+      { "img": "assets/img/maker/maker3.jpg", "svg": "assets/svg/maker/maker3.svg", "label": "Sewing"              },
+      { "img": "assets/img/maker/maker4.jpg", "svg": "assets/svg/maker/maker4.svg", "label": "Ceramics"            },
+      { "img": "assets/img/maker/maker5.jpg", "svg": "assets/svg/maker/maker5.svg", "label": "Drawing"             },
+      { "img": "assets/img/maker/maker6.jpg", "svg": "assets/svg/maker/maker6.svg", "label": "Watercolour"         },
+      { "img": "assets/img/maker/maker7.jpg", "svg": "assets/svg/maker/maker7.svg", "label": "Life Drawing"        },
+      { "img": "assets/img/maker/maker8.jpg", "svg": "assets/svg/maker/maker8.svg", "label": "Life Drawing"        }
     ]
   }
 }
