@@ -56,20 +56,20 @@
     </div>
     <form class="cform" onsubmit="return false">
       <div class="fg">
-        <label>Nom</label>
-        <input type="text" placeholder="Votre nom">
+        <label for="input-name">Nom</label>
+        <input type="text" id="input-name" name="name" placeholder="Votre nom">
       </div>
       <div class="fg">
-        <label>Email</label>
-        <input type="email" placeholder="votre@email.com">
+        <label for="input-email">Email</label>
+        <input type="email" id="input-email" name="email" placeholder="votre@email.com">
       </div>
       <div class="fg">
-        <label>Type de mission</label>
-        <select id="mission-select"></select>
+        <label for="mission-select">Type de mission</label>
+        <select id="mission-select" name="mission"></select>
       </div>
       <div class="fg">
-        <label>Message</label>
-        <textarea rows="3" placeholder="Décrivez votre projet…"></textarea>
+        <label for="textarea-msg">Message</label>
+        <textarea id="textarea-msg" name="message" rows="3" placeholder="Décrivez votre projet…"></textarea>
       </div>
       <button class="btn-send">Envoyer</button>
     </form>
