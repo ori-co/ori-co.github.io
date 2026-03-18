@@ -1,0 +1,47 @@
+{
+  "lang": "fr",
+  "nav": {
+    "home":      "Accueil",
+    "portfolio": "Portfolio",
+    "about":     "À propos"
+  },
+  "hero": {
+    "btnPortfolio": "Voir les réalisations",
+    "btnContact":   "Me contacter"
+  },
+  "offres": {
+    "label": "// offres",
+    "title": "Trois façons de travailler ensemble"
+  },
+  "portfolio": {
+    "title": "Réalisations",
+    "filters": {
+      "all":       "Tous",
+      "ar":        "AR",
+      "vr":        "VR",
+      "3d":        "3D",
+      "ia":        "IA / NLP",
+      "salon":     "Salon",
+      "mediation": "Médiation",
+      "education": "Éducation"
+    }
+  },
+  "contact": {
+    "labelName":        "Nom",
+    "placeholderName":  "Votre nom",
+    "labelEmail":       "Email",
+    "labelMission":     "Type de mission",
+    "labelMessage":     "Message",
+    "placeholderMsg":   "Décrivez votre projet…",
+    "btnSend":          "Envoyer"
+  },
+  "about": {
+    "labelStack":      "// Stack",
+    "labelExperience": "// Expérience",
+    "labelPerso":      "// Projets personnels"
+  },
+  "modal": {
+    "stack": "// stack",
+    "liens": "// liens"
+  }
+}

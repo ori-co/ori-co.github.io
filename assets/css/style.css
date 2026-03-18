@@ -50,6 +50,12 @@ nav {
 #nav-home.active { color:var(--ocre) !important; }
 #nav-portfolio.active { color:var(--cyan) !important; }
 #nav-about.active { color:var(--violet) !important; }
+.lang-toggle {
+  font-family:'DM Mono',monospace; font-size:0.72rem; letter-spacing:0.15em;
+  background:none; border:0.5px solid var(--border); color:var(--muted);
+  padding:0.25rem 0.6rem; cursor:pointer; transition:color 0.2s, border-color 0.2s;
+}
+.lang-toggle:hover { color:var(--text); border-color:var(--muted); }
 
 /* PAGES */
 .page { display:none; padding-top:60px; min-height:100vh; }

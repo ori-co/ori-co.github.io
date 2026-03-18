@@ -1,0 +1,47 @@
+{
+  "lang": "en",
+  "nav": {
+    "home":      "Home",
+    "portfolio": "Portfolio",
+    "about":     "About"
+  },
+  "hero": {
+    "btnPortfolio": "View projects",
+    "btnContact":   "Get in touch"
+  },
+  "offres": {
+    "label": "// services",
+    "title": "Three ways to work together"
+  },
+  "portfolio": {
+    "title": "Projects",
+    "filters": {
+      "all":       "All",
+      "ar":        "AR",
+      "vr":        "VR",
+      "3d":        "3D",
+      "ia":        "AI / NLP",
+      "salon":     "Trade show",
+      "mediation": "Mediation",
+      "education": "Education"
+    }
+  },
+  "contact": {
+    "labelName":       "Name",
+    "placeholderName": "Your name",
+    "labelEmail":      "Email",
+    "labelMission":    "Project type",
+    "labelMessage":    "Message",
+    "placeholderMsg":  "Describe your project…",
+    "btnSend":         "Send"
+  },
+  "about": {
+    "labelStack":      "// Stack",
+    "labelExperience": "// Experience",
+    "labelPerso":      "// Personal projects"
+  },
+  "modal": {
+    "stack": "// stack",
+    "liens": "// links"
+  }
+}

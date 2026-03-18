@@ -17,10 +17,11 @@
 <nav>
   <span class="nav-logo" id="nav-logo" onclick="showPage('home')"></span>
   <ul class="nav-links">
-    <li><a onclick="showPage('home')" id="nav-home" class="active"><span class="nav-dot"></span>Accueil</a></li>
-    <li><a onclick="showPage('portfolio')" id="nav-portfolio"><span class="nav-dot"></span>Portfolio</a></li>
-    <li><a onclick="showPage('about')" id="nav-about"><span class="nav-dot"></span>À propos</a></li>
+    <li><a onclick="showPage('home')" id="nav-home" class="active"><span class="nav-dot"></span><span id="nav-label-home"></span></a></li>
+    <li><a onclick="showPage('portfolio')" id="nav-portfolio"><span class="nav-dot"></span><span id="nav-label-portfolio"></span></a></li>
+    <li><a onclick="showPage('about')" id="nav-about"><span class="nav-dot"></span><span id="nav-label-about"></span></a></li>
   </ul>
+  <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()"></button>
 </nav>
 
 <!-- PAGE 1 -->
@@ -32,8 +33,8 @@
       <h1 class="hero-title" id="hero-title"></h1>
       <p class="hero-sub" id="hero-sub"></p>
       <div class="hero-ctas">
-        <button class="btn-p" onclick="showPage('portfolio')">Voir les réalisations</button>
-        <button class="btn-s" onclick="document.getElementById('ca').scrollIntoView({behavior:'smooth'})">Me contacter</button>
+        <button class="btn-p" id="btn-portfolio" onclick="showPage('portfolio')"></button>
+        <button class="btn-s" id="btn-contact" onclick="document.getElementById('ca').scrollIntoView({behavior:'smooth'})"></button>
       </div>
     </div>
     <div class="hero-right" style="display:flex;align-items:center;justify-content:center;padding:3rem;position:relative;">
@@ -43,8 +44,8 @@
   </section>
 
   <section class="section">
-    <p class="s-label">// offres</p>
-    <h2 class="s-title">Trois façons de travailler ensemble</h2>
+    <p class="s-label" id="label-offres"></p>
+    <h2 class="s-title" id="title-offres"></h2>
     <div class="offres" id="offres"></div>
   </section>
 
@@ -56,22 +57,22 @@
     </div>
     <form class="cform" onsubmit="return false">
       <div class="fg">
-        <label for="input-name">Nom</label>
-        <input type="text" id="input-name" name="name" placeholder="Votre nom">
+        <label id="label-name" for="input-name"></label>
+        <input type="text" id="input-name" name="name">
       </div>
       <div class="fg">
-        <label for="input-email">Email</label>
+        <label id="label-email" for="input-email"></label>
         <input type="email" id="input-email" name="email" placeholder="votre@email.com">
       </div>
       <div class="fg">
-        <label for="mission-select">Type de mission</label>
+        <label id="label-mission" for="mission-select"></label>
         <select id="mission-select" name="mission"></select>
       </div>
       <div class="fg">
-        <label for="textarea-msg">Message</label>
-        <textarea id="textarea-msg" name="message" rows="3" placeholder="Décrivez votre projet…"></textarea>
+        <label id="label-message" for="textarea-msg"></label>
+        <textarea id="textarea-msg" name="message" rows="3"></textarea>
       </div>
-      <button class="btn-send">Envoyer</button>
+      <button class="btn-send" id="btn-send"></button>
     </form>
   </section>
 
@@ -87,18 +88,18 @@
   <div class="port-header">
     <div>
       <p class="hero-name" id="port-name"></p>
-      <h1>Réalisations</h1>
+      <h1 id="title-portfolio"></h1>
     </div>
   </div>
   <div class="filters">
-    <button class="fb active" onclick="fp('all',this)">Tous</button>
-    <button class="fb" onclick="fp('ar',this)">AR</button>
-    <button class="fb" onclick="fp('vr',this)">VR</button>
-    <button class="fb" onclick="fp('3d',this)">3D</button>
-    <button class="fb" onclick="fp('ia',this)">IA / NLP</button>
-    <button class="fb" onclick="fp('salon',this)">Salon</button>
-    <button class="fb" onclick="fp('mediation',this)">Médiation</button>
-    <button class="fb" onclick="fp('education',this)">Éducation</button>
+    <button class="fb active" id="fb-all"       onclick="fp('all',this)"></button>
+    <button class="fb"        id="fb-ar"        onclick="fp('ar',this)"></button>
+    <button class="fb"        id="fb-vr"        onclick="fp('vr',this)"></button>
+    <button class="fb"        id="fb-3d"        onclick="fp('3d',this)"></button>
+    <button class="fb"        id="fb-ia"        onclick="fp('ia',this)"></button>
+    <button class="fb"        id="fb-salon"     onclick="fp('salon',this)"></button>
+    <button class="fb"        id="fb-mediation" onclick="fp('mediation',this)"></button>
+    <button class="fb"        id="fb-education" onclick="fp('education',this)"></button>
   </div>
   <div class="pgrid" id="pgrid"></div>
   <footer>
@@ -128,18 +129,18 @@
   <div class="about-content">
     <div class="parcours-grid">
       <div>
-        <p class="s-label">// Stack</p>
+        <p class="s-label" id="label-stack"></p>
         <div class="skills" id="skills"></div>
       </div>
       <div>
-        <p class="s-label">// Expérience</p>
+        <p class="s-label" id="label-experience"></p>
         <div id="about-timeline"></div>
       </div>
     </div>
   </div>
 
   <div class="maker-s">
-    <p class="s-label">// Projets personnels</p>
+    <p class="s-label" id="label-perso"></p>
     <div class="maker-layout">
       <div class="maker-left">
         <div class="val-cards" id="val-cards"></div>
