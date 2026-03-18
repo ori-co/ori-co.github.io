@@ -167,13 +167,21 @@ function renderValues(values) {
     </div>`).join('');
 }
 
+let _makerImages = [];
+
 function renderMaker(tiles) {
-  document.getElementById('mgrid').innerHTML = tiles.map(t => `
-    <div class="mtile">
+  _makerImages = tiles.map(t => t.img);
+  document.getElementById('mgrid').innerHTML = tiles.map((t, i) => `
+    <div class="mtile" onclick="openMakerLightbox(${i})" style="cursor:zoom-in;">
       <img src="${t.img}" alt="${t.label}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
-      <img src="${t.svg}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;" onerror="this.style.display='none'">
+      <img src="${t.svg}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.25;" onerror="this.style.display='none'">
       <span class="mlabel">${t.label}</span>
     </div>`).join('');
+}
+
+function openMakerLightbox(index) {
+  _lbImages = _makerImages;
+  openLightbox(index);
 }
 
 let _projects = [];
