@@ -1,8 +1,22 @@
 [
-  { "name": "AR / VR",                      "level": 5, "color": "cyan"   },
-  { "name": "Unity · Unreal · Roblox",      "level": 4, "color": "violet" },
-  { "name": "IA Générative · LLM",          "level": 4, "color": "cyan"   },
-  { "name": "Python · JavaScript",          "level": 3, "color": "violet" },
-  { "name": "Design Thinking · Facilitation","level": 4, "color": "cyan"   },
-  { "name": "Modélisation 3D · Blender",    "level": 3, "color": "violet" }
+  {
+    "category": "XR",
+    "items": ["AR / VR", "HoloLens 2 · MRTK", "Looking Glass", "Aximmetry"]
+  },
+  {
+    "category": "Temps réel & 3D",
+    "items": ["Unity", "Unreal Engine", "Blender · Modélisation 3D"]
+  },
+  {
+    "category": "IA",
+    "items": ["IA Générative · LLM", "TensorFlow.js", "Python", "Voicebot"]
+  },
+  {
+    "category": "Web",
+    "items": ["React.js", "Three.js", "Node.js · JavaScript", "Prismic"]
+  },
+  {
+    "category": "Méthodes",
+    "items": ["Design Thinking · Facilitation", "Tech Lead · Product Owner", "Prototypage rapide"]
+  }
 ]

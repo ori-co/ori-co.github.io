@@ -72,7 +72,15 @@ function renderProfile(p) {
 
   document.getElementById('about-hero-title').innerHTML = p.about.heroTitleHtml;
   document.getElementById('about-hero-sub').textContent = p.about.heroSub;
-  document.getElementById('about-bio').innerHTML = p.about.bio.map(t => `<p>${t}</p>`).join('');
+  document.getElementById('about-timeline').innerHTML =
+    `<div class="timeline">${p.about.timeline.map(t => `
+      <div class="tl-item${t.current ? ' tl-current' : ''}${t.edu ? ' tl-edu' : ''}">
+        <span class="tl-year">${t.period}</span>
+        <div class="tl-body">
+          <span class="tl-title">${t.title}</span>
+          <span class="tl-detail">${t.detail}</span>
+        </div>
+      </div>`).join('')}</div>`;
 
 
   ['home', 'portfolio', 'about'].forEach(page => {
@@ -95,8 +103,11 @@ function renderOffres(offres) {
 }
 
 function renderSkills(skills) {
-  document.getElementById('skills').innerHTML =
-    `<div class="tech-tags">${skills.map(s => `<span class="tech-tag">${s.name}</span>`).join('')}</div>`;
+  document.getElementById('skills').innerHTML = skills.map(cat => `
+    <div class="skill-cat">
+      <p class="skill-cat-label">${cat.category}</p>
+      <div class="tech-tags">${cat.items.map(i => `<span class="tech-tag">${i}</span>`).join('')}</div>
+    </div>`).join('');
 }
 // Version avec niveau (dots) — conservée pour référence
 // function renderSkills(skills) {

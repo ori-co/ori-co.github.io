@@ -111,24 +111,30 @@
 
 <!-- PAGE 3 À PROPOS -->
 <div class="page" id="page-about">
-  <div class="about-hero">
-    <div class="about-left">
+
+  <div class="about-header">
+    <div class="about-header-text">
       <p class="hero-name" id="about-name"></p>
       <h1 id="about-hero-title"></h1>
-      <p id="about-hero-sub"></p>
+      <p class="about-header-sub" id="about-hero-sub"></p>
     </div>
-    <div class="about-right">
-      <div style="position:relative;width:100%;max-width:300px;aspect-ratio:4/5;clip-path:inset(0);border:2px solid #23262B;transform:translateZ(0);will-change:transform;">
-        <img src="assets/svg/about/about-visual.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
-        <img src="assets/img/about/oriane_lowscale.png" alt="Oriane Cosson" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;" onerror="this.style.display='none'">
-      </div>
+    <div class="about-portrait">
+      <img src="assets/svg/about/about-visual.svg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="assets/img/about/oriane_lowscale.png" alt="Oriane Cosson" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;" onerror="this.style.display='none'">
     </div>
   </div>
 
   <div class="about-content">
-    <p class="s-label">// Parcours</p>
-    <div id="about-bio"></div>
-    <div class="skills" id="skills"></div>
+    <div class="parcours-grid">
+      <div>
+        <p class="s-label">// Stack</p>
+        <div class="skills" id="skills"></div>
+      </div>
+      <div>
+        <p class="s-label">// Expérience</p>
+        <div id="about-timeline"></div>
+      </div>
+    </div>
   </div>
 
   <div class="maker-s">
