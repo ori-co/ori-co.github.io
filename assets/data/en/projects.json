@@ -85,7 +85,8 @@
     "gallery": ["assets/img/projects/augmented-worker.png","assets/img/projects/augmentedworker-campusfab.jpg", "assets/img/projects/augmentedworker_1.png"],
     "video": null,
     "links": [
-      { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/philippe-pruvost-89215255_cloud-industriedufutur-robotique-activity-6868914984529739776-MDRb", "type": "web" }
+      { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/philippe-pruvost-89215255_cloud-industriedufutur-robotique-activity-6868914984529739776-MDRb", "type": "web" },
+      { "label": "Press", "url": "https://www.voltage.fr/a-la-decouverte-du-metaverse-a-la-cite-des-sciences-de-paris", "type": "web"}
     ]
   },
   {
