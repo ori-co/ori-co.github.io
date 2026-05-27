@@ -17,8 +17,11 @@ const onXrLoaded = () => {
     imageTargetData: [cardBack],
   })
 
-  // Landing-page module shows the camera-permission screen
-  XR8.addCameraPipelineModule(LandingPage.pipelineModule())
+  // Landing-page module shows the camera-permission screen.
+  // Guard: landing-page.js is async — may not be ready when xrloaded fires.
+  if (typeof LandingPage !== 'undefined') {
+    XR8.addCameraPipelineModule(LandingPage.pipelineModule())
+  }
 }
 
 // Initialise the ECS scene (registers spaces, entities, components from expanse)

@@ -10,11 +10,11 @@
   <meta property="og:title" content="Expérience AR — Oriane Cosson">
   <meta property="og:description" content="Scannez la carte de visite pour découvrir les offres en réalité augmentée.">
 
-  <!-- 8thWall XR engine (SLAM disabled — image target only) -->
-  <script async src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/xrweb.js?allowedDevices=mobile&slam=false"></script>
+  <!-- 8thWall XR engine (image target only, no SLAM preload) -->
+  <script async src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js"></script>
 
   <!-- 8thWall landing page (camera permission overlay) -->
-  <script async src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/index.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js"></script>
 
   <!-- 8thWall ECS runtime (must load before bundle.js) -->
   <script src="./external/runtime/runtime.js"></script>
