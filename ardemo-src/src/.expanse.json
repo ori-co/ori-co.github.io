@@ -1,0 +1,132 @@
+{
+  "properties": {},
+
+  "assets": {
+    "model-ocre":   { "type": "gltf", "src": "assets/models/ARScene_plateform_ocre.glb" },
+    "model-cyan":   { "type": "gltf", "src": "assets/models/ARScene_plateform_cyan.glb" },
+    "model-violet": { "type": "gltf", "src": "assets/models/ARScene_plateform_violet.glb" }
+  },
+
+  "spaces": {
+    "ar-main": {
+      "default": true,
+
+      "entities": {
+        "camera": {
+          "components": {
+            "camera": {
+              "fov": 75,
+              "near": 0.001,
+              "far": 200
+            },
+            "ar-camera": {}
+          }
+        },
+
+        "ambient-light": {
+          "components": {
+            "ambient-light": {
+              "intensity": 0.65,
+              "color": "#ffffff"
+            }
+          }
+        },
+
+        "sun": {
+          "components": {
+            "directional-light": {
+              "intensity": 1.1,
+              "color": "#fff8ef",
+              "castShadow": false
+            },
+            "transform": {
+              "position": { "x": 2, "y": 5, "z": 3 }
+            }
+          }
+        },
+
+        "ar-anchor": {
+          "components": {
+            "image-target": {
+              "name": "ImageTarget_faceB"
+            },
+            "platform-manager": {}
+          },
+
+          "children": {
+            "scale-root": {
+              "components": {
+                "transform": {
+                  "scale": { "x": 0.12, "y": 0.12, "z": 0.12 }
+                }
+              },
+
+              "children": {
+                "platform-ocre": {
+                  "components": {
+                    "model": { "asset": "model-ocre" },
+                    "platform-state": {
+                      "platformId": "ocre",
+                      "offerLabel": "Facilitation & Innovation",
+                      "physicsNodePrefix": "Cube_Dispersed_",
+                      "physicsNodeCount": 5
+                    },
+                    "gyro-physics": {
+                      "cylinderRadius": 0.7,
+                      "cylinderCenterX": 0,
+                      "cylinderCenterZ": -1.8
+                    }
+                  }
+                },
+
+                "platform-cyan": {
+                  "components": {
+                    "model": { "asset": "model-cyan" },
+                    "platform-state": {
+                      "platformId": "cyan",
+                      "offerLabel": "AR / VR & 3D",
+                      "physicsNodePrefix": "Ico_Small_",
+                      "physicsNodeCount": 4
+                    },
+                    "gyro-physics": {
+                      "cylinderRadius": 0.7,
+                      "cylinderCenterX": -1.8,
+                      "cylinderCenterZ": 1.2
+                    }
+                  }
+                },
+
+                "platform-violet": {
+                  "components": {
+                    "model": { "asset": "model-violet" },
+                    "platform-state": {
+                      "platformId": "violet",
+                      "offerLabel": "Stratégie & Prototypage",
+                      "physicsNodePrefix": "Sphere_Small_",
+                      "physicsNodeCount": 4
+                    },
+                    "gyro-physics": {
+                      "cylinderRadius": 0.7,
+                      "cylinderCenterX": 1.8,
+                      "cylinderCenterZ": 1.2
+                    }
+                  }
+                },
+
+                "connections": {
+                  "components": {
+                    "connection-line": {
+                      "platform0Id": "platform-ocre",
+                      "platform1Id": "platform-cyan",
+                      "platform2Id": "platform-violet"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

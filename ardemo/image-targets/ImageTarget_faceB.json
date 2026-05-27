@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 319,
+    "left": 60,
+    "width": 961,
+    "height": 1281,
+    "isRotated": true,
+    "originalWidth": 1080,
+    "originalHeight": 1920
+  },
+  "imagePath": "image-targets/ImageTarget_faceB_luminance.png",
+  "metadata": null,
+  "name": "ImageTarget_faceB",
+  "resources": {
+    "originalImage": "ImageTarget_faceB_original.png",
+    "croppedImage": "ImageTarget_faceB_cropped.png",
+    "thumbnailImage": "ImageTarget_faceB_thumbnail.png",
+    "luminanceImage": "ImageTarget_faceB_luminance.png"
+  },
+  "created": 1779907559478,
+  "updated": 1779907657267
+}
