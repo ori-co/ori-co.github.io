@@ -37,7 +37,7 @@
           "headset": "disabled",
           "phone": "AR",
           "world": {
-            "disableWorldTracking": true
+            "disableWorldTracking": false
           }
         }
       },
@@ -155,7 +155,7 @@
       },
       "name": "ARScene_plateform_cyan.glb",
       "order": 7.973549248495258,
-      "hidden": true
+      "hidden": false
     },
     "10a5ec45-6de4-4dab-9b4e-79e02332a54c": {
       "id": "10a5ec45-6de4-4dab-9b4e-79e02332a54c",
@@ -192,7 +192,7 @@
       },
       "name": "ARScene_plateform_ocre.glb",
       "order": 8.098904964092462,
-      "hidden": true
+      "hidden": false
     },
     "9067b348-8a63-44e7-87a6-07088d6eacd4": {
       "id": "9067b348-8a63-44e7-87a6-07088d6eacd4",
@@ -226,14 +226,14 @@
       },
       "name": "ARScene_plateform_violet.glb",
       "order": 8.224260679689667,
-      "hidden": true
+      "hidden": false
     },
     "4e882f92-0a55-4250-a554-bdc9d028fc68": {
       "id": "4e882f92-0a55-4250-a554-bdc9d028fc68",
       "position": [
         0,
-        0.3446022360216899,
-        0.11105315662457027
+        0.172301118010845,
+        0.055526578312285135
       ],
       "rotation": [
         0.7071067811865474,
@@ -242,9 +242,9 @@
         0.7071067811865477
       ],
       "scale": [
-        0.43070341238773996,
-        0.013220613883877422,
-        0.3822597447518168
+        0.21535170619386998,
+        0.006610306941938711,
+        0.19112987237590845
       ],
       "geometry": {
         "type": "cylinder",
@@ -268,9 +268,9 @@
     "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730": {
       "id": "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730",
       "position": [
-        -0.38763307114896606,
-        -0.22935584685109003,
-        0.11095310453903118
+        -0.19381653557448303,
+        -0.11467792342554504,
+        0.05547655226951559
       ],
       "rotation": [
         0.7071067811865474,
@@ -279,9 +279,9 @@
         0.7071067811865477
       ],
       "scale": [
-        0.43070341238773996,
-        0.013220613883877422,
-        0.3822597447518168
+        0.21535170619386998,
+        0.006610306941938711,
+        0.19112987237590845
       ],
       "geometry": {
         "type": "cylinder",
@@ -306,9 +306,9 @@
     "9c71edb4-7bd2-4942-8296-321c42876638": {
       "id": "9c71edb4-7bd2-4942-8296-321c42876638",
       "position": [
-        0.38774576505615643,
-        -0.22935584685109003,
-        0.11105315662457038
+        0.19387288252807822,
+        -0.11467792342554504,
+        0.05552657831228519
       ],
       "rotation": [
         0.7071067811865474,
@@ -317,9 +317,9 @@
         0.7071067811865477
       ],
       "scale": [
-        0.43070341238773996,
-        0.013220613883877422,
-        0.3822597447518168
+        0.21535170619386998,
+        0.006610306941938711,
+        0.19112987237590845
       ],
       "geometry": {
         "type": "cylinder",
@@ -344,118 +344,127 @@
       "id": "4612ef91-a58b-46df-8c86-804473df6b57",
       "position": [
         0,
-        14.238928363738465,
-        1.1102230246251565e-16
+        13.09600526832757,
+        0.0016253430613590858
       ],
       "rotation": [
-        -1.6242815018856243e-14,
+        -0.043619387365336,
         0,
         0,
-        1
+        0.9990482215818578
       ],
       "scale": [
-        0.9999999999999994,
-        18.252452620166952,
-        0.9999999999999997
+        0.9999999999999996,
+        10,
+        10
       ],
       "geometry": null,
       "material": null,
       "parentId": "4e882f92-0a55-4250-a554-bdc9d028fc68",
       "components": {},
       "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
         "width": 100,
-        "height": 10,
+        "height": 25,
         "text": "Atelier Vision & Acculturation",
         "color": "#c8a86c",
-        "fontSize": 12,
+        "fontSize": 10,
         "type": "3d",
         "font": {
           "type": "font",
           "font": "Futura"
         },
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "borderRadius": 5
       },
       "name": "Label",
       "order": 9.540336698721632,
-      "hidden": true
+      "hidden": false
     },
     "cf2ccdf3-25dc-4d7c-97e2-46d6871c7f46": {
       "id": "cf2ccdf3-25dc-4d7c-97e2-46d6871c7f46",
       "position": [
-        0,
-        14.238928363738465,
-        1.1102230246251565e-16
+        -1.1102230246251565e-16,
+        14.810396082777528,
+        -0.0008018703897962887
       ],
       "rotation": [
-        -1.6242815018856243e-14,
+        -0.043619387365336,
         0,
         0,
-        1
+        0.9990482215818578
       ],
       "scale": [
-        0.9999999999999994,
-        18.252452620166952,
-        0.9999999999999997
+        0.9999999999999996,
+        10,
+        10
       ],
       "geometry": null,
       "material": null,
       "parentId": "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730",
       "components": {},
       "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
         "width": 100,
-        "height": 10,
+        "height": 25,
         "text": "Prototypage & Developpement",
         "color": "#5bc8c0",
-        "fontSize": 12,
+        "fontSize": 10,
         "type": "3d",
         "font": {
           "type": "font",
           "font": "Futura"
         },
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "borderRadius": 5
       },
       "name": "Label",
       "order": 9.140348162823615,
-      "hidden": true
+      "hidden": false
     },
     "e05ebec9-e43a-43bc-9f27-f5a3d796dede": {
       "id": "e05ebec9-e43a-43bc-9f27-f5a3d796dede",
       "position": [
-        0,
-        14.238928363738465,
-        1.1102230246251565e-16
+        2.220446049250313e-16,
+        14.810383740110296,
+        -0.0008234726715625751
       ],
       "rotation": [
-        -1.6242815018856243e-14,
+        -0.043619387365336,
         0,
         0,
-        1
+        0.9990482215818578
       ],
       "scale": [
-        0.9999999999999994,
-        18.252452620166952,
-        0.9999999999999997
+        0.9999999999999996,
+        10,
+        10
       ],
       "geometry": null,
       "material": null,
       "parentId": "9c71edb4-7bd2-4942-8296-321c42876638",
       "components": {},
       "ui": {
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
         "width": 100,
-        "height": 10,
+        "height": 25,
         "text": "Direction de Projet Innovation",
         "color": "#9b8ec4",
-        "fontSize": 12,
+        "fontSize": 10,
         "type": "3d",
         "font": {
           "type": "font",
           "font": "Futura"
         },
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "borderRadius": 5
       },
       "name": "Label",
       "order": 10.156472634020272,
-      "hidden": true
+      "hidden": false
     },
     "ae7270a2-51af-4bb4-9383-0168b21f7a7a": {
       "id": "ae7270a2-51af-4bb4-9383-0168b21f7a7a",
@@ -488,7 +497,8 @@
         "type": "overlay"
       },
       "name": "Version#",
-      "order": 3.733576123742947
+      "order": 3.733576123742947,
+      "hidden": true
     }
   },
   "spaces": {
