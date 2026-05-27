@@ -443,6 +443,39 @@
       "name": "Label",
       "order": 10.156472634020272,
       "hidden": true
+    },
+    "ae7270a2-51af-4bb4-9383-0168b21f7a7a": {
+      "id": "ae7270a2-51af-4bb4-9383-0168b21f7a7a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "ui": {
+        "width": 100,
+        "height": 100,
+        "text": "V1.1 - Tap to show palteforms",
+        "color": "#ffffff",
+        "fontSize": 12,
+        "type": "overlay"
+      },
+      "name": "Version#",
+      "order": 3.733576123742947
     }
   },
   "spaces": {
