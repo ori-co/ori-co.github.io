@@ -2,12 +2,14 @@ import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
   name: 'disc-reveal',
-  add :(world, cursor) => {
-    const eid = cursor.eid
-    world.events.addListener(world.events.globalId, ecs.input.SCREEN_TOUCH_END, (e: any) => {
-      if (e.target !== eid) return
+  add :(world, component) => {
+    const eid = component.eid
+    console.log('[disc-reveal] initialized, eid:', eid)
+
+    world.events.addListener(eid, ecs.input.SCREEN_TOUCH_START, () => {
+      console.log('[disc-reveal] tap on disc! showing children...')
       for (const childEid of world.getChildren(eid)) {
-        ecs.Hidden.remove(world, childEid)
+        world.getEntity(childEid).show()
       }
     })
   },

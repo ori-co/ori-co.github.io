@@ -32,10 +32,13 @@
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "disabled",
-          "xrCameraType": "world",
+          "desktop": "3D",
+          "xrCameraType": "3dOnly",
           "headset": "disabled",
-          "phone": "AR"
+          "phone": "3D",
+          "world": {
+            "disableWorldTracking": true
+          }
         }
       },
       "components": {},
@@ -45,11 +48,11 @@
       "name": "Camera",
       "position": [
         0,
-        2,
-        3
+        0.9018198838289004,
+        0.741421885372211
       ],
       "rotation": [
-        0.0004436887233141012,
+        0.00044368872331410124,
         0.9659425615285845,
         -0.25875089860082223,
         0.0016563336561801576
@@ -239,7 +242,7 @@
         0.7071067811865477
       ],
       "scale": [
-        0.43070341238774,
+        0.43070341238773996,
         0.013220613883877422,
         0.3822597447518168
       ],
@@ -254,13 +257,19 @@
       },
       "parentId": "1e91f161-0d44-46aa-9293-a99c9fda4cfc",
       "components": {
-        "036d1527-1014-4676-97f8-e7fbc9208cf7": {
-          "id": "036d1527-1014-4676-97f8-e7fbc9208cf7",
+        "afa9b0a0-345d-418d-949d-bfbceaa96d0b": {
+          "id": "afa9b0a0-345d-418d-949d-bfbceaa96d0b",
           "name": "disc-reveal"
         }
       },
       "name": "Trigger (1)",
-      "order": 9.264562516122826
+      "order": 1.3344658391151034,
+      "collider": {
+        "geometry": {
+          "type": "auto"
+        },
+        "eventOnly": true
+      }
     },
     "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730": {
       "id": "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730",
@@ -276,7 +285,7 @@
         0.7071067811865477
       ],
       "scale": [
-        0.43070341238774,
+        0.43070341238773996,
         0.013220613883877422,
         0.3822597447518168
       ],
@@ -289,11 +298,22 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "components": {},
+      "components": {
+        "da07d809-ab1e-4e86-ae96-ef33dfc8a491": {
+          "id": "da07d809-ab1e-4e86-ae96-ef33dfc8a491",
+          "name": "disc-reveal"
+        }
+      },
       "name": "Trigger (2)",
-      "order": 9.304864352555985,
+      "order": 1.361017787394174,
       "parentId": "1e91f161-0d44-46aa-9293-a99c9fda4cfc",
-      "hidden": false
+      "hidden": false,
+      "collider": {
+        "geometry": {
+          "type": "auto"
+        },
+        "eventOnly": true
+      }
     },
     "9c71edb4-7bd2-4942-8296-321c42876638": {
       "id": "9c71edb4-7bd2-4942-8296-321c42876638",
@@ -309,7 +329,7 @@
         0.7071067811865477
       ],
       "scale": [
-        0.43070341238774,
+        0.43070341238773996,
         0.013220613883877422,
         0.3822597447518168
       ],
@@ -322,10 +342,21 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "components": {},
+      "components": {
+        "dc609c84-8091-415e-a3cf-2af6a70112c2": {
+          "id": "dc609c84-8091-415e-a3cf-2af6a70112c2",
+          "name": "disc-reveal"
+        }
+      },
       "name": "Trigger (3)",
-      "order": 9.345166188989145,
-      "parentId": "1e91f161-0d44-46aa-9293-a99c9fda4cfc"
+      "order": 1.3875697356732446,
+      "parentId": "1e91f161-0d44-46aa-9293-a99c9fda4cfc",
+      "collider": {
+        "geometry": {
+          "type": "auto"
+        },
+        "eventOnly": true
+      }
     },
     "4612ef91-a58b-46df-8c86-804473df6b57": {
       "id": "4612ef91-a58b-46df-8c86-804473df6b57",
@@ -469,13 +500,50 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V1.1 - Tap to show palteforms",
+        "text": "V1.2 - Tap to show palteforms and label",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"
       },
       "name": "Version#",
       "order": 3.733576123742947
+    },
+    "26f7f4af-242b-46f4-8ff9-e639a7bb8e21": {
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "disabled",
+          "phone": "AR",
+          "world": {
+            "disableWorldTracking": true
+          }
+        }
+      },
+      "components": {},
+      "geometry": null,
+      "id": "26f7f4af-242b-46f4-8ff9-e639a7bb8e21",
+      "material": null,
+      "name": "Camera (1)",
+      "position": [
+        0,
+        0.9018198838289004,
+        0.741421885372211
+      ],
+      "rotation": [
+        0.00044368872331410124,
+        0.9659425615285845,
+        -0.25875089860082223,
+        0.0016563336561801576
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "order": 1.1339793727732603
     }
   },
   "spaces": {
