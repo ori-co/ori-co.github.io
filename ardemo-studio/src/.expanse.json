@@ -5,7 +5,8 @@
       "geometry": null,
       "id": "47699d9e-18a5-4f88-a4f9-b8be92e8f74a",
       "light": {
-        "type": "ambient"
+        "type": "ambient",
+        "intensity": 1
       },
       "material": null,
       "name": "Ambient Light",
@@ -92,7 +93,8 @@
         1
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "order": 0.6644431107322474
+      "order": 0.6644431107322474,
+      "disabled": true
     },
     "1e91f161-0d44-46aa-9293-a99c9fda4cfc": {
       "id": "1e91f161-0d44-46aa-9293-a99c9fda4cfc",
