@@ -491,14 +491,14 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V1.2 - Tap to show palteforms and label",
+        "text": "V1.3 - No lights + new Image target",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"
       },
       "name": "Version#",
       "order": 3.733576123742947,
-      "hidden": true
+      "hidden": false
     }
   },
   "spaces": {
