@@ -4,6 +4,7 @@ const onxrloaded = () => {
       require('../image-targets/ImageTarget_faceB.json'),
       require('../image-targets/ImageTarget_faceB_v2.json'),
       require('../image-targets/ImageTarget_faceB_photo.json'),
+      require('../image-targets/DrawingTarget.json'),
     ],
   })
 }
