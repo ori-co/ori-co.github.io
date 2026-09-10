@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 292,
+    "left": 150,
+    "width": 554,
+    "height": 739,
+    "isRotated": true,
+    "originalWidth": 877,
+    "originalHeight": 1327
+  },
+  "imagePath": "image-targets/ImageTarget_fullcard_luminance.png",
+  "metadata": null,
+  "name": "ImageTarget_fullcard",
+  "resources": {
+    "originalImage": "ImageTarget_fullcard_original.png",
+    "croppedImage": "ImageTarget_fullcard_cropped.png",
+    "thumbnailImage": "ImageTarget_fullcard_thumbnail.png",
+    "luminanceImage": "ImageTarget_fullcard_luminance.png"
+  },
+  "created": 1789051609584,
+  "updated": 1789051681541
+}
