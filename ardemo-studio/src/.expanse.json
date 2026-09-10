@@ -120,7 +120,7 @@
       "components": {},
       "name": "Cible d'image",
       "imageTarget": {
-        "name": "ImageTarget_faceB_v2"
+        "name": "ImageTarget"
       },
       "order": 2.139191317678198,
       "hidden": false
@@ -265,7 +265,8 @@
         }
       },
       "name": "Trigger (1)",
-      "order": 1.3804374641181032
+      "order": 1.3804374641181032,
+      "hidden": false
     },
     "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730": {
       "id": "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730",
@@ -553,7 +554,8 @@
       "imageTarget": {
         "name": "DrawingTarget"
       },
-      "order": 5.200654409174332
+      "order": 5.200654409174332,
+      "hidden": true
     },
     "3a5cecb7-d05e-44cf-a37e-b5f1f180d34c": {
       "id": "3a5cecb7-d05e-44cf-a37e-b5f1f180d34c",
