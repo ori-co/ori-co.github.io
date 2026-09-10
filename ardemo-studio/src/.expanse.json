@@ -118,7 +118,7 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "Cible d'image",
+      "name": "Cible d'image - Rendu",
       "imageTarget": {
         "name": "ImageTarget_fullcard"
       },
@@ -494,7 +494,7 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V1.7 - Full card target",
+        "text": "V1.8 - Multiple targets",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"
@@ -527,6 +527,254 @@
       "name": "Plateformes",
       "order": 1.1065764966008638,
       "prefab": true
+    },
+    "d6df1e27-fab7-4628-9164-969514ca77e2": {
+      "id": "d6df1e27-fab7-4628-9164-969514ca77e2",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.5,
+        -0.5,
+        -0.4999999999999999,
+        0.5000000000000001
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Cible d'image - Photo",
+      "imageTarget": {
+        "name": "PhotoTarget"
+      },
+      "order": 1.7146194654685438
+    },
+    "2f834c90-bb7d-46dc-bbdf-525d39965c97": {
+      "id": "2f834c90-bb7d-46dc-bbdf-525d39965c97",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -4.329780281177466e-17,
+        -0.7071067811865476,
+        -0.7071067811865475,
+        4.329780281177467e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Cible d'image - Rendutest",
+      "imageTarget": {
+        "name": "ImageTarget_testcard"
+      },
+      "order": 2.0006010476089098
+    },
+    "3ee5a80e-3790-46c9-a2ed-cb92ff8385ca": {
+      "id": "3ee5a80e-3790-46c9-a2ed-cb92ff8385ca",
+      "position": [
+        0.09914577010131426,
+        -2.099789243384578e-17,
+        0.004579669560680649
+      ],
+      "rotation": [
+        -4.502573573085878e-17,
+        0.7269207465859288,
+        -0.6867213613853553,
+        -3.711457492784868e-16
+      ],
+      "scale": [
+        0.19984117966835171,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#c8a86c"
+      },
+      "parentId": "d6df1e27-fab7-4628-9164-969514ca77e2",
+      "components": {},
+      "name": "Cylindre",
+      "order": 1.0546982937095792
+    },
+    "5d114284-7691-4d3d-bbc1-d843c2d511c7": {
+      "id": "5d114284-7691-4d3d-bbc1-d843c2d511c7",
+      "position": [
+        -0.07002557563374373,
+        -0.12001044125609876,
+        0.004579669560680676
+      ],
+      "rotation": [
+        -4.502573573085864e-17,
+        0.7269207465859288,
+        -0.6867213613853553,
+        -3.7114574927848726e-16
+      ],
+      "scale": [
+        0.19984117966835155,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#9b8ec4"
+      },
+      "parentId": "d6df1e27-fab7-4628-9164-969514ca77e2",
+      "components": {},
+      "name": "Cylindre (1)",
+      "order": 2.66345830082333
+    },
+    "460094a6-2b05-422c-9652-55e0e5e09017": {
+      "id": "460094a6-2b05-422c-9652-55e0e5e09017",
+      "position": [
+        -0.07002557563374368,
+        0.12145635018689528,
+        0.004579669560680622
+      ],
+      "rotation": [
+        -4.502573573085868e-17,
+        0.7269207465859288,
+        -0.6867213613853553,
+        -3.7114574927848736e-16
+      ],
+      "scale": [
+        0.1998411796683515,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#5bc8c0"
+      },
+      "parentId": "d6df1e27-fab7-4628-9164-969514ca77e2",
+      "components": {},
+      "name": "Cylindre (2)",
+      "order": 4.217322889478865
+    },
+    "eaf2a96e-10e6-4a9e-80d9-1c58f4c6327c": {
+      "id": "eaf2a96e-10e6-4a9e-80d9-1c58f4c6327c",
+      "position": [
+        -0.12145635018689528,
+        -0.07002557563374369,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835144,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#5bc8c0"
+      },
+      "parentId": "2f834c90-bb7d-46dc-bbdf-525d39965c97",
+      "components": {},
+      "name": "Cylindre (3)",
+      "order": 5.950177084978985
+    },
+    "9497569a-3e43-44ef-a3a7-9e85c977ddc8": {
+      "id": "9497569a-3e43-44ef-a3a7-9e85c977ddc8",
+      "position": [
+        1.2141855000357385e-17,
+        0.09914577010131426,
+        0.0045796695606806275
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835166,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#c8a86c"
+      },
+      "parentId": "2f834c90-bb7d-46dc-bbdf-525d39965c97",
+      "components": {},
+      "name": "Cylindre (4)",
+      "order": 2.0463815558710747
+    },
+    "1ff469b6-919b-47bd-981d-f281bae2d70c": {
+      "id": "1ff469b6-919b-47bd-981d-f281bae2d70c",
+      "position": [
+        0.12001044125609876,
+        -0.07002557563374372,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.1998411796683515,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#9b8ec4"
+      },
+      "parentId": "2f834c90-bb7d-46dc-bbdf-525d39965c97",
+      "components": {},
+      "name": "Cylindre (5)",
+      "order": 3.6213025395048524
     }
   },
   "spaces": {
