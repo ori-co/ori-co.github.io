@@ -1,5 +1,28 @@
 [
   {
+    "id": "stack-wars",
+    "filterTags": ["3d"],
+    "img": "assets/img/projects/stack-wars.jpg",
+    "svg": "assets/svg/projects/stack-wars.svg",
+    "year": "2026 · Jeu vidéo · DworkinLabs",
+    "name": "Stack Wars",
+    "desc": "Jeu multijoueur Roblox de construction de tours, où la physique désigne le vainqueur. En ligne.",
+    "labels": [
+      { "text": "Roblox", "color": "ocre" },
+      { "text": "Jeu vidéo" },
+      { "text": "Multijoueur" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Jeu multijoueur <strong>Roblox</strong> développé depuis avril 2026 au sein du studio <strong>DworkinLabs</strong>, en binôme avec darkzeb (commits répartis à peu près à 50/50). Publié sur Roblox (deux lancements publics, version 1.0.x), le jeu est en production et en développement continu.</p><p>Chaque joueur reçoit les <strong>8 mêmes pièces</strong>, tirées d'un deck partagé, et les lâche dans sa zone pour construire la tour la plus haute. La <strong>physique</strong> décide du reste : à la fin du round, les tours sont mesurées et classées.</p><ul><li><strong>Boucle de round pilotée par le serveur</strong> (WAITING → COUNTDOWN → PLAYING → SETTLING → RESULTS), avec un deck partagé mélangé une seule fois par round pour garantir l'équité</li><li>Timer par pièce avec drop automatique, <strong>ghost 3D</strong> et projection au sol ; hauteur de drop et <strong>mesure des tours calculées côté serveur</strong></li><li>« Shake » : une fois par round, la zone devient une dalle physique qui secoue les tours</li><li>Progression : niveaux, rebirth, kit de pièces améliorables, trophées, badges, cosmétiques, VIP</li></ul><p><strong>Architecture :</strong> environ 340 commits, 140 modules Luau et 24 000 lignes. Une couche <strong>Core</strong> réutilisable et indépendante du jeu (persistance DataStore, boutique Robux, leaderboards globaux, analytics, moteur d'onboarding) est pensée comme un template pour les futurs jeux du studio. Serveur autoritaire, registre réseau unique de 48 canaux, rate limiting et détection d'exploits. Support PC, mobile et manette.</p><p><strong>Ma contribution :</strong></p><ul><li><strong>Design system UI</strong> maison (Theme, Effects, composants atomiques, tailles relatives au viewport, widgets 3D en SurfaceGui) et migration de tous les écrans : Shop, Kit, Stats, Leaderboards, Rewards, Feedback, Results, HUD de round</li><li><strong>Onboarding interactif</strong> de bout en bout : moteur par étapes, spotlight, hints, icônes de commandes par plateforme, analytics</li><li><strong>Gameplay</strong> : drop et caméra, hauteur de drop automatique, masse par matériau, règle de mesure, fixes mobile et manette</li><li><strong>Système d'attaques et de défenses</strong> entre joueurs : conception et implémentation en cours</li><li>Mise en place du workspace entièrement géré par <strong>Rojo</strong></li></ul><p><strong>Décisions pilotées par la donnée :</strong> les analytics ont montré que 42 % des joueurs décrochaient à l'étape caméra orbitale de l'onboarding, qui a donc été désactivée. Après le lancement, une analyse de l'économie a mis en évidence un multiplicateur de niveau non borné (écart de puissance ×100 au niveau 100) et abouti à un plan de rééquilibrage.</p><p>Développement assisté par <strong>Claude Code</strong>, avec des skills projet sur mesure qui imposent de lire la documentation, de valider le plan avant de coder et de mettre les docs à jour. Chaque dossier du code a son README.</p>",
+    "tech": ["Roblox Studio", "Luau", "Rojo", "Wally", "Selene", "StyLua", "Claude Code"],
+    "gallery": ["assets/img/projects/stack-wars.jpg", "assets/img/projects/stack-wars_1.jpg", "assets/img/projects/stack-wars_2.jpg", "assets/img/projects/stack-wars_3.jpg", "assets/img/projects/stack-wars_4.jpg"],
+    "video": null,
+    "links": [
+      { "label": "Jouer sur Roblox", "url": "https://www.roblox.com/games/137181927453484", "type": "web" }
+    ]
+  },
+  {
     "id": "polarpod",
     "filterTags": ["3d", "ia", "mediation"],
     "img": "assets/img/projects/polarpod.png",

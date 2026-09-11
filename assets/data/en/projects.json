@@ -1,5 +1,28 @@
 [
   {
+    "id": "stack-wars",
+    "filterTags": ["3d"],
+    "img": "assets/img/projects/stack-wars.jpg",
+    "svg": "assets/svg/projects/stack-wars.svg",
+    "year": "2026 · Video game · DworkinLabs",
+    "name": "Stack Wars",
+    "desc": "Multiplayer Roblox tower-building game where physics picks the winner. Live online.",
+    "labels": [
+      { "text": "Roblox", "color": "ocre" },
+      { "text": "Video game" },
+      { "text": "Multiplayer" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> Multiplayer <strong>Roblox</strong> game developed since April 2026 at the <strong>DworkinLabs</strong> studio, as a two-person team with darkzeb (commits split roughly 50/50). Published on Roblox (two public launches, version 1.0.x), the game is live and under active development.</p><p>Every player gets the <strong>same 8 pieces</strong>, drawn from a shared deck, and drops them into their zone to build the tallest tower. <strong>Physics</strong> does the rest: at the end of the round, towers are measured and ranked.</p><ul><li><strong>Server-driven round loop</strong> (WAITING → COUNTDOWN → PLAYING → SETTLING → RESULTS), with the shared deck shuffled only once per round for competitive fairness</li><li>Per-piece timer with auto-drop, <strong>3D ghost</strong> and ground projection; drop height and <strong>tower measurement computed server-side</strong></li><li>“Shake”: once per round, the zone turns into a physics slab that shakes the towers</li><li>Progression: levels, rebirth, upgradable piece kit, trophies, badges, cosmetics, VIP</li></ul><p><strong>Architecture:</strong> about 340 commits, 140 Luau modules and 24,000 lines. A reusable, game-agnostic <strong>Core</strong> layer (DataStore persistence, Robux shop, global leaderboards, analytics, onboarding engine) is designed as a template for the studio's future games. Authoritative server, single network registry of 48 channels, rate limiting and exploit detection. PC, mobile and gamepad support.</p><p><strong>My contribution:</strong></p><ul><li>In-house <strong>UI design system</strong> (Theme, Effects, atomic components, viewport-relative sizing, 3D SurfaceGui widgets) and migration of every screen: Shop, Kit, Stats, Leaderboards, Rewards, Feedback, Results, round HUD</li><li>End-to-end <strong>interactive onboarding</strong>: step engine, spotlight, hints, per-platform input icons, analytics</li><li><strong>Gameplay</strong>: drop and camera, automatic drop height, per-material mass, measurement rule, mobile and gamepad fixes</li><li><strong>Player attack and defence system</strong>: design and implementation in progress</li><li>Setup of the fully <strong>Rojo</strong>-managed workspace</li></ul><p><strong>Data-driven decisions:</strong> analytics showed that 42% of players dropped off at the orbital camera step of the onboarding, so that step was disabled. After launch, an economy analysis revealed an unbounded level multiplier (a ×100 power gap at level 100) and led to a rebalancing plan.</p><p>Developed with <strong>Claude Code</strong> and custom project skills that require reading the docs, validating the plan before coding and updating the docs. Every code folder has its own README.</p>",
+    "tech": ["Roblox Studio", "Luau", "Rojo", "Wally", "Selene", "StyLua", "Claude Code"],
+    "gallery": ["assets/img/projects/stack-wars.jpg", "assets/img/projects/stack-wars_1.jpg", "assets/img/projects/stack-wars_2.jpg", "assets/img/projects/stack-wars_3.jpg", "assets/img/projects/stack-wars_4.jpg"],
+    "video": null,
+    "links": [
+      { "label": "Play on Roblox", "url": "https://www.roblox.com/games/137181927453484", "type": "web" }
+    ]
+  },
+  {
     "id": "polarpod",
     "filterTags": ["3d", "ia", "mediation"],
     "img": "assets/img/projects/polarpod.png",
