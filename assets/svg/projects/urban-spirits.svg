@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#23262B"/>
+  <polyline points="20,180 70,160 95,175 150,140 190,150 230,120" fill="none" stroke="#9B8EC4" stroke-width="0.8" opacity="0.3" stroke-dasharray="4 4"/>
+  <circle cx="230" cy="120" r="4" fill="none" stroke="#9B8EC4" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="230" cy="120" r="10" fill="none" stroke="#9B8EC4" stroke-width="0.5" opacity="0.2"/>
+  <polygon points="260,30 370,45 370,165 260,150" fill="none" stroke="#5BC8C0" stroke-width="0.8" opacity="0.4"/>
+  <path d="M315,97 a4,4 0 1,1 -6,-3 a10,10 0 1,1 16,8 a18,18 0 1,1 -30,-12 a26,26 0 1,1 44,16" fill="none" stroke="#C8A86C" stroke-width="0.8" opacity="0.35"/>
+  <line x1="230" y1="120" x2="260" y2="90" stroke="#5BC8C0" stroke-width="0.5" opacity="0.25"/>
+  <line x1="230" y1="120" x2="260" y2="140" stroke="#5BC8C0" stroke-width="0.5" opacity="0.25"/>
+  <rect x="60" y="40" width="50" height="70" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.2"/>
+  <rect x="120" y="60" width="36" height="50" fill="none" stroke="#5BC8C0" stroke-width="0.5" opacity="0.2"/>
+</svg>

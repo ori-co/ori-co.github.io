@@ -1,5 +1,29 @@
 [
   {
+    "id": "urban-spirits",
+    "filterTags": ["ar", "mediation"],
+    "img": "assets/img/projects/urban-spirits.jpg",
+    "svg": "assets/svg/projects/urban-spirits.svg",
+    "year": "2026 · Judith Darmont",
+    "name": "URBAN SPIRITS",
+    "desc": "La danse prend vie sur les murs de la ville, en réalité augmentée. App iOS et Android en production.",
+    "labels": [
+      { "text": "AR", "color": "cyan" },
+      { "text": "Danse" },
+      { "text": "Mobile" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Contexte :</strong> Née d'une idée originale de l'artiste <strong>Judith Darmont</strong>, URBAN SPIRITS invite à regarder la ville autrement : devant un mur, on lève son téléphone et une chorégraphie s'y dessine en lumière, en <strong>réalité augmentée</strong>. À Judith la vision artistique, les idées et les contenus ; à moi de rendre cette vision concrète, avec les solutions techniques, la méthode et les bonnes pratiques qui font avancer le projet. Ensemble, nous avons trié les idées, conçu l'expérience et itéré : en quelques semaines, un premier <strong>prototype</strong> fonctionnait, et l'app est aujourd'hui en production sur <strong>iOS et Android</strong>, avec un back-office qui permet à Judith de faire vivre ses contenus en autonomie. Conseil, product owner, développement, DevOps : j'ai porté toutes les casquettes pour passer de l'idée à l'app.</p>",
+    "tech": ["Flutter", "Unity", "AR Foundation", "ARCore", "ARKit", "Firebase"],
+    "gallery": ["assets/img/projects/urban-spirits.jpg", "assets/img/projects/urban-spirits_1.jpg", "assets/img/projects/urban-spirits_2.png", "assets/img/projects/urban-spirits_3.png"],
+    "video": null,
+    "links": [
+      { "label": "Le projet", "url": "https://www.judithdarmont.com/urban-spirits-1", "type": "web" },
+      { "label": "Instagram", "url": "https://www.instagram.com/urbanspirits.world/", "type": "web" }
+    ]
+  },
+  {
     "id": "stack-wars",
     "filterTags": ["3d"],
     "img": "assets/img/projects/stack-wars.jpg",

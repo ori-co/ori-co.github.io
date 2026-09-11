@@ -1,5 +1,29 @@
 [
   {
+    "id": "urban-spirits",
+    "filterTags": ["ar", "mediation"],
+    "img": "assets/img/projects/urban-spirits.jpg",
+    "svg": "assets/svg/projects/urban-spirits.svg",
+    "year": "2026 · Judith Darmont",
+    "name": "URBAN SPIRITS",
+    "desc": "Dance comes to life on city walls in augmented reality. iOS and Android app, now live.",
+    "labels": [
+      { "text": "AR", "color": "cyan" },
+      { "text": "Dance" },
+      { "text": "Mobile" }
+    ],
+    "study": false,
+    "wip": false,
+    "fullDesc": "<p><strong>Context:</strong> Born from an original idea by artist <strong>Judith Darmont</strong>, URBAN SPIRITS invites you to see the city differently: stand in front of a wall, raise your phone, and a choreography unfolds on it in light, in <strong>augmented reality</strong>. Judith brings the artistic vision, the ideas and the content; my part is to make that vision real, with the technical solutions, the method and the best practices that keep the project moving. Together, we sorted through the ideas, designed the experience and iterated: within a few weeks a first <strong>prototype</strong> was working, and the app is now live on <strong>iOS and Android</strong>, with a back-office that lets Judith keep her content alive on her own. Consulting, product ownership, development, DevOps: I wore every hat needed to go from idea to app.</p>",
+    "tech": ["Flutter", "Unity", "AR Foundation", "ARCore", "ARKit", "Firebase"],
+    "gallery": ["assets/img/projects/urban-spirits.jpg", "assets/img/projects/urban-spirits_1.jpg", "assets/img/projects/urban-spirits_2.png", "assets/img/projects/urban-spirits_3.png"],
+    "video": null,
+    "links": [
+      { "label": "The project", "url": "https://www.judithdarmont.com/urban-spirits-1", "type": "web" },
+      { "label": "Instagram", "url": "https://www.instagram.com/urbanspirits.world/", "type": "web" }
+    ]
+  },
+  {
     "id": "stack-wars",
     "filterTags": ["3d"],
     "img": "assets/img/projects/stack-wars.jpg",
