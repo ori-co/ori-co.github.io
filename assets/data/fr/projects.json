@@ -20,7 +20,8 @@
     "video": null,
     "links": [
       { "label": "Le projet", "url": "https://www.judithdarmont.com/urban-spirits-1", "type": "web" },
-      { "label": "Instagram", "url": "https://www.instagram.com/urbanspirits.world/", "type": "web" }
+      { "label": "Instagram", "url": "https://www.instagram.com/urbanspirits.world/", "type": "web" },
+      { "label": "Rejoindre la bêta", "url": "https://urbanspirits-ar.web.app/beta/", "type": "web" }
     ]
   },
   {
