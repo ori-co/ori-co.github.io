@@ -20,7 +20,7 @@ The repo also hosts a WebAR demo (8thWall), documented separately in [ardemo-stu
 │   ├── img/              # Photos (projects/, maker/, about/, offers/, …)
 │   ├── svg/              # Illustrations + overlays (projects/, maker/, about/, …)
 │   └── video/            # ⚠ git-ignored — not deployed (see Known gotchas)
-├── ardemo/               # Generated WebAR build, served at /ardemo/ — never edit by hand
+├── hello/                # Generated WebAR build, served at /hello/ — never edit by hand
 └── ardemo-studio/        # WebAR sources (8thWall Studio project)
 ```
 
@@ -167,7 +167,7 @@ No backend. On submit, `main.js` POSTs `{ name, email, mission, message }` as JS
 
 GitHub Pages serves the `main` branch as is: **pushing to `main` puts the site online**, and there's no CI to wait for.
 
-For the WebAR demo (`/ardemo/`), see [ardemo-studio/README.md](ardemo-studio/README.md#build--deploy).
+For the WebAR demo (`/hello/`), see [ardemo-studio/README.md](ardemo-studio/README.md#build--deploy).
 
 ## Known gotchas
 

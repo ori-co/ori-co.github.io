@@ -11,7 +11,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../../..')
 const STUDIO = join(ROOT, 'ardemo-studio')
 const SRC = join(STUDIO, 'src')
 const TARGETS = join(STUDIO, 'image-targets')
-const DEPLOYED_BUNDLE = join(ROOT, 'ardemo', 'bundle.js')
+const DEPLOYED_BUNDLE = join(ROOT, 'hello', 'bundle.js')
 
 const errors = []
 const warnings = []
@@ -58,7 +58,7 @@ for (const file of required) {
 info(`targets loaded by app.js: ${[...loadedNames].map(([n, f]) => `${n} (${f})`).join(', ') || 'none'}`)
 
 for (const f of readdirSync(TARGETS))
-  if (!targetFiles.has(f)) warn(`image-targets/${f} is not used by app.js but will still be copied to ardemo/`)
+  if (!targetFiles.has(f)) warn(`image-targets/${f} is not used by app.js but will still be copied to hello/`)
 
 // ── Scene ─────────────────────────────────────────────────────────────
 let scene
@@ -114,7 +114,7 @@ else {
     // The scene is inlined as JSON in the bundle: match the exact quoted string, not a substring
     const bundle = readFileSync(DEPLOYED_BUNDLE, 'utf8')
     if (bundle.includes(`"text":${JSON.stringify(version)}`))
-      warn(`Version# "${version}" is already the deployed version (found in ardemo/bundle.js): bump it in Studio before deploying`)
+      warn(`Version# "${version}" is already the deployed version (found in hello/bundle.js): bump it in Studio before deploying`)
   }
 }
 

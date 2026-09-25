@@ -1,6 +1,6 @@
 ---
 name: ardemo-deploy
-description: Check, build and deploy the WebAR demo. Runs pre-flight checks on ardemo-studio (image targets, scene, assets, Version#), builds it, replaces ardemo/ with the fresh build and proposes a commit message. Overwrites ardemo/, so only run on explicit request.
+description: Check, build and deploy the WebAR demo. Runs pre-flight checks on ardemo-studio (image targets, scene, assets, Version#), builds it, replaces hello/ with the fresh build and proposes a commit message. Overwrites hello/, so only run on explicit request.
 disable-model-invocation: true
 argument-hint: "[Version# label, e.g. \"V1.8 - Platform animation\"]"
 allowed-tools: Bash(node .claude/skills/ardemo-deploy/preflight.mjs*)
@@ -8,7 +8,7 @@ allowed-tools: Bash(node .claude/skills/ardemo-deploy/preflight.mjs*)
 
 # ardemo-deploy
 
-Deploys `ardemo-studio/` to `ardemo/`, which GitHub Pages serves at <https://ori-co.github.io/ardemo/>. Background: [ardemo-studio/README.md](../../../ardemo-studio/README.md#build--deploy).
+Deploys `ardemo-studio/` to `hello/`, which GitHub Pages serves at <https://ori-co.github.io/hello/>. Background: [ardemo-studio/README.md](../../../ardemo-studio/README.md#build--deploy).
 
 **Never commit or push.** The last step proposes a commit message only.
 
@@ -37,7 +37,7 @@ Read-only. It checks that:
 - each scene Image Target entity tracks a target that `app.js` actually loads (the names must match, or nothing is detected and no error is shown);
 - the GLB files referenced by the scene exist, and the scene's custom components are registered in `src/`;
 - `node_modules/` is installed;
-- the `Version#` text is not already the deployed one (looked up in `ardemo/bundle.js`).
+- the `Version#` text is not already the deployed one (looked up in `hello/bundle.js`).
 
 It also warns about image targets and assets that are unused but would still be deployed.
 
@@ -57,11 +57,11 @@ rm -rf ardemo-studio/dist
 cd ardemo-studio && npm run build
 ```
 
-`dist/` is removed first because the build never cleans it, and old targets or assets would pile up and get deployed. If the build fails, show the relevant part of the error, stop and don't touch `ardemo/`.
+`dist/` is removed first because the build never cleans it, and old targets or assets would pile up and get deployed. If the build fails, show the relevant part of the error, stop and don't touch `hello/`.
 
-## 3. Replace `ardemo/`
+## 3. Replace `hello/`
 
-`ardemo/` contains nothing but build output:
+`hello/` contains nothing but build output:
 
 ```sh
 rm -rf ardemo && cp -r ardemo-studio/dist ardemo
@@ -71,14 +71,14 @@ rm -rf ardemo && cp -r ardemo-studio/dist ardemo
 
 ```sh
 diff -rq ardemo-studio/dist ardemo                  # must print nothing
-git status --short ardemo | cut -c1-2 | sort | uniq -c   # summary: M modified, D deleted, ?? new
+git status --short hello | cut -c1-2 | sort | uniq -c   # summary: M modified, D deleted, ?? new
 ```
 
-Also check that the `Version#` text shown by the pre-flight appears in `ardemo/bundle.js`.
+Also check that the `Version#` text shown by the pre-flight appears in `hello/bundle.js`.
 
 ## 5. Hand over to the user
 
-Give a short summary: version deployed, files changed in `ardemo/` (counts), warnings you skipped. Then:
+Give a short summary: version deployed, files changed in `hello/` (counts), warnings you skipped. Then:
 
-- Propose a commit message. The repo convention is the Version# text, e.g. `V1.7 - Full card target`. Remind the user to commit `ardemo-studio/` and `ardemo/` together.
-- After the push: open <https://ori-co.github.io/ardemo/> **on the real device** (Samsung Galaxy A06) and check the version number on screen. If the old one still shows, it is the GitHub Pages / browser cache: wait a minute and reload.
+- Propose a commit message. The repo convention is the Version# text, e.g. `V1.7 - Full card target`. Remind the user to commit `ardemo-studio/` and `hello/` together.
+- After the push: open <https://ori-co.github.io/hello/> **on the real device** (Samsung Galaxy A06) and check the version number on screen. If the old one still shows, it is the GitHub Pages / browser cache: wait a minute and reload.

@@ -2,7 +2,7 @@
 
 WebAR experience built on the business card. You scan the card, three platforms appear on it, and tapping a platform's disc reveals a 3D model and a label. Each platform stands for one of the three offers on the website (ocre / cyan / violet).
 
-- **Live URL:** <https://ori-co.github.io/ardemo/>. The page is deliberately not linked from the website.
+- **Live URL:** <https://ori-co.github.io/hello/>. The page is deliberately not linked from the website.
 - **Reference test device:** Samsung Galaxy A06.
 - **Roadmap and open bugs:** [TODO.md](TODO.md).
 
@@ -118,7 +118,7 @@ Nav, "flip the card" hint, collapsible contact form and footer, styled like the 
 
 ## Build & deploy
 
-The site is served from `../ardemo/`, a plain copy of `dist/`. **Never edit `ardemo/` by hand.**
+The site is served from `../hello/`, a plain copy of `dist/`. **Never edit `hello/` by hand.**
 
 From `ardemo-studio/` (webpack resolves paths from the current directory):
 
@@ -130,15 +130,15 @@ Remove-Item -Recurse -Force ..\ardemo\*
 Copy-Item -Recurse dist\* ..\ardemo\
 ```
 
-Studio can also produce the build. Either way, what you commit in `ardemo/` must be the contents of `dist/`.
+Studio can also produce the build. Either way, what you commit in `hello/` must be the contents of `dist/`.
 
 Then:
 
 1. Update the `Version#` text (ideally before the build).
-2. Commit `ardemo-studio/` **and** `ardemo/` together, then push to `main`. GitHub Pages publishes it.
-3. Open <https://ori-co.github.io/ardemo/> on the real device and check the version number on screen.
+2. Commit `ardemo-studio/` **and** `hello/` together, then push to `main`. GitHub Pages publishes it.
+3. Open <https://ori-co.github.io/hello/> on the real device and check the version number on screen.
 
-Why clean before copying: old image targets and assets would otherwise pile up in `dist/` and `ardemo/`, and get deployed for nothing.
+Why clean before copying: old image targets and assets would otherwise pile up in `dist/` and `hello/`, and get deployed for nothing.
 
 ### Local testing
 
