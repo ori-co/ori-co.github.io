@@ -18,10 +18,238 @@
   <script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam">
   </script>
 
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* Site overlay (nav, contact drawer, footer). Tokens copied from assets/css/style.css.
+       The root lets touches through to the AR canvas; only the bars themselves catch them. */
+    .ar-ui {
+      --bg:      #1C1E22;
+      --surface: #23262B;
+      --text:    #DDDBD6;
+      --muted:   #999;
+      --border:  #2E3138;
+      --ocre:    #C8A86C;
+      --cyan:    #5BC8C0;
+      --violet:  #9B8EC4;
+      position:fixed; inset:0; z-index:1000;
+      display:flex; flex-direction:column; justify-content:space-between;
+      pointer-events:none;
+      font-family:'Syne',sans-serif; color:var(--text);
+    }
+    .ar-ui * { margin:0; padding:0; box-sizing:border-box; }
+    .ar-ui > * { pointer-events:auto; }
+
+    /* NAV */
+    .ar-nav {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 16px;
+      background:rgba(28,30,34,0.85);
+      border-bottom:0.5px solid var(--border);
+    }
+    .ar-logo {
+      font-family:'DM Mono',monospace; font-size:17px; letter-spacing:0.08em;
+      color:var(--ocre); text-decoration:none;
+    }
+    .ar-links { display:flex; gap:14px; list-style:none; }
+    .ar-links a {
+      font-size:12px; letter-spacing:0.12em; text-transform:uppercase;
+      color:var(--muted); text-decoration:none; transition:color 0.2s;
+    }
+    .ar-links a:hover { color:var(--text); }
+
+    /* BOTTOM: contact drawer + footer */
+    .ar-bottom { background:var(--surface); border-top:0.5px solid var(--border); }
+    .ar-contact-toggle {
+      width:100%; display:flex; align-items:center; justify-content:space-between;
+      padding:12px 16px; background:none; border:none; cursor:pointer;
+      font-family:'Syne',sans-serif; font-size:15px; font-weight:500; color:var(--text);
+      text-align:left;
+    }
+    .ar-contact-icon {
+      font-family:'DM Mono',monospace; font-size:18px; color:var(--cyan);
+      transition:transform 0.3s;
+    }
+    .ar-bottom.open .ar-contact-icon { transform:rotate(45deg); }
+    .ar-contact-body {
+      display:grid; grid-template-rows:0fr;
+      transition:grid-template-rows 0.3s ease;
+    }
+    .ar-bottom.open .ar-contact-body { grid-template-rows:1fr; }
+    .ar-contact-inner {
+      overflow:hidden;
+    }
+    .ar-bottom.open .ar-contact-inner {
+      overflow-y:auto; max-height:calc(100dvh - 180px);
+    }
+    .ar-contact-content { padding:0 16px 16px; display:flex; flex-direction:column; gap:14px; }
+    .ar-contact-link {
+      color:var(--cyan); font-family:'DM Mono',monospace;
+      font-size:13px; text-decoration:none; letter-spacing:0.1em;
+    }
+    .ar-form { display:flex; flex-direction:column; gap:12px; }
+    .ar-fg { display:flex; flex-direction:column; gap:5px; }
+    .ar-fg label {
+      font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.15em;
+      text-transform:uppercase; color:var(--muted);
+    }
+    .ar-fg input, .ar-fg textarea, .ar-fg select {
+      background:var(--bg); border:0.5px solid var(--border);
+      padding:10px 14px; color:var(--text);
+      font-family:'Syne',sans-serif; font-size:16px;
+      outline:none; transition:border-color 0.2s; resize:none; border-radius:0;
+    }
+    .ar-fg input:focus, .ar-fg textarea:focus { border-color:var(--cyan); }
+    .ar-fg select option { background:var(--surface); }
+    .ar-send {
+      padding:12px 26px; background:var(--violet); color:var(--bg);
+      font-family:'Syne',sans-serif; font-size:12px; font-weight:500;
+      letter-spacing:0.15em; text-transform:uppercase;
+      border:none; cursor:pointer; align-self:flex-start; transition:background 0.2s;
+    }
+    .ar-send:hover { background:var(--cyan); }
+
+    .ar-footer {
+      display:flex; justify-content:center; flex-wrap:wrap; gap:0 6px;
+      padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+      border-top:0.5px solid var(--border);
+    }
+    .ar-footer span { font-family:'DM Mono',monospace; font-size:10px; color:var(--muted); }
+    .ar-footer .ar-fdot { color:var(--cyan); }
+  </style>
 </head>
 
 <body>
 <script src="bundle.js"></script>
+
+<!-- Site overlay. Text is FR by default, then replaced from ../assets/data/{lang}/ when available. -->
+<div class="ar-ui">
+  <nav class="ar-nav">
+    <a class="ar-logo" id="ar-logo" href="../">OC_</a>
+    <ul class="ar-links">
+      <li><a href="../" id="ar-nav-home">Accueil</a></li>
+      <li><a href="../#portfolio" id="ar-nav-portfolio">Portfolio</a></li>
+      <li><a href="../#about" id="ar-nav-about">À propos</a></li>
+    </ul>
+  </nav>
+
+  <div class="ar-bottom" id="ar-bottom">
+    <button class="ar-contact-toggle" id="ar-contact-toggle" aria-expanded="false" aria-controls="ar-contact-body">
+      <span id="ar-contact-title">Un projet en tête ?</span>
+      <span class="ar-contact-icon">+</span>
+    </button>
+    <div class="ar-contact-body" id="ar-contact-body">
+      <div class="ar-contact-inner">
+        <div class="ar-contact-content">
+          <a class="ar-contact-link" id="ar-linkedin" href="https://linkedin.com/in/orianecosson" target="_blank">→ LinkedIn</a>
+          <form class="ar-form" id="ar-form">
+            <div class="ar-fg">
+              <label id="ar-label-name" for="ar-input-name">Nom</label>
+              <input type="text" id="ar-input-name" name="name" placeholder="Votre nom">
+            </div>
+            <div class="ar-fg">
+              <label id="ar-label-email" for="ar-input-email">Email</label>
+              <input type="email" id="ar-input-email" name="email" placeholder="votre@email.com">
+            </div>
+            <div class="ar-fg">
+              <label id="ar-label-mission" for="ar-mission">Type de mission</label>
+              <select id="ar-mission" name="mission">
+                <option>— Sélectionner —</option>
+                <option>Atelier / Acculturation</option>
+                <option>Démonstrateur Salon</option>
+                <option>Installation Interactive</option>
+                <option>POC / Prototypage</option>
+                <option>Direction de Projet</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="ar-fg">
+              <label id="ar-label-message" for="ar-message">Message</label>
+              <textarea id="ar-message" name="message" rows="3" placeholder="Décrivez votre projet…"></textarea>
+            </div>
+            <button class="ar-send" id="ar-send">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="ar-footer">
+      <span id="ar-footer-copy">© 2026 Oriane Cosson</span>
+      <span class="ar-fdot">·</span>
+      <span id="ar-footer-role">Ingénieur en Innovation · Freelance</span>
+    </footer>
+  </div>
+</div>
+
+<script>
+  (() => {
+    const $ = id => document.getElementById(id)
+    const lang = localStorage.getItem('lang') || 'fr'
+    let formspreeId = 'mbdzzkwn'
+
+    // Contact drawer
+    const bottom = $('ar-bottom')
+    $('ar-contact-toggle').addEventListener('click', () => {
+      const open = bottom.classList.toggle('open')
+      $('ar-contact-toggle').setAttribute('aria-expanded', open)
+    })
+
+    // Same Formspree flow as the site (assets/js/main.js)
+    const form = $('ar-form')
+    form.addEventListener('submit', async e => {
+      e.preventDefault()
+      const btn = $('ar-send')
+      const data = {
+        name:    $('ar-input-name').value,
+        email:   $('ar-input-email').value,
+        mission: $('ar-mission').value,
+        message: $('ar-message').value,
+      }
+      btn.textContent = '…'
+      btn.disabled = true
+      try {
+        const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data),
+        })
+        if (!res.ok) throw new Error()
+        btn.textContent = lang === 'en' ? 'Sent ✓' : 'Message envoyé ✓'
+        btn.style.background = 'var(--cyan)'
+        form.reset()
+      } catch {
+        btn.textContent = lang === 'en' ? 'Error — retry' : 'Erreur — réessayer'
+        btn.style.background = 'var(--ocre)'
+        btn.disabled = false
+      }
+    })
+
+    // Site content (not available under `npm run serve`: the FR defaults above stay)
+    const load = path => fetch(path).then(r => r.json())
+    Promise.all([
+      load(`../assets/data/${lang}/profile.json`),
+      load(`../assets/data/${lang}/ui.json`),
+    ]).then(([p, ui]) => {
+      document.documentElement.lang = ui.lang
+      $('ar-logo').textContent = p.initials
+      ;['home', 'portfolio', 'about'].forEach(n => { $(`ar-nav-${n}`).textContent = ui.nav[n] })
+      $('ar-contact-title').textContent = p.contact.title
+      $('ar-linkedin').href = p.linkedin
+      $('ar-label-name').textContent    = ui.contact.labelName
+      $('ar-label-email').textContent   = ui.contact.labelEmail
+      $('ar-label-mission').textContent = ui.contact.labelMission
+      $('ar-label-message').textContent = ui.contact.labelMessage
+      $('ar-input-name').placeholder    = ui.contact.placeholderName
+      $('ar-message').placeholder       = ui.contact.placeholderMsg
+      $('ar-send').textContent          = ui.contact.btnSend
+      $('ar-mission').innerHTML =
+        '<option>— Sélectionner —</option>' +
+        p.contact.missionTypes.map(t => `<option>${t}</option>`).join('')
+      $('ar-footer-copy').textContent = p.copyright
+      $('ar-footer-role').textContent = p.role
+      formspreeId = p.formspreeId
+    }).catch(() => {})
+  })()
+</script>
 
 </body>
 

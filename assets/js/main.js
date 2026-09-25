@@ -312,3 +312,7 @@ Promise.all([
   renderValues(profile.about.values);
   renderMaker(profile.about.maker);
 }).catch(err => console.error('Erreur chargement données:', err));
+
+// Deep link from other pages (e.g. /ardemo): ../#portfolio, ../#about
+const startPage = location.hash.slice(1);
+if (['portfolio', 'about'].includes(startPage)) showPage(startPage);
