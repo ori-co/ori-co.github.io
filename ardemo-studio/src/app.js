@@ -1,9 +1,11 @@
 const onxrloaded = () => {
   XR8.XrController.configure({
     imageTargetData: [
-      require('../image-targets/ImageTarget_fullcard.json'),
-      require('../image-targets/ImageTarget_testcard.json'),
-      require('../image-targets/PhotoTarget.json')
+      require('../image-targets/VERSO A.json'),
+      require('../image-targets/VERSO B.json'),
+      require('../image-targets/VERSO C.json'),
+      require('../image-targets/VERSO D.json'),
+      require('../image-targets/ImageTarget_testcard.json')
     ],
   })
 }

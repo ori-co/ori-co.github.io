@@ -118,9 +118,9 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "Cible d'image - Rendu",
+      "name": "Cible d'image - Dots",
       "imageTarget": {
-        "name": "ImageTarget_fullcard"
+        "name": "ImageTarget_testcard"
       },
       "order": 2.139191317678198,
       "hidden": false
@@ -494,7 +494,7 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V1.11 - Contact auto-open",
+        "text": "V1.12 - Verso targets",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"
@@ -528,34 +528,6 @@
       "order": 1.1065764966008638,
       "prefab": true
     },
-    "d6df1e27-fab7-4628-9164-969514ca77e2": {
-      "id": "d6df1e27-fab7-4628-9164-969514ca77e2",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        -0.5,
-        -0.5,
-        -0.4999999999999999,
-        0.5000000000000001
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
-      "name": "Cible d'image - Photo",
-      "imageTarget": {
-        "name": "PhotoTarget"
-      },
-      "order": 1.7146194654685438
-    },
     "2f834c90-bb7d-46dc-bbdf-525d39965c97": {
       "id": "2f834c90-bb7d-46dc-bbdf-525d39965c97",
       "position": [
@@ -578,107 +550,11 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "Cible d'image - Rendutest",
+      "name": "Cible d'image - A",
       "imageTarget": {
-        "name": "ImageTarget_testcard"
+        "name": "VERSO A"
       },
       "order": 2.0006010476089098
-    },
-    "3ee5a80e-3790-46c9-a2ed-cb92ff8385ca": {
-      "id": "3ee5a80e-3790-46c9-a2ed-cb92ff8385ca",
-      "position": [
-        0.09914577010131426,
-        -2.099789243384578e-17,
-        0.004579669560680649
-      ],
-      "rotation": [
-        -4.502573573085878e-17,
-        0.7269207465859288,
-        -0.6867213613853553,
-        -3.711457492784868e-16
-      ],
-      "scale": [
-        0.19984117966835171,
-        0.04998127955545058,
-        0.19991609286353823
-      ],
-      "geometry": {
-        "type": "cylinder",
-        "radius": 0.5,
-        "height": 1
-      },
-      "material": {
-        "type": "basic",
-        "color": "#c8a86c"
-      },
-      "parentId": "d6df1e27-fab7-4628-9164-969514ca77e2",
-      "components": {},
-      "name": "Cylindre",
-      "order": 1.0546982937095792
-    },
-    "5d114284-7691-4d3d-bbc1-d843c2d511c7": {
-      "id": "5d114284-7691-4d3d-bbc1-d843c2d511c7",
-      "position": [
-        -0.07002557563374373,
-        -0.12001044125609876,
-        0.004579669560680676
-      ],
-      "rotation": [
-        -4.502573573085864e-17,
-        0.7269207465859288,
-        -0.6867213613853553,
-        -3.7114574927848726e-16
-      ],
-      "scale": [
-        0.19984117966835155,
-        0.04998127955545058,
-        0.19991609286353823
-      ],
-      "geometry": {
-        "type": "cylinder",
-        "radius": 0.5,
-        "height": 1
-      },
-      "material": {
-        "type": "basic",
-        "color": "#9b8ec4"
-      },
-      "parentId": "d6df1e27-fab7-4628-9164-969514ca77e2",
-      "components": {},
-      "name": "Cylindre (1)",
-      "order": 2.66345830082333
-    },
-    "460094a6-2b05-422c-9652-55e0e5e09017": {
-      "id": "460094a6-2b05-422c-9652-55e0e5e09017",
-      "position": [
-        -0.07002557563374368,
-        0.12145635018689528,
-        0.004579669560680622
-      ],
-      "rotation": [
-        -4.502573573085868e-17,
-        0.7269207465859288,
-        -0.6867213613853553,
-        -3.7114574927848736e-16
-      ],
-      "scale": [
-        0.1998411796683515,
-        0.04998127955545058,
-        0.19991609286353823
-      ],
-      "geometry": {
-        "type": "cylinder",
-        "radius": 0.5,
-        "height": 1
-      },
-      "material": {
-        "type": "basic",
-        "color": "#5bc8c0"
-      },
-      "parentId": "d6df1e27-fab7-4628-9164-969514ca77e2",
-      "components": {},
-      "name": "Cylindre (2)",
-      "order": 4.217322889478865
     },
     "eaf2a96e-10e6-4a9e-80d9-1c58f4c6327c": {
       "id": "eaf2a96e-10e6-4a9e-80d9-1c58f4c6327c",
@@ -775,6 +651,588 @@
       "components": {},
       "name": "Cylindre (5)",
       "order": 3.6213025395048524
+    },
+    "f6515669-6f8b-4694-bea5-06412775939c": {
+      "id": "f6515669-6f8b-4694-bea5-06412775939c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -4.329780281177466e-17,
+        -0.7071067811865476,
+        -0.7071067811865475,
+        4.329780281177467e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Cible d'image - B",
+      "imageTarget": {
+        "name": "VERSO B"
+      },
+      "order": 2.0885658924224457
+    },
+    "e8efa5c5-2315-4636-84cb-7fab463cd9c2": {
+      "id": "e8efa5c5-2315-4636-84cb-7fab463cd9c2",
+      "position": [
+        -0.12145635018689528,
+        -0.07002557563374369,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835144,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#5bc8c0"
+      },
+      "parentId": "f6515669-6f8b-4694-bea5-06412775939c",
+      "components": {},
+      "name": "Cylindre (6)",
+      "order": 5.950177084978985
+    },
+    "863a4e6d-d1eb-45a0-95dc-8f67d8781ebd": {
+      "id": "863a4e6d-d1eb-45a0-95dc-8f67d8781ebd",
+      "position": [
+        1.2141855000357385e-17,
+        0.09914577010131426,
+        0.0045796695606806275
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835166,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#c8a86c"
+      },
+      "parentId": "f6515669-6f8b-4694-bea5-06412775939c",
+      "components": {},
+      "name": "Cylindre (7)",
+      "order": 2.0463815558710747
+    },
+    "d4f88b63-b7d4-46bd-a6b1-ebd18c58abab": {
+      "id": "d4f88b63-b7d4-46bd-a6b1-ebd18c58abab",
+      "position": [
+        0.12001044125609876,
+        -0.07002557563374372,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.1998411796683515,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#9b8ec4"
+      },
+      "parentId": "f6515669-6f8b-4694-bea5-06412775939c",
+      "components": {},
+      "name": "Cylindre (8)",
+      "order": 3.6213025395048524
+    },
+    "3b6374fd-ae62-42f4-aeb6-4383d94bb1c0": {
+      "id": "3b6374fd-ae62-42f4-aeb6-4383d94bb1c0",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -4.329780281177466e-17,
+        -0.7071067811865476,
+        -0.7071067811865475,
+        4.329780281177467e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Cible d'image - C",
+      "imageTarget": {
+        "name": "VERSO C"
+      },
+      "order": 2.114066685033316
+    },
+    "898c3d49-6d83-4633-8538-62478a874243": {
+      "id": "898c3d49-6d83-4633-8538-62478a874243",
+      "position": [
+        -0.12145635018689528,
+        -0.07002557563374369,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835144,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#5bc8c0"
+      },
+      "parentId": "3b6374fd-ae62-42f4-aeb6-4383d94bb1c0",
+      "components": {},
+      "name": "Cylindre (9)",
+      "order": 5.950177084978985
+    },
+    "a1704d1d-9a48-4caf-a382-5f0235c7e301": {
+      "id": "a1704d1d-9a48-4caf-a382-5f0235c7e301",
+      "position": [
+        1.2141855000357385e-17,
+        0.09914577010131426,
+        0.0045796695606806275
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835166,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#c8a86c"
+      },
+      "parentId": "3b6374fd-ae62-42f4-aeb6-4383d94bb1c0",
+      "components": {},
+      "name": "Cylindre (10)",
+      "order": 2.0463815558710747
+    },
+    "31c19ce9-d000-4602-b691-8f66ba2478ed": {
+      "id": "31c19ce9-d000-4602-b691-8f66ba2478ed",
+      "position": [
+        0.12001044125609876,
+        -0.07002557563374372,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.1998411796683515,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#9b8ec4"
+      },
+      "parentId": "3b6374fd-ae62-42f4-aeb6-4383d94bb1c0",
+      "components": {},
+      "name": "Cylindre (11)",
+      "order": 3.6213025395048524
+    },
+    "2e421abe-6e44-4294-863b-9439c037458e": {
+      "id": "2e421abe-6e44-4294-863b-9439c037458e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -4.329780281177466e-17,
+        -0.7071067811865476,
+        -0.7071067811865475,
+        4.329780281177467e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Cible d'image - D",
+      "imageTarget": {
+        "name": "VERSO D"
+      },
+      "order": 2.124956269113462
+    },
+    "8a6b8fb3-ce10-4347-930f-6a4f06ce1b3f": {
+      "id": "8a6b8fb3-ce10-4347-930f-6a4f06ce1b3f",
+      "position": [
+        -0.12145635018689528,
+        -0.07002557563374369,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835144,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#5bc8c0"
+      },
+      "parentId": "2e421abe-6e44-4294-863b-9439c037458e",
+      "components": {},
+      "name": "Cylindre (12)",
+      "order": 5.950177084978985
+    },
+    "074a9227-ea58-4a2b-adcf-a3f925c601d3": {
+      "id": "074a9227-ea58-4a2b-adcf-a3f925c601d3",
+      "position": [
+        1.2141855000357385e-17,
+        0.09914577010131426,
+        0.0045796695606806275
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.19984117966835166,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#c8a86c"
+      },
+      "parentId": "2e421abe-6e44-4294-863b-9439c037458e",
+      "components": {},
+      "name": "Cylindre (13)",
+      "order": 2.0463815558710747
+    },
+    "1e6ef023-49e2-46da-8b8c-bc6a8f0451f6": {
+      "id": "1e6ef023-49e2-46da-8b8c-bc6a8f0451f6",
+      "position": [
+        0.12001044125609876,
+        -0.07002557563374372,
+        0.004579669560680665
+      ],
+      "rotation": [
+        0.5140105892960982,
+        -0.5140105892960982,
+        0.48558533142124277,
+        -0.4855853314212422
+      ],
+      "scale": [
+        0.1998411796683515,
+        0.04998127955545058,
+        0.19991609286353823
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#9b8ec4"
+      },
+      "parentId": "2e421abe-6e44-4294-863b-9439c037458e",
+      "components": {},
+      "name": "Cylindre (14)",
+      "order": 3.6213025395048524
+    },
+    "e84c14d1-d363-46e9-b0aa-828af3a78be4": {
+      "id": "e84c14d1-d363-46e9-b0aa-828af3a78be4",
+      "position": [
+        0,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "2f834c90-bb7d-46dc-bbdf-525d39965c97",
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.5,
+        "width": 125,
+        "height": 50,
+        "text": "RECTO A",
+        "color": "#ffffff",
+        "fontSize": 20,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center",
+        "borderRadius": 10
+      },
+      "name": "Label (1)",
+      "order": 7.811409886426567,
+      "hidden": false
+    },
+    "78fe910d-59dd-4166-9d7c-d3e91a38de0b": {
+      "id": "78fe910d-59dd-4166-9d7c-d3e91a38de0b",
+      "position": [
+        -2.540718180781202e-34,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f6515669-6f8b-4694-bea5-06412775939c",
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.5,
+        "width": 125,
+        "height": 50,
+        "text": "RECTO B",
+        "color": "#ffffff",
+        "fontSize": 20,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center",
+        "borderRadius": 10
+      },
+      "name": "Label (2)",
+      "order": 7.206444590713226,
+      "hidden": false
+    },
+    "d06e2b4e-955b-4abb-92f0-5b53d1b3696b": {
+      "id": "d06e2b4e-955b-4abb-92f0-5b53d1b3696b",
+      "position": [
+        1.2246467991473533e-17,
+        0.1,
+        -2.2204460492503132e-17
+      ],
+      "rotation": [
+        4.329780281177466e-17,
+        0.7071067811865476,
+        0.7071067811865475,
+        4.329780281177467e-17
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.5,
+        "width": 125,
+        "height": 50,
+        "text": "RECTO C",
+        "color": "#ffffff",
+        "fontSize": 20,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center",
+        "borderRadius": 10
+      },
+      "name": "Label (3)",
+      "order": 7.4834007871964,
+      "hidden": false,
+      "parentId": "3b6374fd-ae62-42f4-aeb6-4383d94bb1c0"
+    },
+    "5b0386e9-e80d-4fc2-aa23-3a804685ee0e": {
+      "id": "5b0386e9-e80d-4fc2-aa23-3a804685ee0e",
+      "position": [
+        1.2246467991473533e-17,
+        0.1,
+        -2.2204460492503132e-17
+      ],
+      "rotation": [
+        4.329780281177466e-17,
+        0.7071067811865476,
+        0.7071067811865475,
+        4.329780281177467e-17
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.5,
+        "width": 125,
+        "height": 50,
+        "text": "RECTO D",
+        "color": "#ffffff",
+        "fontSize": 20,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center",
+        "borderRadius": 10
+      },
+      "name": "Label (4)",
+      "order": 6.953073921243031,
+      "hidden": false,
+      "parentId": "2e421abe-6e44-4294-863b-9439c037458e"
+    },
+    "41e53f59-548c-462f-8c60-fcbaebd6a2ee": {
+      "id": "41e53f59-548c-462f-8c60-fcbaebd6a2ee",
+      "position": [
+        -0.00043945988588102095,
+        0,
+        0.191
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.4307032219988897,
+        0.431,
+        0.431
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "background": "#000000",
+        "backgroundOpacity": 0.5,
+        "width": 125,
+        "height": 50,
+        "text": "OLD",
+        "color": "#ffffff",
+        "fontSize": 20,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center",
+        "borderRadius": 10
+      },
+      "name": "Label (5)",
+      "order": 3.263837623065828,
+      "hidden": false,
+      "parentId": "1e91f161-0d44-46aa-9293-a99c9fda4cfc"
     }
   },
   "spaces": {

@@ -64,13 +64,13 @@ cd ardemo-studio && npm run build
 `hello/` contains nothing but build output:
 
 ```sh
-rm -rf ardemo && cp -r ardemo-studio/dist ardemo
+rm -rf hello && cp -r ardemo-studio/dist hello
 ```
 
 ## 4. Verify
 
 ```sh
-diff -rq ardemo-studio/dist ardemo                  # must print nothing
+diff -rq ardemo-studio/dist hello                   # must print nothing
 git status --short hello | cut -c1-2 | sort | uniq -c   # summary: M modified, D deleted, ?? new
 ```
 

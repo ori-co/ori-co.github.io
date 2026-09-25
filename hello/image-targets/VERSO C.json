@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 36,
+    "left": 0,
+    "width": 692,
+    "height": 922,
+    "isRotated": true,
+    "originalWidth": 692,
+    "originalHeight": 996
+  },
+  "imagePath": "image-targets/VERSO C_luminance.png",
+  "metadata": null,
+  "name": "VERSO C",
+  "resources": {
+    "originalImage": "VERSO C_original.png",
+    "croppedImage": "VERSO C_cropped.png",
+    "thumbnailImage": "VERSO C_thumbnail.png",
+    "luminanceImage": "VERSO C_luminance.png"
+  },
+  "created": 1790337841114,
+  "updated": 1790337841114
+}
