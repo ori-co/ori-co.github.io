@@ -38,7 +38,8 @@
   "about": {
     "labelStack":      "// Stack",
     "labelExperience": "// Expérience",
-    "labelPerso":      "// Projets personnels"
+    "labelPerso":      "// Projets personnels",
+    "btnCv":           "Télécharger mon CV"
   },
   "modal": {
     "stack": "// stack",

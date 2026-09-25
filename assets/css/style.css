@@ -341,6 +341,7 @@ nav {
 .tl-detail { font-size:0.75rem; color:var(--muted); font-weight:300; line-height:1.5; }
 .tl-current .tl-title { color:var(--ocre); }
 .tl-edu .tl-title { color:var(--violet); }
+.btn-cv { display:inline-block; margin-top:1.5rem; text-decoration:none; }
 .skills { margin-top:1.5rem; display:flex; flex-direction:column; gap:1.2rem; }
 .skill-cat { display:flex; flex-direction:column; gap:0.5rem; }
 .skill-cat-label {

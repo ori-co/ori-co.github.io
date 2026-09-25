@@ -59,6 +59,10 @@ function renderUI(ui) {
   document.getElementById('label-stack').textContent      = ui.about.labelStack;
   document.getElementById('label-experience').textContent = ui.about.labelExperience;
   document.getElementById('label-perso').textContent      = ui.about.labelPerso;
+
+  const btnCv = document.getElementById('btn-cv');
+  btnCv.textContent = ui.about.btnCv;
+  btnCv.href        = `assets/pdf/cv_oriane_cosson_${ui.lang}.pdf`;
 }
 
 function renderProfile(p) {
