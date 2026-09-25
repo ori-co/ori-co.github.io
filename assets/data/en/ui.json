@@ -43,5 +43,9 @@
   "modal": {
     "stack": "// stack",
     "liens": "// links"
+  },
+  "ardemo": {
+    "hintTitle": "Flip the card over",
+    "hintSub":   "Point your camera at the back of the business card"
   }
 }

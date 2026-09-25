@@ -57,6 +57,47 @@
     }
     .ar-links a:hover { color:var(--text); }
 
+    /* HINT: "flip the card", shown until an image target is found */
+    .ar-ui > .ar-hint {
+      pointer-events:none;
+      align-self:center; margin:0 16px;
+      display:flex; flex-direction:column; align-items:center; gap:14px;
+      padding:22px 26px; max-width:300px; text-align:center;
+      background:rgba(28,30,34,0.6); border:0.5px solid var(--border);
+      transition:opacity 0.4s;
+    }
+    .ar-ui > .ar-hint.hidden { opacity:0; }
+    .ar-hint-card { width:84px; height:52px; perspective:400px; }
+    .ar-hint-flip {
+      position:relative; width:100%; height:100%;
+      transform-style:preserve-3d; animation:ar-flip 3s ease-in-out infinite;
+    }
+    .ar-hint-face {
+      position:absolute; inset:0; backface-visibility:hidden;
+      display:flex; align-items:center; justify-content:center;
+      background:var(--surface);
+    }
+    .ar-hint-front { border:1px solid var(--ocre); }
+    .ar-hint-front::after {
+      content:''; width:20px; height:20px;
+      border:4px double var(--ocre);   /* QR code side */
+    }
+    .ar-hint-back { border:1px solid var(--cyan); transform:rotateY(180deg); }
+    .ar-hint-back::after {
+      content:''; width:46px; height:16px;
+      border-top:2px solid var(--cyan); border-bottom:2px solid var(--violet);
+    }
+    @keyframes ar-flip {
+      0%, 30%   { transform:rotateY(0); }
+      50%, 80%  { transform:rotateY(180deg); }
+      100%      { transform:rotateY(360deg); }
+    }
+    .ar-hint-title { font-size:17px; font-weight:500; }
+    .ar-hint-sub {
+      font-family:'DM Mono',monospace; font-size:11px; line-height:1.6;
+      letter-spacing:0.05em; color:var(--muted);
+    }
+
     /* BOTTOM: contact drawer + footer */
     .ar-bottom { background:var(--surface); border-top:0.5px solid var(--border); }
     .ar-contact-toggle {
@@ -132,6 +173,17 @@
     </ul>
   </nav>
 
+  <div class="ar-hint" id="ar-hint">
+    <div class="ar-hint-card">
+      <div class="ar-hint-flip">
+        <div class="ar-hint-face ar-hint-front"></div>
+        <div class="ar-hint-face ar-hint-back"></div>
+      </div>
+    </div>
+    <p class="ar-hint-title" id="ar-hint-title">Retournez la carte</p>
+    <p class="ar-hint-sub" id="ar-hint-sub">Visez le dos de la carte de visite avec la caméra</p>
+  </div>
+
   <div class="ar-bottom" id="ar-bottom">
     <button class="ar-contact-toggle" id="ar-contact-toggle" aria-expanded="false" aria-controls="ar-contact-body">
       <span id="ar-contact-title">Un projet en tête ?</span>
@@ -186,6 +238,9 @@
     const lang = localStorage.getItem('lang') || 'fr'
     let formspreeId = 'mbdzzkwn'
 
+    // Flip hint: hidden on the first detection (event sent by src/target-events.ts)
+    window.addEventListener('ar-image-found', () => $('ar-hint').classList.add('hidden'), {once: true})
+
     // Contact drawer
     const bottom = $('ar-bottom')
     $('ar-contact-toggle').addEventListener('click', () => {
@@ -232,6 +287,8 @@
       document.documentElement.lang = ui.lang
       $('ar-logo').textContent = p.initials
       ;['home', 'portfolio', 'about'].forEach(n => { $(`ar-nav-${n}`).textContent = ui.nav[n] })
+      $('ar-hint-title').textContent = ui.ardemo.hintTitle
+      $('ar-hint-sub').textContent   = ui.ardemo.hintSub
       $('ar-contact-title').textContent = p.contact.title
       $('ar-linkedin').href = p.linkedin
       $('ar-label-name').textContent    = ui.contact.labelName

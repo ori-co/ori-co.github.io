@@ -43,5 +43,9 @@
   "modal": {
     "stack": "// stack",
     "liens": "// liens"
+  },
+  "ardemo": {
+    "hintTitle": "Retournez la carte",
+    "hintSub":   "Visez le dos de la carte de visite avec la caméra"
   }
 }
