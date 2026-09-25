@@ -494,7 +494,7 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V1.10 - Flip card hint",
+        "text": "V1.11 - Contact auto-open",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"

@@ -108,12 +108,12 @@
     }
     .ar-contact-icon {
       font-family:'DM Mono',monospace; font-size:18px; color:var(--cyan);
-      transition:transform 0.3s;
+      transition:transform 0.6s cubic-bezier(0.22,1,0.36,1);
     }
     .ar-bottom.open .ar-contact-icon { transform:rotate(45deg); }
     .ar-contact-body {
       display:grid; grid-template-rows:0fr;
-      transition:grid-template-rows 0.3s ease;
+      transition:grid-template-rows 0.6s cubic-bezier(0.22,1,0.36,1);
     }
     .ar-bottom.open .ar-contact-body { grid-template-rows:1fr; }
     .ar-contact-inner {
@@ -243,10 +243,17 @@
 
     // Contact drawer
     const bottom = $('ar-bottom')
-    $('ar-contact-toggle').addEventListener('click', () => {
-      const open = bottom.classList.toggle('open')
+    const setContactOpen = open => {
+      bottom.classList.toggle('open', open)
       $('ar-contact-toggle').setAttribute('aria-expanded', open)
-    })
+    }
+    $('ar-contact-toggle').addEventListener('click', () => setContactOpen(!bottom.classList.contains('open')))
+
+    // Opens by itself once every platform has been revealed (event sent by src/platform-progress.ts)
+    const CONTACT_AUTO_OPEN_DELAY = 3000
+    window.addEventListener('ar-all-platforms-revealed', () => {
+      setTimeout(() => setContactOpen(true), CONTACT_AUTO_OPEN_DELAY)
+    }, {once: true})
 
     // Same Formspree flow as the site (assets/js/main.js)
     const form = $('ar-form')

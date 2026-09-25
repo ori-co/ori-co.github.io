@@ -1,10 +1,12 @@
 import * as ecs from '@8thwall/ecs'
+import {registerPlatform, platformRevealed} from './platform-progress'
 
 ecs.registerComponent({
   name: 'disc-reveal',
   add :(world, component) => {
     const eid = component.eid
     console.log('[disc-reveal] initialized, eid:', eid)
+    registerPlatform(eid)
     for (const childEid of world.getChildren(eid)) {
         world.getEntity(childEid).hide()
       }
@@ -14,6 +16,7 @@ ecs.registerComponent({
       for (const childEid of world.getChildren(eid)) {
         world.getEntity(childEid).show()
       }
+      platformRevealed(eid)
     })
   },
 })

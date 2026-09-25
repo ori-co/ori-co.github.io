@@ -21,6 +21,7 @@ ardemo-studio/
 │   ├── .expanse.json     # The scene: entities, transforms, components. Written by Studio.
 │   ├── app.js            # XR8 config: list of image targets to load
 │   ├── disc-reveal.ts    # Custom ECS component
+│   ├── platform-progress.ts # Counts opened platforms, notifies the overlay
 │   ├── target-events.ts  # Forwards image found/lost to the HTML overlay
 │   ├── index.html        # HTML shell (loads runtime.js + xr.js, then bundle.js)
 │   └── assets/           # GLB models used by the scene
@@ -73,6 +74,8 @@ Attached to each `Trigger` cylinder.
 1. `add`: hides all the entity's children (platform GLB + label).
 2. On `SCREEN_TOUCH_START` on this entity (a tap on the disc), shows them again.
 
+Each instance also reports to `src/platform-progress.ts` (plain module, not a component): it registers the platform on `add` and reports each tap. Once every registered platform has been opened at least once, it fires `ar-all-platforms-revealed` on `window`, once. The total is the number of `disc-reveal` instances in the scene, so adding a platform in Studio needs no code change.
+
 To create a new component, copy this file and keep the same pattern:
 
 ```ts
@@ -94,6 +97,8 @@ Then attach it to an entity in Studio.
 ### `target-events` (`src/target-events.ts`)
 
 Not a component: a world behavior (`ecs.registerBehavior`), so it needs nothing in the scene. It listens to `ecs.events.REALITY_IMAGE_FOUND` / `REALITY_IMAGE_LOST` on `world.events.globalId` and re-emits them on `window` as `ar-image-found` / `ar-image-lost` (target name in `detail`). This is how the HTML overlay in `src/index.html` reacts to tracking. The "flip the card" hint hides on the first `ar-image-found`.
+
+Overlay events on `window`: `ar-image-found`, `ar-image-lost` (from `target-events.ts`) and `ar-all-platforms-revealed` (from `platform-progress.ts`). The contact drawer opens by itself `CONTACT_AUTO_OPEN_DELAY` ms after the last one.
 
 ## HTML overlay (`src/index.html`)
 
