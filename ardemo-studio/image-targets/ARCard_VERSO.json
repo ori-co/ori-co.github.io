@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 102,
+    "left": 27,
+    "width": 604,
+    "height": 805,
+    "isRotated": true,
+    "originalWidth": 658,
+    "originalHeight": 1010
+  },
+  "imagePath": "image-targets/ARCard_VERSO_luminance.png",
+  "metadata": null,
+  "name": "ARCard_VERSO",
+  "resources": {
+    "originalImage": "ARCard_VERSO_original.png",
+    "croppedImage": "ARCard_VERSO_cropped.png",
+    "thumbnailImage": "ARCard_VERSO_thumbnail.png",
+    "luminanceImage": "ARCard_VERSO_luminance.png"
+  },
+  "created": 1791211542279,
+  "updated": 1791211712874
+}

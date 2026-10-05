@@ -116,6 +116,8 @@ Nav, "flip the card" hint, collapsible contact form and footer, styled like the 
 3. On the Image Target entity (`Cible d'image`), select the same target. **The target name in the scene must match the `name` field of the JSON.** Otherwise nothing is tracked, and no error is shown.
 4. Remove old targets from both `app.js` and `image-targets/`. Every target listed in `app.js` must exist on disk, or the build fails on the `require`.
 
+Shortcut: the `/ardemo-add-target` skill does steps 1–3 from a JPG/PNG without Studio (it reproduces Studio's files: 3:4 portrait crop, 480x640 grayscale luminance, 263x350 thumbnail) and adds an empty Image Target entity to the scene. Landscape images are rotated 90° clockwise first, as Studio did for the VERSO targets.
+
 ## Build & deploy
 
 The site is served from `../hello/`, a plain copy of `dist/`. **Never edit `hello/` by hand.**
