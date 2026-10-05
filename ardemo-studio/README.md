@@ -83,6 +83,7 @@ import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
   name: 'my-component',            // name referenced by the scene in .expanse.json
+  schema: {},                      // even if empty (see gotchas)
   add: (world, component) => {     // arrow function (see gotchas)
     const eid = component.eid
     world.events.addListener(eid, ecs.input.SCREEN_TOUCH_START, () => {
@@ -155,6 +156,7 @@ Lessons learned the hard way:
 | Topic | What to do |
 |---|---|
 | Component syntax | Studio expects the arrow function form `add: (world, component) => {}`, not the method shorthand `add(world, component) {}` |
+| Component without `schema` | Always declare `schema: {}`, even if empty. Otherwise Studio saves the component without `parameters`, and duplicating the entity crashes with `TypeError: Cannot convert undefined or null to object` in `createObjectUpdateRefs`. After adding it, remove and re-add the component in Studio so the scene entry gets rewritten |
 | Tap on an entity | Listen on the entity itself: `world.events.addListener(eid, ecs.input.SCREEN_TOUCH_START, cb)`. Listening on `world.events.globalId` and comparing target/eid proved unreliable |
 | Event payload | Events are wrapped: use `e.data.target`, not `e.target` |
 | Show / hide | Use `world.getEntity(eid).show()` / `.hide()`. `ecs.Hidden.remove` doesn't bring back an entity hidden in Studio |

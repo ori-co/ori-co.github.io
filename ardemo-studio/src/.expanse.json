@@ -130,12 +130,12 @@
       "position": [
         2.5739045355386666e-17,
         0.1,
-        -4.666828150829652e-17
+        0.01
       ],
       "rotation": [
         0.7071064131106127,
-        -0.0007214830860009519,
-        -0.0007214830860009521,
+        -0.0007214830860009518,
+        -0.0007214830860009522,
         0.7071064131106128
       ],
       "scale": [
@@ -149,9 +149,9 @@
         "height": 0.1
       },
       "material": {
-        "type": "unlit",
-        "color": "#787878",
-        "opacity": 0.3,
+        "type": "basic",
+        "color": "#1b1d23",
+        "opacity": 0.8,
         "textureFiltering": "smooth",
         "wireframe": false,
         "forceTransparent": true
@@ -172,7 +172,7 @@
       "position": [
         0.11,
         -0.1,
-        -2.4832164403677836e-18
+        0.01
       ],
       "rotation": [
         0.7071064131106127,
@@ -191,11 +191,12 @@
         "height": 0.1
       },
       "material": {
-        "type": "unlit",
-        "color": "#787878",
-        "opacity": 0.3,
+        "type": "basic",
+        "color": "#1b1d23",
+        "opacity": 0.8,
         "textureFiltering": "smooth",
-        "wireframe": false
+        "wireframe": false,
+        "forceTransparent": true
       },
       "components": {
         "da07d809-ab1e-4e86-ae96-ef33dfc8a491": {
@@ -213,7 +214,7 @@
       "position": [
         -0.11,
         -0.1,
-        -2.4832164403677867e-18
+        0.01
       ],
       "rotation": [
         0.7071064131106127,
@@ -232,11 +233,12 @@
         "height": 0.1
       },
       "material": {
-        "type": "unlit",
-        "color": "#787878",
-        "opacity": 0.3,
+        "type": "basic",
+        "color": "#1b1d23",
+        "opacity": 0.8,
         "textureFiltering": "smooth",
-        "wireframe": false
+        "wireframe": false,
+        "forceTransparent": true
       },
       "components": {
         "dc609c84-8091-415e-a3cf-2af6a70112c2": {
@@ -399,7 +401,7 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V2.0 ARCard verso",
+        "text": "V2.1 anim trigger in disc-reveal",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"
@@ -664,7 +666,7 @@
           "asset": "assets/offer_violet.glb"
         },
         "animationClip": "Apparition",
-        "loop": true,
+        "loop": false,
         "repetitions": 1
       },
       "name": "offer_violet.glb",
