@@ -271,7 +271,18 @@
       "geometry": null,
       "material": null,
       "parentId": "4e882f92-0a55-4250-a554-bdc9d028fc68",
-      "components": {},
+      "components": {
+        "9ea251e1-7b03-40b2-9adf-f13745a82f5a": {
+          "id": "9ea251e1-7b03-40b2-9adf-f13745a82f5a",
+          "name": "look-at-animation",
+          "parameters": {
+            "target": {
+              "type": "entity",
+              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
+            }
+          }
+        }
+      },
       "ui": {
         "background": "#000000",
         "backgroundOpacity": 0.5,
@@ -295,9 +306,9 @@
     "cf2ccdf3-25dc-4d7c-97e2-46d6871c7f46": {
       "id": "cf2ccdf3-25dc-4d7c-97e2-46d6871c7f46",
       "position": [
-        0,
-        1.3049827036510977,
-        -2.220446049250313e-16
+        -0.25,
+        1.3049827036510973,
+        0.00046304667557806045
       ],
       "rotation": [
         -0.7071064131106127,
@@ -308,12 +319,23 @@
       "scale": [
         1,
         1,
-        0.9999999999999998
+        0.9999999999999994
       ],
       "geometry": null,
       "material": null,
       "parentId": "9c71edb4-7bd2-4942-8296-321c42876638",
-      "components": {},
+      "components": {
+        "9ea251e1-7b03-40b2-9adf-f13745a82f5a": {
+          "id": "9ea251e1-7b03-40b2-9adf-f13745a82f5a",
+          "name": "look-at-animation",
+          "parameters": {
+            "target": {
+              "type": "entity",
+              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
+            }
+          }
+        }
+      },
       "ui": {
         "background": "#000000",
         "backgroundOpacity": 0.5,
@@ -337,9 +359,9 @@
     "e05ebec9-e43a-43bc-9f27-f5a3d796dede": {
       "id": "e05ebec9-e43a-43bc-9f27-f5a3d796dede",
       "position": [
-        0,
-        1.3049827036510977,
-        -1.1102230246251565e-16
+        0.25,
+        1.3049827036510975,
+        -0.0003477441537251269
       ],
       "rotation": [
         -0.7071064131106127,
@@ -350,12 +372,23 @@
       "scale": [
         1,
         1,
-        0.9999999999999998
+        0.9999999999999996
       ],
       "geometry": null,
       "material": null,
       "parentId": "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730",
-      "components": {},
+      "components": {
+        "9ea251e1-7b03-40b2-9adf-f13745a82f5a": {
+          "id": "9ea251e1-7b03-40b2-9adf-f13745a82f5a",
+          "name": "look-at-animation",
+          "parameters": {
+            "target": {
+              "type": "entity",
+              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
+            }
+          }
+        }
+      },
       "ui": {
         "background": "#000000",
         "backgroundOpacity": 0.5,
@@ -401,7 +434,7 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V2.3 - Detection zone",
+        "text": "V2.4 - lookat",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"
