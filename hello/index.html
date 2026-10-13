@@ -156,7 +156,7 @@
     $('ar-contact-toggle').addEventListener('click', () => setContactOpen(!bottom.classList.contains('open')))
 
     // Opens by itself once every platform has been revealed (event sent by src/platform-progress.ts)
-    const CONTACT_AUTO_OPEN_DELAY = 3000
+    const CONTACT_AUTO_OPEN_DELAY = 6000
     window.addEventListener('ar-all-platforms-revealed', () => {
       setTimeout(() => setContactOpen(true), CONTACT_AUTO_OPEN_DELAY)
     }, {once: true})

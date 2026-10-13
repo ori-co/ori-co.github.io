@@ -275,11 +275,11 @@
       "ui": {
         "background": "#000000",
         "backgroundOpacity": 0.5,
-        "width": 100,
-        "height": 25,
+        "width": 150,
+        "height": 35,
         "text": "Atelier Vision & Acculturation",
         "color": "#c8a86c",
-        "fontSize": 8,
+        "fontSize": 12,
         "type": "3d",
         "font": {
           "type": "font",
@@ -317,11 +317,11 @@
       "ui": {
         "background": "#000000",
         "backgroundOpacity": 0.5,
-        "width": 100,
-        "height": 25,
+        "width": 150,
+        "height": 35,
         "text": "Prototypage & Developpement",
         "color": "#5bc8c0",
-        "fontSize": 8,
+        "fontSize": 12,
         "type": "3d",
         "font": {
           "type": "font",
@@ -359,11 +359,11 @@
       "ui": {
         "background": "#000000",
         "backgroundOpacity": 0.5,
-        "width": 100,
-        "height": 25,
+        "width": 150,
+        "height": 35,
         "text": "Direction de Projet Innovation",
         "color": "#9b8ec4",
-        "fontSize": 8,
+        "fontSize": 12,
         "type": "3d",
         "font": {
           "type": "font",
@@ -401,7 +401,7 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V2.2 - Labels repositioned",
+        "text": "V2.3 - Detection zone",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"
@@ -504,48 +504,6 @@
         "name": "ARCard_VERSO"
       },
       "order": 2.9363837207105723
-    },
-    "a24a0469-adc0-4039-a5d6-6cfe22cefa91": {
-      "id": "a24a0469-adc0-4039-a5d6-6cfe22cefa91",
-      "position": [
-        -0.00020406570192826518,
-        4.1642984118894625e-7,
-        0.15
-      ],
-      "rotation": [
-        -2.7755474480787725e-17,
-        -2.216997889252226e-19,
-        -0.0010203311652453408,
-        0.9999994794620212
-      ],
-      "scale": [
-        0.3,
-        0.3,
-        0.3
-      ],
-      "geometry": null,
-      "material": null,
-      "components": {},
-      "ui": {
-        "background": "#000000",
-        "backgroundOpacity": 0.5,
-        "width": 125,
-        "height": 50,
-        "text": "NEW",
-        "color": "#ffffff",
-        "fontSize": 20,
-        "type": "3d",
-        "font": {
-          "type": "font",
-          "font": "Futura"
-        },
-        "verticalTextAlign": "center",
-        "borderRadius": 10
-      },
-      "name": "Label (6)",
-      "order": 5.192247136747563,
-      "hidden": true,
-      "parentId": "e76c215b-8268-4c5c-835b-cc4fbcb05977"
     },
     "b3f82157-f0da-41bf-ac67-f4bf3baba688": {
       "id": "b3f82157-f0da-41bf-ac67-f4bf3baba688",
