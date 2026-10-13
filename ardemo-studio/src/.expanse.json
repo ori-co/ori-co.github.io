@@ -272,15 +272,10 @@
       "material": null,
       "parentId": "4e882f92-0a55-4250-a554-bdc9d028fc68",
       "components": {
-        "9ea251e1-7b03-40b2-9adf-f13745a82f5a": {
-          "id": "9ea251e1-7b03-40b2-9adf-f13745a82f5a",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
+        "025fa4ec-eb99-48f6-a340-1f9873f96a31": {
+          "id": "025fa4ec-eb99-48f6-a340-1f9873f96a31",
+          "name": "label-billboard",
+          "parameters": {}
         }
       },
       "ui": {
@@ -325,15 +320,10 @@
       "material": null,
       "parentId": "9c71edb4-7bd2-4942-8296-321c42876638",
       "components": {
-        "9ea251e1-7b03-40b2-9adf-f13745a82f5a": {
-          "id": "9ea251e1-7b03-40b2-9adf-f13745a82f5a",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
+        "a3050141-acb9-4505-adfb-bb91ade8517a": {
+          "id": "a3050141-acb9-4505-adfb-bb91ade8517a",
+          "name": "label-billboard",
+          "parameters": {}
         }
       },
       "ui": {
@@ -378,15 +368,10 @@
       "material": null,
       "parentId": "fc3fc9c0-f57e-41b2-9dac-1f4b7624e730",
       "components": {
-        "9ea251e1-7b03-40b2-9adf-f13745a82f5a": {
-          "id": "9ea251e1-7b03-40b2-9adf-f13745a82f5a",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
+        "a58fb115-9140-44ad-ada5-ecbae3f15363": {
+          "id": "a58fb115-9140-44ad-ada5-ecbae3f15363",
+          "name": "label-billboard",
+          "parameters": {}
         }
       },
       "ui": {
@@ -434,7 +419,7 @@
       "ui": {
         "width": 100,
         "height": 100,
-        "text": "V2.4 - lookat",
+        "text": "V2.5 - label billboard",
         "color": "#ffffff",
         "fontSize": 12,
         "type": "overlay"

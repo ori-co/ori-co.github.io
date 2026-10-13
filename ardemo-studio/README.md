@@ -51,13 +51,13 @@ Default Space
 ├── Cible d'image              Image Target entity
 │   ├── Trigger (1)            cylinder "disc" + disc-reveal
 │   │   ├── ARScene_plateform_ocre.glb
-│   │   └── Label              "Atelier Vision & Acculturation"
+│   │   └── Label              "Atelier Vision & Acculturation" + label-billboard
 │   ├── Trigger (2)            cylinder + disc-reveal
 │   │   ├── ARScene_plateform_cyan.glb
-│   │   └── Label              "Prototypage & Developpement"
+│   │   └── Label              "Prototypage & Developpement" + label-billboard
 │   └── Trigger (3)            cylinder + disc-reveal
 │       ├── ARScene_plateform_violet.glb
-│       └── Label              "Direction de Projet Innovation"
+│       └── Label              "Direction de Projet Innovation" + label-billboard
 └── Version#                   on-screen UI text, e.g. "V1.6 - Cropped Image Target"
 
 Prefab (outside the space): Plateformes
@@ -94,6 +94,10 @@ ecs.registerComponent({
 ```
 
 Then attach it to an entity in Studio.
+
+### `label-billboard` (`src/label-billboard.ts`)
+
+Attached to each `Label`. Every frame, it turns the label around its own normal (local Z) so the text stays upright on screen while the camera orbits the card. The label keeps the plane set in Studio, so it doesn't face the screen like a sticker. The angle comes from the screen's up direction, not the camera position, so it stays stable with the camera right above the card. The built-in `look-at-animation` jittered here: it aims at the camera with world up as reference, which is unstable when looking down at an image target.
 
 ### `target-events` (`src/target-events.ts`)
 
